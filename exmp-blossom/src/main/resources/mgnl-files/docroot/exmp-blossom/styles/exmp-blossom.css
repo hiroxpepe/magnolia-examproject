@@ -1,0 +1,347 @@
+/* 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ 
+ 
+/* ****************************************************************************
+ * initialize
+ *****************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+input {
+    width: 100%;
+    font-size: 100%;
+}
+textarea {
+    width: 100%;
+    height: 10em;
+    resize: vertical;
+    font-size: 100%;
+}
+body, div {
+    font: 100% arial, helvetica, clean, sans-serif;
+} 
+select, input, button, textarea {
+    font: 90% arial, helvetica, clean, sans-serif;
+}
+
+/* ****************************************************************************
+ * define the body of this application.
+ * this will set the background color of this site.
+ */
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: mintcream;
+}
+
+/* ****************************************************************************
+ * basic layout configuration
+ *****************************************************************************/
+
+/* ****************************************************************************
+ * define the container area of this application.
+ * this represents part of the rectangle to display the contents of site.
+ * here, there is never set a height param.
+ */
+div.container {
+    width: 763px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lavender;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+    div.container.wide {
+        width: 950px;
+    }
+
+/* ****************************************************************************
+ * define the header area of this application.
+ * this part is setting of the appearance and layout
+ * structure of the constituent regions for this site.
+ */
+div.header {
+    width: 100%;
+    height: 8em;
+    text-align: left;
+    color: white;
+    background: lightslategray;
+    border-bottom: 1px solid silver;
+}
+
+/* ****************************************************************************
+ * define the menu area of this application.
+ */
+div.menu {
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    background: dimgray;
+}
+
+/* ****************************************************************************
+ * define the content area of this application.
+ */
+div.content {
+    width: 75%;
+    min-height: 720px;
+    height: auto;
+    float: left;
+    text-align: left;
+    background-color: white;
+}
+
+/* ****************************************************************************
+ * define the sidebar area of this application.
+ */
+div.sidebar {
+    width: 25%;
+    min-height: 720px;
+    height: auto;
+    float: right;
+    text-align: left;
+    background-color: lavender;
+}
+
+/* ****************************************************************************
+ * define the footer area of this application.
+ */
+div.footer {
+    width: 100%;
+    height: 6em;
+    clear: both;
+    text-align: right;
+    font-size: 90%;
+    color: white;
+    background: lightslategray;
+    border-top: 1px solid silver;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* ****************************************************************************
+ * basic margin configuration 
+ *****************************************************************************/
+    
+/* ****************************************************************************
+ * define the div block class for set basic margin of this application.
+ */
+div.block {
+    margin-right: 1em;
+    margin-left: 1em;
+    padding: 0.25em;
+}
+
+/* ****************************************************************************
+ * basic appearance configuration
+ *****************************************************************************/
+
+/* ****************************************************************************
+ * define the appearance of the header content.
+ */
+div.header-content {
+}
+    div.header-title  {
+        margin-top: 0.5em;
+        font-size: 200%;
+        font-weight: bold;
+        color: white;
+    }
+
+/* ****************************************************************************
+ * define the appearance of the menu content.
+ */
+div.menu-content {
+}
+    div.menu-bar {
+    }
+        div.menu-bar a {
+            margin-right: 0.25em;
+            padding-left: 0.25em;
+            padding-right: 0.25em;
+            color: white;
+            text-decoration: none;
+        }
+            div.menu-bar a:active {
+                color: white;
+                text-decoration: none;
+            }
+            div.menu-bar a:visited {
+                text-decoration: none;
+                color: white;
+            }
+            div.menu-bar a:hover {
+                text-decoration: none;
+                color: white;
+                background: gray;
+                border-radius: 2px;
+            }
+    
+/* ****************************************************************************
+ * define the appearance of the sidebar content.
+ */
+div.sidebar-content {
+    margin-top: 1em;
+}
+    div.sidebar-header {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding-top: 0.15em;
+        padding-bottom: 0.15em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-weight: bold;
+        color: white;
+        background: lightslategray;
+        border-radius: 2px;
+    }
+    div.sidebar-text {
+        padding-top: 0.15em;
+        padding-bottom: 0.15em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-size: 70%;
+        color: darkslateblue;
+    }
+    div.sidebar-link {
+        padding-top: 0.15em;
+        padding-bottom: 0.15em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-size: 85%;
+        color: lightslategray;
+    }
+        div.sidebar-link a {
+        font-weight: bold;
+            text-decoration: none;
+            color: dimgray;
+        }
+            div.sidebar-link a:active {
+                font-weight: bold;
+                text-decoration: none;
+                color: dimgray;
+            }
+            div.sidebar-link a:visited {
+                font-weight: bold;
+                text-decoration: none;
+                color: dimgray;
+            }
+            div.sidebar-link a:hover {
+                font-weight: bold;
+                text-decoration: underline;
+                color: lightslategray;
+            }
+
+/* ****************************************************************************
+ * define the appearance of the footer content.
+ */
+div.footer-content {
+    padding-top: 0.75em;
+}
+    div.footer-content a {
+        text-decoration: none;
+        color: white;
+    }
+    div.footer-content a:active {
+        text-decoration: none;
+        color: white;
+    }
+    div.footer-content a:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+/* ****************************************************************************
+ * additional configuration
+ *****************************************************************************/
+    
+/* ****************************************************************************
+ * define the appearance of the entry content.
+ */
+div.entry-wrapper {
+     margin-bottom: 1em;
+} 
+    div.entry {
+        margin-left : 1em;
+        margin-right : 1em;
+    }
+        div.entry-title {
+            margin-top: 1em;
+            margin-bottom: 0.25em;
+            padding-top: 0.5em;
+            font-size: 150%;
+            font-weight: bold;
+            color: dimgray;
+            border-top: 1px solid silver;
+        }
+        div.entry-content {
+        }
+            div.entry-content p {
+            }
+        div.entry-image-left {
+            margin-right: 1em;
+            float: left;
+        }
+            div.entry-image-left img {
+                width: 196px;
+                border-radius: 2px;
+            }
+        div.entry-clear-left {
+            clear: left;
+        }
+        div.entry-image-right {
+            margin-left: 1em;
+            float: right;
+        }
+            div.entry-image-right img {
+                width: 196px;
+                border-radius: 2px;
+            }
+        div.entry-clear-right {
+            clear: right;
+        }
+        div.entry-link {
+            margin-top: 1em;
+            padding: 0.5em;
+            background: lavender;
+            border: 1px solid lightsteelblue;
+            border-radius: 3px;
+        }
+            div.entry-link p {
+                padding: 0.25em;
+            }
+            div.entry-link a {
+                font-weight: bold;
+                text-decoration: none;
+                color: dimgray;
+            }
+                div.entry-link a:active {
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: dimgray;
+                }
+                div.entry-link a:visited {
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: dimgray;
+                }
+                div.entry-link a:hover {
+                    font-weight: bold;
+                    text-decoration: underline;
+                    color: lightslategray;
+                }

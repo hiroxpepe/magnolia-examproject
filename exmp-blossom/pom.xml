@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>org.examproject</groupId>
+    <artifactId>exmp-blossom</artifactId>
+    <packaging>jar</packaging>
+    <version>0.1.0-SNAPSHOT</version>
+    <name>exmp-blossom</name>
+    <description>a blossom bean example.</description>
+  
+    <properties>
+        <java.version>1.6</java.version>
+        <spring.version>3.1.1.RELEASE</spring.version>
+        <magnolia.version>4.5.2</magnolia.version>
+        <blossom.version>2.0</blossom.version>
+    </properties>
+  
+    <dependencies>
+        <!--///////////////////////////////////////////////////////////////////////////-->
+        <!-- OSS LIB --> 
+      
+        <!-- Magnolia -->
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-core</artifactId>
+            <version>${magnolia.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-mail</artifactId>
+            <version>${magnolia.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-gui</artifactId>
+            <version>${magnolia.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-admininterface</artifactId>
+            <version>${magnolia.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-fckeditor</artifactId>
+            <version>${magnolia.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-templating</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+
+        <!-- Magnolia Blossom Module -->
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-blossom</artifactId>
+            <version>${blossom.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+            <scope>provided</scope>
+        </dependency>
+      
+        <!-- Logging -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+            <scope>provided</scope>
+        </dependency>    
+    
+  </dependencies>
+      
+    <repositories>
+        <!-- for Magnolia -->
+        <repository>
+            <id>magnolia.public</id>
+            <url>http://nexus.magnolia-cms.com/content/groups/public</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+    <build>
+        <resources>
+            <!-- add the Attributes from the POM to properties files -->
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <showWarnings>true</showWarnings>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>install</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>sources</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

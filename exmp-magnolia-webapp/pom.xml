@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>org.examproject</groupId>
+    <artifactId>exmp-magnolia-webapp</artifactId>
+    <packaging>war</packaging>
+    <version>0.1.0-SNAPSHOT</version>
+    <name>exmp-magnolia-webapp</name>
+    <description>a magnolia webapp.</description>
+  
+    <properties>
+        <java.version>1.6</java.version>
+        <spring.version>3.1.1.RELEASE</spring.version>
+        <magnolia.version>4.5.2</magnolia.version>
+        <blossom.version>2.0</blossom.version>
+    </properties>
+  
+    <dependencies>   
+        <!--///////////////////////////////////////////////////////////////////////////-->
+        <!-- USER LIB -->
+        
+        <dependency>
+            <groupId>org.examproject</groupId>
+            <artifactId>exmp-blossom</artifactId>
+            <version>0.1.0-SNAPSHOT</version>
+        </dependency>
+    
+        <!--///////////////////////////////////////////////////////////////////////////-->
+        <!-- OSS LIB -->
+    
+        <!-- Blossom -->
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-blossom</artifactId>
+            <version>${blossom.version}</version>
+        </dependency>
+        
+        <!-- Magnolia -->
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-rendering</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-templating</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-templating-editor</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-templating-jsp</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-templating-compatibility-taglib-cms</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-core</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-admininterface</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-cache</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-exchange-simple</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-gui</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-jaas</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-fckeditor</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-mail</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-module-store-client</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+    
+        <!-- Openutils -->
+        <dependency>
+            <groupId>net.sourceforge.openutils</groupId>
+            <artifactId>openutils-log4j</artifactId>
+            <version>2.0.5</version>
+        </dependency>
+    
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+    
+        <!-- Servlet API -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+        
+        <!--///////////////////////////////////////////////////////////////////////////-->
+        <!-- Test Lib -->
+        
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <repositories>
+        <!-- for Magnolia -->
+        <repository>
+            <id>magnolia.public</id>
+            <url>http://nexus.magnolia-cms.com/content/groups/public</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <dependentWarExcludes>WEB-INF/lib/*.jar</dependentWarExcludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

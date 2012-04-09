@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+    <name>${project.artifactId}</name>
+    <displayName>examproject - Blossom bean Module</displayName>
+    <description>${project.description}</description>
+    <class>org.examproject.blossom.core.BlossomModule</class>
+    <version>${project.version}</version>
+    
+    <dependencies>
+        <dependency>
+            <name>core</name>
+            <version>4.5/*</version>
+        </dependency>
+    </dependencies>
+    
+</module>

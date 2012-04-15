@@ -2,7 +2,7 @@
 
 ***
 ### What's this?
-An example of [Magnolia CMS](http://www.magnolia-cms.com/magnolia-cms.html) and [Magnolia Blossom](http://documentation.magnolia-cms.com/modules/blossom.html).
+An example of [Magnolia CMS](http://www.magnolia-cms.com/magnolia-cms.html) and it's module [Magnolia Blossom](http://documentation.magnolia-cms.com/modules/blossom.html).
 
 ***
 ### How to run at the local?

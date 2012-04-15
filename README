@@ -1,5 +1,0 @@
-
-> cd {path to this README directory!}
-> mvn compile
-> mvn install
-> java -jar target/dependency/jetty-runner.jar exmp-magnolia-webapp/target/*.war

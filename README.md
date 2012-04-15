@@ -36,7 +36,7 @@ To push the application for Heroku at your command line.
 
 ***
 ### Running on Heroku.
-http://exmpmagnolia.herokuapp.com/
+http://exmpmagnolia.herokuapp.com/home
 
 ***
 ### Author

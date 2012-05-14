@@ -60,10 +60,11 @@ div.container {
     margin-left: auto;
     margin-right: auto;
     background-color: lavender;
-    border-left: 1px solid silver;
-    border-right: 1px solid silver;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: 0 0 4px 0 gainsboro;
 }
     div.container.wide {
         width: 950px;
@@ -76,11 +77,11 @@ div.container {
  */
 div.header {
     width: 100%;
-    height: 8em;
+    height: 5em;
     text-align: left;
     color: white;
-    background: lightslategray;
-    border-bottom: 1px solid silver;
+    background: #777799;
+    border-bottom: 1px solid gainsboro;
 }
 
 /* ****************************************************************************
@@ -98,7 +99,7 @@ div.menu {
  * define the content area of this application.
  */
 div.content {
-    width: 75%;
+    width: 70%;
     min-height: 720px;
     height: auto;
     float: left;
@@ -110,7 +111,7 @@ div.content {
  * define the sidebar area of this application.
  */
 div.sidebar {
-    width: 25%;
+    width: 30%;
     min-height: 720px;
     height: auto;
     float: right;
@@ -128,8 +129,8 @@ div.footer {
     text-align: right;
     font-size: 90%;
     color: white;
-    background: lightslategray;
-    border-top: 1px solid silver;
+    background: #777799;
+    border-top: 1px solid gainsboro;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -155,12 +156,23 @@ div.block {
  * define the appearance of the header content.
  */
 div.header-content {
+    padding-top: 1em;
 }
-    div.header-title  {
-        margin-top: 0.5em;
-        font-size: 200%;
+    span.header-logo {
+        margin-right: 0.25em;
+    }
+        span.header-logo img {
+            border: 1px solid #aaaabb;
+            border-radius: 4px;
+        }
+    span.header-title {
+        margin-right: 0.15em;
+        cursor: pointer;
+        font-size: xx-large;
         font-weight: bold;
-        color: white;
+    }
+    span.header-sub-title {
+        font-size: 60%;
     }
 
 /* ****************************************************************************
@@ -169,17 +181,18 @@ div.header-content {
 div.menu-content {
 }
     div.menu-bar {
+        height: 1.55em;
     }
         div.menu-bar a {
             margin-right: 0.25em;
             padding-left: 0.25em;
             padding-right: 0.25em;
-            color: white;
             text-decoration: none;
+            color: white;
         }
             div.menu-bar a:active {
-                color: white;
                 text-decoration: none;
+                color: white;
             }
             div.menu-bar a:visited {
                 text-decoration: none;
@@ -207,15 +220,16 @@ div.sidebar-content {
         padding-right: 0.5em;
         font-weight: bold;
         color: white;
-        background: lightslategray;
+        background: #777799;
         border-radius: 2px;
+        box-shadow: 0 0 2px 0 lightsteelblue;
     }
     div.sidebar-text {
         padding-top: 0.15em;
         padding-bottom: 0.15em;
         padding-left: 0.5em;
         padding-right: 0.5em;
-        font-size: 70%;
+        font-size: 80%;
         color: darkslateblue;
     }
     div.sidebar-link {
@@ -224,7 +238,7 @@ div.sidebar-content {
         padding-left: 0.5em;
         padding-right: 0.5em;
         font-size: 85%;
-        color: lightslategray;
+        color: #777799;
     }
         div.sidebar-link a {
         font-weight: bold;
@@ -244,7 +258,7 @@ div.sidebar-content {
             div.sidebar-link a:hover {
                 font-weight: bold;
                 text-decoration: underline;
-                color: lightslategray;
+                color: #777799;
             }
 
 /* ****************************************************************************
@@ -263,6 +277,11 @@ div.footer-content {
     }
     div.footer-content a:visited {
         text-decoration: none;
+        color: white;
+    }
+    div.footer-content a:hover {
+        text-decoration: none;
+        font-weight: bold;
         color: white;
     }
 
@@ -284,10 +303,10 @@ div.entry-wrapper {
             margin-top: 1em;
             margin-bottom: 0.25em;
             padding-top: 0.5em;
-            font-size: 150%;
+            font-size: x-large;
             font-weight: bold;
             color: dimgray;
-            border-top: 1px solid silver;
+            border-top: 1px solid gainsboro;
         }
         div.entry-content {
         }
@@ -299,7 +318,8 @@ div.entry-wrapper {
         }
             div.entry-image-left img {
                 width: 196px;
-                border-radius: 2px;
+                border-radius: 3px;
+                box-shadow: 0 0 2px 0 gainsboro;
             }
         div.entry-clear-left {
             clear: left;
@@ -310,7 +330,8 @@ div.entry-wrapper {
         }
             div.entry-image-right img {
                 width: 196px;
-                border-radius: 2px;
+                border-radius: 3px;
+                box-shadow: 0 0 2px 0 gainsboro;
             }
         div.entry-clear-right {
             clear: right;
@@ -321,6 +342,7 @@ div.entry-wrapper {
             background: lavender;
             border: 1px solid lightsteelblue;
             border-radius: 3px;
+            box-shadow: 0 0 2px 0 gainsboro;
         }
             div.entry-link p {
                 padding: 0.25em;
@@ -343,5 +365,5 @@ div.entry-wrapper {
                 div.entry-link a:hover {
                     font-weight: bold;
                     text-decoration: underline;
-                    color: lightslategray;
+                    color: #777799;
                 }

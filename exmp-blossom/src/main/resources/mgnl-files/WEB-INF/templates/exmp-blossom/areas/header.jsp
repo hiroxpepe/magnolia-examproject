@@ -3,7 +3,8 @@
 
 <div class="header">
     <div class="block header-content">
-        <div class="header-title">${content.title}</div>
-        <div class="header-subTitle">${content.subTitle}</div>
+        <span class="header-logo"><img src="<c:url value="/docroot/exmp-blossom/images/icon-64a.png" />" width="32" height="32" border="0"></span>
+        <span class="header-title">${content.title}</span>
+        <span class="header-sub-title">${content.subTitle}</span>
     </div>
 </div>

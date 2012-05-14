@@ -6,7 +6,7 @@
     <groupId>org.examproject</groupId>
     <artifactId>magnolia-examproject</artifactId>
     <packaging>pom</packaging>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>magnolia-examproject</name>
     
     <properties>

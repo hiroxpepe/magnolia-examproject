@@ -7,9 +7,12 @@
     <head>
         <title>${content.title}</title>
         <meta name="description" content="${content.metaDescription}" />
-        <meta name="keywords" content="${content.metaKeywords}" />
-        <link href="${pageContext.request.contextPath}/docroot/exmp-blossom/images/icon.ico" rel="shortcut icon" />
-        <link href="${pageContext.request.contextPath}/docroot/exmp-blossom/styles/exmp-blossom.css" rel="stylesheet" type="text/css" />
+        <meta name="keywords" content="${content.metaKeywords}" />      
+        <link rel="shortcut icon" href="<c:url value="/docroot/exmp-blossom/images/icon.png" />" />
+        <link rel="stylesheet" type="text/css" href="<c:url value="/docroot/exmp-blossom/styles/exmp-blossom.css" />" />
+        <script language="javascript" type="text/javascript" src="<c:url value="/docroot/exmp-blossom/scripts/jquery.js" />"></script>
+        <script language="javascript" type="text/javascript" src="<c:url value="/docroot/exmp-blossom/scripts/jquery-ui.custom.min.js" />"></script>
+        <script language="javascript" type="text/javascript" src="<c:url value="/docroot/exmp-blossom/scripts/exmp-blossom.js" />"></script>
     </head>
     <body>
         <div class="container">

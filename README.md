@@ -53,20 +53,6 @@ exmp-magnolia-webapp/src/main/webapp/WEB-INF/config/repo-conf/jackrabbit-bundle-
 Again to push to Heroku.
 
 ***
-### How to edit the entry content?
-
-This project is Magnolia public instance, but easy to edit the entry contents.
-You will need to run as magnolia author instance this project.
-
-You must edit this file like this.
-exmp-magnolia-webapp/src/main/webapp/WEB-INF\config\default\magnolia.properties
-
-    magnolia.bootstrap.authorInstance=true
-
-And, You run the project at local, the project run as the Magnolia author instance.
-You can edit the entry content and exporting and importing this web site data as xml file.
-
-***
 ### Hosted on GitHub.
 [hiroxpepe/magnolia-examproject](https://github.com/hiroxpepe/magnolia-examproject)
 

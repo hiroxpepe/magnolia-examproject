@@ -9,15 +9,15 @@
     <version>1.0.0-SNAPSHOT</version>
     <name>exmp-magnolia-webapp</name>
     <description>a magnolia webapp.</description>
-  
+    
     <properties>
         <java.version>1.6</java.version>
         <spring.version>3.1.1.RELEASE</spring.version>
         <magnolia.version>4.5.2</magnolia.version>
         <blossom.version>2.0</blossom.version>
     </properties>
-  
-    <dependencies>   
+    
+    <dependencies>
         <!--///////////////////////////////////////////////////////////////////////////-->
         <!-- USER LIB -->
         
@@ -26,10 +26,10 @@
             <artifactId>exmp-blossom</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
-    
+        
         <!--///////////////////////////////////////////////////////////////////////////-->
         <!-- OSS LIB -->
-    
+        
         <!-- Blossom -->
         <dependency>
             <groupId>info.magnolia</groupId>
@@ -109,21 +109,21 @@
             <artifactId>magnolia-module-store-client</artifactId>
             <version>${magnolia.version}</version>
         </dependency>
-    
+        
         <!-- Openutils -->
         <dependency>
             <groupId>net.sourceforge.openutils</groupId>
             <artifactId>openutils-log4j</artifactId>
             <version>2.0.5</version>
         </dependency>
-    
+        
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
-    
+        
         <!-- Servlet API -->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -141,6 +141,13 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
+        </dependency>
+        
+        <!-- PostgreSQL -->
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>8.4-702.jdbc4</version>
         </dependency>
         
         <!--///////////////////////////////////////////////////////////////////////////-->

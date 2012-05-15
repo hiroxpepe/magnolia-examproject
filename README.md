@@ -31,6 +31,42 @@ To push the application for Heroku at your command line.
     > git push git@heroku.com:your-app-name.git
 
 ***
+### How to use the Heroku PostgreSQL DB?
+
+You will need to edit some configure files.
+
+You must edit this file like this.
+exmp-magnolia-webapp/src/main/webapp/WEB-INF/config/default/magnolia.properties
+ 
+    magnolia.repositories.jackrabbit.config=WEB-INF/config/repo-conf/jackrabbit-bundle-postgres-search.xml
+
+You must edit this file like this.
+exmp-magnolia-webapp/src/main/webapp/WEB-INF/config/repo-conf/jackrabbit-bundle-postgres-search.xml
+
+    (*excerpt) need to edit two places. 
+    <PersistenceManager class="org.apache.jackrabbit.core.persistence.bundle.PostgreSQLPersistenceManager">
+      <param name="url" value="jdbc:postgresql://your-heroku-db-url/your-heroku-username" />
+      <param name="user" value="your-heroku-username" />
+      <param name="password" value="your-heroku-password" />
+    </PersistenceManager>
+
+Again to push to Heroku.
+
+***
+### How to edit the entry content?
+
+This project is Magnolia public instance, but easy to edit the entry contents.
+You will need to run as magnolia author instance this project.
+
+You must edit this file like this.
+exmp-magnolia-webapp/src/main/webapp/WEB-INF\config\default\magnolia.properties
+
+    magnolia.bootstrap.authorInstance=true
+
+And, You run the project at local, the project run as the Magnolia author instance.
+You can edit the entry content and exporting and importing this web site data as xml file.
+
+***
 ### Hosted on GitHub.
 [hiroxpepe/magnolia-examproject](https://github.com/hiroxpepe/magnolia-examproject)
 

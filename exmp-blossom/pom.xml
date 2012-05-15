@@ -9,18 +9,18 @@
     <version>1.0.0-SNAPSHOT</version>
     <name>exmp-blossom</name>
     <description>a blossom bean example.</description>
-  
+    
     <properties>
         <java.version>1.6</java.version>
         <spring.version>3.1.1.RELEASE</spring.version>
         <magnolia.version>4.5.2</magnolia.version>
         <blossom.version>2.0</blossom.version>
     </properties>
-  
+    
     <dependencies>
         <!--///////////////////////////////////////////////////////////////////////////-->
-        <!-- OSS LIB --> 
-      
+        <!-- OSS LIB -->
+        
         <!-- Magnolia -->
         <dependency>
             <groupId>info.magnolia</groupId>
@@ -57,7 +57,7 @@
             <artifactId>magnolia-templating</artifactId>
             <version>${magnolia.version}</version>
         </dependency>
-
+        
         <!-- Magnolia Blossom Module -->
         <dependency>
             <groupId>info.magnolia</groupId>
@@ -65,7 +65,7 @@
             <version>${blossom.version}</version>
             <scope>provided</scope>
         </dependency>
-
+        
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -73,17 +73,17 @@
             <version>${spring.version}</version>
             <scope>provided</scope>
         </dependency>
-      
+        
         <!-- Logging -->
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
             <version>1.1.1</version>
             <scope>provided</scope>
-        </dependency>    
-    
+        </dependency>
+        
   </dependencies>
-      
+    
     <repositories>
         <!-- for Magnolia -->
         <repository>

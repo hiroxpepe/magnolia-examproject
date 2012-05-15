@@ -9,15 +9,15 @@
         http://www.springframework.org/schema/context/spring-context-3.1.xsd
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
-
+    
     <context:annotation-config />
-
+    
     <context:component-scan base-package="org.examproject.blossom" use-default-filters="false">
         <context:include-filter type="annotation" expression="info.magnolia.module.blossom.annotation.Template" />
         <context:include-filter type="annotation" expression="info.magnolia.module.blossom.annotation.Area" />
         <context:include-filter type="annotation" expression="info.magnolia.module.blossom.annotation.DialogFactory" />
     </context:component-scan>
-
+    
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
     
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
@@ -25,7 +25,7 @@
             <bean class="info.magnolia.module.blossom.web.BlossomWebArgumentResolver" />
         </property>
     </bean>
-
+    
     <bean class="info.magnolia.module.blossom.preexecution.BlossomHandlerMapping">
         <property name="targetHandlerMappings">
             <list>
@@ -36,7 +36,7 @@
             </list>
         </property>
     </bean>
-
+    
     <bean class="info.magnolia.module.blossom.view.UuidRedirectViewResolver">
         <property name="order" value="1" />
     </bean>
@@ -44,11 +44,11 @@
     <!-- JSP - renders all views that end with .jsp -->
     <bean class="info.magnolia.module.blossom.view.TemplateViewResolver">
         <property name="order" value="2"/>
-        <property name="prefix" value="/WEB-INF/templates/${project.artifactId}/"/>
+        <property name="prefix" value="/WEB-INF/templates/exmp-blossom/"/>
         <property name="viewNames" value="*.jsp"/>
         <property name="viewRenderer">
             <bean class="info.magnolia.module.blossom.view.JspTemplateViewRenderer"/>
         </property>
     </bean>
-
+    
 </beans>

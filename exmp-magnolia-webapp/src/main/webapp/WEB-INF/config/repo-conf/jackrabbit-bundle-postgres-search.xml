@@ -25,7 +25,7 @@
       <param name="driver" value="org.postgresql.Driver"/>
       <param name="url" value="jdbc:postgresql://localhost:5432/magnolia" />
       <param name="schema" value="postgresql" /><!-- warning, this is not the schema name, it's the db type -->
-      <param name="user" value="postgres" />
+      <param name="user" value="username" />
       <param name="password" value="password" />
       <param name="schemaObjectPrefix" value="${wsp.name}_" />
       <param name="externalBLOBs" value="false" />
@@ -63,7 +63,7 @@
       <param name="driver" value="org.postgresql.Driver"/>
       <param name="url" value="jdbc:postgresql://localhost:5432/magnolia" />
       <param name="schema" value="postgresql" /><!-- warning, this is not the schema name, it's the db type -->
-      <param name="user" value="postgres" />
+      <param name="user" value="username" />
       <param name="password" value="password" />
       <param name="schemaObjectPrefix" value="version_" />
       <param name="externalBLOBs" value="false" />

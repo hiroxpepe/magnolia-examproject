@@ -5,8 +5,8 @@
 <div class="entry">
     <div class="entry-title">${content.title}</div>
     <div class="entry-image-${content.imagePosition}">
-        <a href="${pageContext.request.contextPath}${imagePath}" target="_blank">
-            <img src="${cmsfn:link(content.image)}" />
+        <a href="${content.imageLink}" target="_blank">
+            <img src="${content.imageLink}" />
         </a>
     </div>
     <div class="entry-content">${cmsfn:decode(content).content}</div>

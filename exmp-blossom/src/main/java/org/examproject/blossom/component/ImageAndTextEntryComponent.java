@@ -90,21 +90,6 @@ public class ImageAndTextEntryComponent {
     ) throws RepositoryException {
         LOG.debug("called.");
         
-        // create the image path of this content.
-        String nodePath = NodeUtil.getPathIfPossible(content);    
-        Node image = content.getNode("image");
-        String name = image.getName();
-        String fileName = image.getProperty("fileName").getString();
-        String extension = image.getProperty("extension").getString();
-        String imagePath = nodePath + "/" + name +
-            "/" + fileName + "." + extension;
-        
-        // put the image path to the model object.
-        model.put(
-            "imagePath",
-            imagePath
-        );
-        
         return "components/imageAndTextEntry.jsp";
     }
     
@@ -121,13 +106,13 @@ public class ImageAndTextEntryComponent {
             "Content",
             "the content of the entry."
         ).setRequired(true);
-        
-        tab.addFile(
-            "image",
-            "Image",
-            "the image should not be more than 320px x 240px."
+                 
+        tab.addLink(
+            "imageLink",
+            "Image Link URL",
+            "the image url of the entry."
         ).setRequired(true);
-                    
+        
         Map<String, String> options = new HashMap<String, String>();
         options.put("Left", "left");
         options.put("Right", "right");

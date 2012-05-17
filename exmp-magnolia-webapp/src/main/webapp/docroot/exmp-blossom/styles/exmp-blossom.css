@@ -367,3 +367,31 @@ div.entry-wrapper {
                     text-decoration: underline;
                     color: #777799;
                 }
+                
+/* ****************************************************************************
+ * define the appearance of the table.
+ */
+div.entry-table {
+    padding-top: 1em;
+}
+    div.entry-table table {
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 90%;
+        border-collapse: collapse;
+    }
+        div.entry-table table th {
+            padding: 0.25em;
+            color: white;
+            background: lightslategray;
+            border-style: solid;
+            border-color: gainsboro;
+            border-width: 1px;
+        }
+        div.entry-table table td {
+            padding: 0.25em;
+            border-style: solid;
+            border-color: gainsboro;
+            border-width: 1px;
+        }

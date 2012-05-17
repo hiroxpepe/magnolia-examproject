@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component;
+package org.examproject.blossom.component.paragraph;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -23,7 +23,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import info.magnolia.module.blossom.annotation.TabFactory;
 import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
@@ -34,39 +33,33 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/menuLinkItem",
-    title="Menu Link Item"
+    id="exmp-blossom:components/richTextParagraph",
+    title="Rich Text Paragraph"
 )
-@TemplateDescription("the component of a menu item.")
-public class MenuLinkItemComponent {
+@TemplateDescription("the component of a rich text paragraph.")
+public class RichTextParagraphComponent {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        MenuLinkItemComponent.class
+        RichTextParagraphComponent.class
     );
     
-    @RequestMapping("/menuLinkItem") 
+    @RequestMapping("/richTextParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.debug("called.");
         
-        return "components/menuLinkItem.jsp";
+        return "components/paragraph/richTextParagraph.jsp";
     }
     
-    @TabFactory("Menu Link Item")
+    @TabFactory("Rich Text Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addEdit(
-            "linkText",
-            "Link Text",
-            "the link text of a menu item."
-        );
-        
-        tab.addLink(
-            "link",
-            "Link URL",
-            "the link url of a menu item."
-        );
+        tab.addFckEditor(
+            "text",
+            "Text",
+            "the text of the paragraph."
+        ).setRequired(true);
     }
     
 }

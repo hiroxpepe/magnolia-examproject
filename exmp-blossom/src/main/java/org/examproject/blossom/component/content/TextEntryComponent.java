@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component;
+package org.examproject.blossom.component.content;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -23,7 +23,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import info.magnolia.module.blossom.annotation.TabFactory;
 import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
@@ -56,7 +55,7 @@ public class TextEntryComponent {
         Property property = content.getProperty("title");
         LOG.debug(property.getString());
         
-        return "components/textEntry.jsp";
+        return "components/content/textEntry.jsp";
     }
     
     @TabFactory("Text Entry")

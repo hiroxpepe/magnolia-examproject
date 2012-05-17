@@ -23,20 +23,20 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import info.magnolia.module.blossom.annotation.Area;
 import info.magnolia.module.blossom.annotation.AvailableComponentClasses;
 import info.magnolia.module.blossom.annotation.TabFactory;
 import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.ImageAndTextEntryComponent;
-import org.examproject.blossom.component.MenuLinkItemComponent;
-import org.examproject.blossom.component.RichTextEntryComponent;
-import org.examproject.blossom.component.SideBarHeaderItemComponent;
-import org.examproject.blossom.component.SideBarLinkItemComponent;
-import org.examproject.blossom.component.SideBarTextItemComponent;
-import org.examproject.blossom.component.TextEntryComponent;
+import org.examproject.blossom.component.content.ImageAndTextEntryComponent;
+import org.examproject.blossom.component.content.MultipleParagraphEntryComponent;
+import org.examproject.blossom.component.content.RichTextEntryComponent;
+import org.examproject.blossom.component.content.TextEntryComponent;
+import org.examproject.blossom.component.menu.MenuLinkItemComponent;
+import org.examproject.blossom.component.sidebar.SideBarHeaderItemComponent;
+import org.examproject.blossom.component.sidebar.SideBarLinkItemComponent;
+import org.examproject.blossom.component.sidebar.SideBarTextItemComponent;
 
 /**
  * the main template class of the application.
@@ -121,7 +121,8 @@ public class MainTemplate {
     @AvailableComponentClasses({
         TextEntryComponent.class,
         RichTextEntryComponent.class,
-        ImageAndTextEntryComponent.class
+        ImageAndTextEntryComponent.class,
+        MultipleParagraphEntryComponent.class
     })
     public static class ContentArea {
         

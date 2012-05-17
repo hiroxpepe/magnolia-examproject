@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component;
+package org.examproject.blossom.component.paragraph;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -23,7 +23,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import info.magnolia.module.blossom.annotation.TabFactory;
 import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
@@ -34,39 +33,34 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/sideBarLinkItem",
-    title="SideBar Link Item"
+    id="exmp-blossom:components/preTextParagraph",
+    title="Pre Text Paragraph"
 )
-@TemplateDescription("the component of a sidebar link item.")
-public class SideBarLinkItemComponent {
+@TemplateDescription("the component of a pre text paragraph.")
+public class PreTextParagraphComponent {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        SideBarLinkItemComponent.class
+        PreTextParagraphComponent.class
     );
     
-    @RequestMapping("/sideBarLinkItem")
+    @RequestMapping("/preTextParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.debug("called.");
         
-        return "components/sideBarLinkItem.jsp";
+        return "components/paragraph/preTextParagraph.jsp";
     }
     
-    @TabFactory("SideBar Link Item")
-    public void addDialog(TabBuilder tab) {        
-        tab.addEdit(
-            "linkText",
-            "Link Text",
-            "a link text of the sidebar item."
-        );
-        
-        tab.addLink(
-            "link",
-            "Link URL",
-            "a link url of the sidebar item."
-        );
+    @TabFactory("Pre Text Paragraph")
+    public void addDialog(TabBuilder tab) {
+        tab.addTextArea(
+            "text",
+            "Text",
+            "the text of the paragraph.",
+            5
+        ).setRequired(true);
     }
     
 }

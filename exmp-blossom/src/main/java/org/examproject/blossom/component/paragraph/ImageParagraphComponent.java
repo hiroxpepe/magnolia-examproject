@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component;
+package org.examproject.blossom.component.paragraph;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,92 +25,42 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import info.magnolia.jcr.util.NodeUtil;
-import info.magnolia.module.blossom.annotation.Area;
-import info.magnolia.module.blossom.annotation.AvailableComponentClasses;
 import info.magnolia.module.blossom.annotation.TabFactory;
 import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
 /**
- * one of the entry class with image upload and rich text input.
- * this has one child classes as a area class.
  * @author hiroxpepe
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/imageAndTextEntry",
-    title="Image and Text Entry"
+    id="exmp-blossom:components/imageParagraph",
+    title="Image Paragraph"
 )
-@TemplateDescription("the component of an image and text entry.")
-public class ImageAndTextEntryComponent {
+@TemplateDescription("the component of an image paragraph.")
+public class ImageParagraphComponent {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        ImageAndTextEntryComponent.class
+        ImageParagraphComponent.class
     );
     
-    ///////////////////////////////////////////////////////////////////////////
-    // the area class of the link.
-
-    @Controller
-    @Area(
-        value="imageAndTextEntryLink",
-        title="Link"
-    )
-    @AvailableComponentClasses({
-        EntryLinkItemComponent.class
-    })
-    public static class LinkArea {
-
-        @RequestMapping("/imageAndTextEntry/link")
-        public String render(
-            ModelMap model,
-            Node content
-        ) throws RepositoryException {
-            
-            return "areas/entryLink.jsp";
-        }
-
-        @TabFactory("Link")
-        public void addDialog(TabBuilder tab) {
-            tab.addStatic("there is no item to be set yet.");
-        }
-
-    }
-    
-    ///////////////////////////////////////////////////////////////////////////
-    // this class public methods.
-    
-    @RequestMapping("/imageAndTextEntry")
+    @RequestMapping("/imageParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.debug("called.");
         
-        return "components/imageAndTextEntry.jsp";
+        return "components/paragraph/imageParagraph.jsp";
     }
     
-    @TabFactory("Image and Text Entry")
+    @TabFactory("Image Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addEdit(
-            "title",
-            "Title",
-            "the title of the entry."
-        ).setRequired(true); 
-        
-        tab.addFckEditor(
-            "content",
-            "Content",
-            "the content of the entry."
-        ).setRequired(true);
-                 
         tab.addLink(
             "imageLink",
             "Image Link URL",
-            "the image url of the entry."
+            "the image url of the paragraph."
         ).setRequired(true);
         
         Map<String, String> options = new HashMap<String, String>();

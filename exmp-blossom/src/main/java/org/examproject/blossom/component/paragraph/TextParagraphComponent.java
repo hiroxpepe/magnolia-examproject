@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component;
+package org.examproject.blossom.component.paragraph;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -23,7 +23,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import info.magnolia.module.blossom.annotation.TabFactory;
 import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
@@ -34,33 +33,34 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/sideBarHeaderItem",
-    title="SideBar Header Item"
+    id="exmp-blossom:components/textParagraph",
+    title="Text Paragraph"
 )
-@TemplateDescription("the component of a sidebar header item.")
-public class SideBarHeaderItemComponent {
+@TemplateDescription("the component of a text paragraph.")
+public class TextParagraphComponent {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        SideBarHeaderItemComponent.class
+        TextParagraphComponent.class
     );
     
-    @RequestMapping("/sideBarHeaderItem")
+    @RequestMapping("/textParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.debug("called.");
         
-        return "components/sideBarHeaderItem.jsp";
+        return "components/paragraph/textParagraph.jsp";
     }
     
-    @TabFactory("SideBar Header Item")
+    @TabFactory("Text Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addEdit(
-            "title",
-            "Title",
-            "a title of the sidebar item."
-        ).setRequired(true); 
+        tab.addTextArea(
+            "text",
+            "Text",
+            "the text of the paragraph.",
+            5
+        ).setRequired(true);
     }
     
 }

@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component;
+package org.examproject.blossom.component.item;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -23,7 +23,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import info.magnolia.module.blossom.annotation.TabFactory;
 import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
@@ -34,38 +33,32 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/entryLinkItem",
-    title="Entry Link Item"
+    id="exmp-blossom:components/oneColumnRowItem",
+    title="one Column Row Item"
 )
-@TemplateDescription("the component of a entry link item.")
-public class EntryLinkItemComponent {
+@TemplateDescription("the component of a one column row item.")
+public class OneColumnRowItemComponent {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        EntryLinkItemComponent.class
+        OneColumnRowItemComponent.class
     );
     
-    @RequestMapping("/entryLinkItem") 
+    @RequestMapping("/oneColumnRowItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.debug("called.");
         
-        return "components/entryLinkItem.jsp";
+        return "components/item/oneColumnRowItem.jsp";
     }
     
-    @TabFactory("Entry Link Item")
+    @TabFactory("One Column Row Item")
     public void addDialog(TabBuilder tab) {
         tab.addEdit(
-            "linkText",
-            "Link Text",
-            "the link text of a entry item."
-        );
-        
-        tab.addLink(
-            "link",
-            "Link URL",
-            "the link url of a entry item."
+            "firstValue",
+            "First Value",
+            "the text value of the first column."
         );
     }
     

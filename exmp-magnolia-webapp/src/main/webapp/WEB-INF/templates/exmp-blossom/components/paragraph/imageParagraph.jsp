@@ -2,7 +2,7 @@
 <%@ taglib prefix="cms" uri="http://magnolia-cms.com/taglib/templating-components/cms" %>
 <%@ taglib prefix="cmsfn" uri="http://magnolia-cms.com/taglib/templating-components/cmsfn" %>
 
-<div class="entry-paragraph-image-and-text">
+<div class="entry-paragraph-image">
     <div class="entry-image-${content.imagePosition}">
         <a href="${content.imageLink}" target="_blank">
             <img src="${content.imageLink}" />

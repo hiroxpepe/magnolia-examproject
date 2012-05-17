@@ -58,7 +58,7 @@ Again to push to Heroku.
 
 ***
 ### Running on Heroku.
-http://exmpmagnolia.herokuapp.com/home
+http://exmpmagnolia.herokuapp.com/home.html
 
 ***
 ### Author

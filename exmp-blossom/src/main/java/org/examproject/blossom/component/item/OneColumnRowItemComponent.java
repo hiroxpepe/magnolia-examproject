@@ -60,6 +60,11 @@ public class OneColumnRowItemComponent {
             "First Value",
             "the text value of the first column."
         );
+        tab.addCheckbox(
+            "header",
+            "Header",
+            "set the check when if you need a header of the table."
+        ).setRequired(true);
     }
     
 }

@@ -33,27 +33,27 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/twoColumnRowItem",
-    title="Two Columns Row Item"
+    id="exmp-blossom:components/sixColumnRowItem",
+    title="Six Columns Row Item"
 )
-@TemplateDescription("the component of a two columns row item.")
-public class TwoColumnRowItemComponent {
+@TemplateDescription("the component of a six columns row item.")
+public class SixColumnRowItemComponent {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        TwoColumnRowItemComponent.class
+        SixColumnRowItemComponent.class
     );
     
-    @RequestMapping("/twoColumnRowItem") 
+    @RequestMapping("/sixColumnRowItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.debug("called.");
         
-        return "components/item/twoColumnRowItem.jsp";
+        return "components/item/sixColumnRowItem.jsp";
     }
     
-    @TabFactory("Two Columns Row Item")
+    @TabFactory("Six Columns Row Item")
     public void addDialog(TabBuilder tab) {
         tab.addEdit(
             "firstValue",
@@ -64,6 +64,26 @@ public class TwoColumnRowItemComponent {
             "secondValue",
             "Second Value",
             "the text value of the second column."
+        );
+        tab.addEdit(
+            "thirdValue",
+            "Third Value",
+            "the text value of the third column."
+        );
+        tab.addEdit(
+            "fourthValue",
+            "Fourth Value",
+            "the text value of the fourth column."
+        );
+        tab.addEdit(
+            "fifthValue",
+            "Fifth Value",
+            "the text value of the fifth column."
+        );
+        tab.addEdit(
+            "sixthValue",
+            "Sixth Value",
+            "the text value of the sixth column."
         );
         tab.addCheckbox(
             "header",

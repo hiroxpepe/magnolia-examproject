@@ -52,7 +52,7 @@ public class LinkParagraphComponent {
 
     @Controller
     @Area(
-        value="linkParagraphItem",
+        value="paragraphLinkItem",
         title="Link Item"
     )
     @AvailableComponentClasses({
@@ -71,7 +71,11 @@ public class LinkParagraphComponent {
 
         @TabFactory("Link")
         public void addDialog(TabBuilder tab) {
-            tab.addStatic("there is no item to be set yet.");
+            tab.addEdit(
+                "caption",
+                "Caption",
+                "set the caption of the table when if you need."
+            );
         }
 
     }
@@ -91,11 +95,7 @@ public class LinkParagraphComponent {
     
     @TabFactory("Link Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addEdit(
-            "title",
-            "Title",
-            "the title of the paragraph."
-        ); 
+        tab.addStatic("to proceed with OK.");
     }
     
 }

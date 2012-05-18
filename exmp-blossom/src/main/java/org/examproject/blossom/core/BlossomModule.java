@@ -40,8 +40,8 @@ public class BlossomModule extends BlossomModuleSupport implements ModuleLifecyc
         
         initBlossomDispatcherServlet(
             "blossom",
-            "/WEB-INF/blossom/exmp-blossom/blossom-config.xml"
-        ); 
+            "/WEB-INF/blossom/blossom-config.xml"
+        );
     }
 
     @Override

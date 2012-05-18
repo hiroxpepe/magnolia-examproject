@@ -293,7 +293,7 @@ div.footer-content {
  * define the appearance of the entry content.
  */
 div.entry-wrapper {
-     /*margin-bottom: 1em;*/
+    margin-bottom: 1em;
 } 
     div.entry {
         margin-left : 1em;
@@ -307,14 +307,28 @@ div.entry-wrapper {
             color: dimgray;
             border-top: 1px solid gainsboro;
         }
+        div.entry-caption {
+        }
         div.entry-content {
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
             div.entry-content p {
             }
+        div.entry-pre {
+            margin-top: 1.0em;
+            margin-bottom: 1.0em;
+            padding: 0.5em;
+            font-size: small;
+            overflow: auto;
+            color: dimgray;
+            background: whitesmoke;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 0 silver;
+        }
         div.entry-image-left {
             margin-top: 0.5em;
+            margin-bottom: 0.5em;
             margin-right: 1em;
             float: left;
         }
@@ -328,6 +342,7 @@ div.entry-wrapper {
         }
         div.entry-image-right {
             margin-top: 0.5em;
+            margin-bottom: 0.5em;
             margin-left: 1em;
             float: right;
         }
@@ -340,7 +355,8 @@ div.entry-wrapper {
             clear: right;
         }
         div.entry-link {
-            margin-top: 1em;
+            margin-top: 1.0em;
+            margin-bottom: 1.0em;
             padding: 0.5em;
             background: lavender;
             border: 1px solid lightsteelblue;
@@ -372,46 +388,27 @@ div.entry-wrapper {
                 }
         div.entry-paragraph {
         }
-            div.entry-paragraph-text {
+            /* ****************************************************************
+            * define the appearance of the table.
+            */
+            div.entry-table {
+                margin-top: 1.0em;
+                margin-bottom: 1.0em;
             }
-            div.entry-paragraph-rich-text {
-            }
-            div.entry-paragraph-pre-text {
-            }
-            div.entry-paragraph-image {
-            }
-            div.entry-paragraph-image-and-text {
-            }
-            div.entry-paragraph-link {
-            }
-                div.paragraph-link-title {
+                div.entry-table table {
+                    font-size: 90%;
+                    border-collapse: collapse;
                 }
-            div.entry-paragraph-table {
-            }
-                div.paragraph-table-title {
-                }
-        
-/* ****************************************************************************
- * define the appearance of the table.
- */
-div.entry-table {
-}
-    div.entry-table table {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 90%;
-        border-collapse: collapse;
-    }
-        div.entry-table table th {
-            padding: 0.25em;
-            background: lavender;
-            border-style: solid;
-            border-color: gainsboro;
-            border-width: 1px;
-        }
-        div.entry-table table td {
-            padding: 0.25em;
-            border-style: solid;
-            border-color: gainsboro;
-            border-width: 1px;
-        }
+                    div.entry-table table th {
+                        padding: 0.25em;
+                        background: lavender;
+                        border-style: solid;
+                        border-color: gainsboro;
+                        border-width: 1px;
+                    }
+                    div.entry-table table td {
+                        padding: 0.25em;
+                        border-style: solid;
+                        border-color: gainsboro;
+                        border-width: 1px;
+                    }

@@ -2,7 +2,9 @@
 <%@ taglib prefix="cms" uri="http://magnolia-cms.com/taglib/templating-components/cms" %>
 <%@ taglib prefix="cmsfn" uri="http://magnolia-cms.com/taglib/templating-components/cmsfn" %>
 
-<div class="entry-paragraph-table">
-    <div class="paragraph-table-title">${content.title}</div>
-    <cms:area name="tableParagraphItem" />
+<div class="entry-paragraph-pre-text">
+    <c:if test="${content.caption}">
+        <div class="entry-caption">${content.caption}</div>
+    </c:if>
+    <div class="entry-pre"><pre>${cmsfn:decode(content).text}</pre></div>
 </div>

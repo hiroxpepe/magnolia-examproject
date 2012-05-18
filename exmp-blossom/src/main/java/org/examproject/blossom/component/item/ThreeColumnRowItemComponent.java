@@ -70,6 +70,11 @@ public class ThreeColumnRowItemComponent {
             "Third Value",
             "the text value of the third column."
         );
+        tab.addCheckbox(
+            "header",
+            "Header",
+            "set the check when if you need a header of the table."
+        ).setRequired(true);
     }
     
 }

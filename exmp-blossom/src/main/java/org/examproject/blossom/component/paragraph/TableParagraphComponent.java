@@ -30,8 +30,10 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
+import org.examproject.blossom.component.item.FiveColumnRowItemComponent;
 import org.examproject.blossom.component.item.FourColumnRowItemComponent;
 import org.examproject.blossom.component.item.OneColumnRowItemComponent;
+import org.examproject.blossom.component.item.SixColumnRowItemComponent;
 import org.examproject.blossom.component.item.ThreeColumnRowItemComponent;
 import org.examproject.blossom.component.item.TwoColumnRowItemComponent;
 
@@ -55,14 +57,16 @@ public class TableParagraphComponent {
 
     @Controller
     @Area(
-        value="tableParagraphItem",
+        value="paragraphTableItem",
         title="Table Item"
     )
     @AvailableComponentClasses({
-        FourColumnRowItemComponent.class,
         OneColumnRowItemComponent.class,
+        TwoColumnRowItemComponent.class,     
         ThreeColumnRowItemComponent.class,
-        TwoColumnRowItemComponent.class           
+        FourColumnRowItemComponent.class,
+        FiveColumnRowItemComponent.class,
+        SixColumnRowItemComponent.class
     })
     public static class TableParagraphItemArea {
 
@@ -77,7 +81,16 @@ public class TableParagraphComponent {
 
         @TabFactory("Table")
         public void addDialog(TabBuilder tab) {
-            tab.addStatic("there is no item to be set yet.");
+            tab.addCheckbox(
+                "wide",
+                "Wide",
+                "set the check when if you need a wide table."
+            ).setRequired(true);
+            tab.addEdit(
+                "caption",
+                "Caption",
+                "set the caption of the table when if you need."
+            );
         }
 
     }
@@ -97,11 +110,7 @@ public class TableParagraphComponent {
     
     @TabFactory("Table Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addEdit(
-            "title",
-            "Title",
-            "the title of the paragraph."
-        ); 
+        tab.addStatic("to proceed with OK.");
     }
     
 }

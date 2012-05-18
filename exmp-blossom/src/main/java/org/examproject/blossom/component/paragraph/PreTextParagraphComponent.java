@@ -61,6 +61,11 @@ public class PreTextParagraphComponent {
             "the text of the paragraph.",
             5
         ).setRequired(true);
+        tab.addEdit(
+            "caption",
+            "Caption",
+            "set the caption of the table when if you need."
+        );
     }
     
 }

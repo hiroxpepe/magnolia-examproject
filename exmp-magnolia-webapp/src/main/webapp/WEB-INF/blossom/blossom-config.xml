@@ -44,7 +44,7 @@
     <!-- JSP - renders all views that end with .jsp -->
     <bean class="info.magnolia.module.blossom.view.TemplateViewResolver">
         <property name="order" value="2"/>
-        <property name="prefix" value="/WEB-INF/templates/exmp-blossom/"/>
+        <property name="prefix" value="/WEB-INF/templates/"/>
         <property name="viewNames" value="*.jsp"/>
         <property name="viewRenderer">
             <bean class="info.magnolia.module.blossom.view.JspTemplateViewRenderer"/>

@@ -2,11 +2,13 @@
 <%@ taglib prefix="cms" uri="http://magnolia-cms.com/taglib/templating-components/cms" %>
 <%@ taglib prefix="cmsfn" uri="http://magnolia-cms.com/taglib/templating-components/cmsfn" %>
 
-<div class="entry-paragraph-image">
-    <div class="entry-image-${content.imagePosition}">
-        <a href="${content.imageLink}" target="_blank">
-            <img src="${content.imageLink}" />
-        </a>
+<c:if test="${content.display == 'true'}">
+    <div class="entry-paragraph-image">
+        <div class="entry-image-${content.imagePosition}">
+            <a href="${content.imageLink}" target="_blank">
+                <img src="${content.imageLink}" />
+            </a>
+        </div>
+        <div class="entry-clear-${content.imagePosition}"></div>
     </div>
-    <div class="entry-clear-${content.imagePosition}"></div>
-</div>
+</c:if>

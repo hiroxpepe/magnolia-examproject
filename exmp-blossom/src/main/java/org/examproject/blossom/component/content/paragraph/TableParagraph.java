@@ -57,7 +57,7 @@ public class TableParagraph {
 
     @Controller
     @Area(
-        value="paragraphTableItem",
+        value="tableItem",
         title="Table Item"
     )
     @AvailableComponentClasses({
@@ -109,7 +109,8 @@ public class TableParagraph {
     
     @TabFactory("Table Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addStatic("to proceed with OK.");
+        tab.addHidden("display", "true");
+        tab.addStatic("proceed with Save.");
     }
     
 }

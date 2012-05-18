@@ -29,7 +29,7 @@
       <sv:value>2012-03-16T21:46:18.454+09:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-      <sv:value>2012-05-18T16:09:53.684+09:00</sv:value>
+      <sv:value>2012-05-19T07:34:06.541+09:00</sv:value>
     </sv:property>
     <sv:property sv:name="mgnl:template" sv:type="String">
       <sv:value>exmp-blossom:pages/main</sv:value>
@@ -71,7 +71,7 @@
         <sv:value>2012-03-16T21:46:39.464+09:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-        <sv:value>2012-05-18T07:01:05.563+09:00</sv:value>
+        <sv:value>2012-05-19T07:54:35.152+09:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:template" sv:type="String">
         <sv:value>exmp-blossom:pages/main</sv:value>
@@ -277,10 +277,10 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-          <sv:value>2012-05-17T06:09:16.033+09:00</sv:value>
+          <sv:value>2012-05-19T07:53:44.264+09:00</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="0">
+      <sv:node sv:name="00">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:component</sv:value>
         </sv:property>
@@ -288,16 +288,7 @@
           <sv:value>mix:lockable</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>23318296-ef3f-4641-9554-7bac2f90f7a9</sv:value>
-        </sv:property>
-        <sv:property sv:name="content" sv:type="String">
-          <sv:value>&lt;p&gt;you must be considered as abstractly for all of &amp;nbsp;the things. for example, when viewed from nearby, it just looks like a piece of leaf. however, do not discoverer of the fact that to form a huge part of the mountain it has, even consider spending a long time for a piece of &amp;nbsp;leaves. do you know that the earth is round? I just know I have been taught that the earth is round. but, I do not to experience actually that the earth is round. simply, that the earth is round. now you are living as a human being. what is it? yes it is, you are simply a part of the universe.&lt;/p&gt;</sv:value>
-        </sv:property>
-        <sv:property sv:name="imageLink" sv:type="String">
-          <sv:value>http://farm8.staticflickr.com/7221/7209575566_2a9594a1b0.jpg</sv:value>
-        </sv:property>
-        <sv:property sv:name="imagePosition" sv:type="String">
-          <sv:value>right</sv:value>
+          <sv:value>5433a37b-6134-4441-9dd6-388145257c64</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -312,53 +303,25 @@
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
-          <sv:property sv:name="mgnl:activated" sv:type="Boolean">
-            <sv:value>false</sv:value>
-          </sv:property>
           <sv:property sv:name="mgnl:authorid" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-            <sv:value>2012-03-16T22:05:02.690+09:00</sv:value>
+            <sv:value>2012-05-19T07:49:51.683+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-            <sv:value>2012-05-17T06:09:16.033+09:00</sv:value>
+            <sv:value>2012-05-19T07:51:12.896+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/imageAndTextEntry</sv:value>
+            <sv:value>exmp-blossom:components/multipleParagraphEntry</sv:value>
           </sv:property>
         </sv:node>
-        <sv:node sv:name="content_files">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:contentNode</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-            <sv:value>mix:lockable</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>851079ad-66b0-4642-a02d-32617376338f</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:node sv:name="MetaData">
-            <sv:property sv:name="jcr:primaryType" sv:type="Name">
-              <sv:value>mgnl:metaData</sv:value>
-            </sv:property>
-            <sv:property sv:name="jcr:createdBy" sv:type="String">
-              <sv:value>admin</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-03-16T22:05:02.690+09:00</sv:value>
-            </sv:property>
-          </sv:node>
-        </sv:node>
-        <sv:node sv:name="imageAndTextEntryLink">
+        <sv:node sv:name="paragraph">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:area</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>f898ae90-1537-4890-9173-416d3fd1b9b3</sv:value>
+            <sv:value>78a99fa8-04bb-4446-9c85-82b97e3dd77c</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -370,10 +333,152 @@
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
             </sv:property>
+            <sv:property sv:name="mgnl:authorid" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+              <sv:value>2012-05-19T07:51:12.896+09:00</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name="0">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:component</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+              <sv:value>mix:lockable</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>e18f1136-0d40-4785-93d3-a5d9c105822a</sv:value>
+            </sv:property>
+            <sv:property sv:name="display" sv:type="String">
+              <sv:value>true</sv:value>
+            </sv:property>
+            <sv:property sv:name="imageLink" sv:type="String">
+              <sv:value>http://farm8.staticflickr.com/7221/7209575566_2a9594a1b0.jpg</sv:value>
+            </sv:property>
+            <sv:property sv:name="imagePosition" sv:type="String">
+              <sv:value>right</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="text" sv:type="String">
+              <sv:value>&lt;p&gt;&lt;span style="font-size: 15px; line-height: normal; text-align: left; "&gt;You must be considered as abstractly for all of &amp;nbsp;the things. for example, when viewed from nearby, it just looks like a piece of leaf. however, do not discoverer of the fact that to form a huge part of the mountain it has, even consider spending a long time for a piece of &amp;nbsp;leaves. do you know that the earth is round?&lt;/span&gt;&lt;/p&gt;</sv:value>
+            </sv:property>
+            <sv:node sv:name="MetaData">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:metaData</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:authorid" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                <sv:value>2012-05-19T07:50:20.320+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                <sv:value>2012-05-19T07:50:45.320+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>exmp-blossom:components/imageAndTextParagraph</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="text_files">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:contentNode</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>82d07b45-5b58-4c3f-8fbc-20f01e46add3</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2012-05-19T07:50:20.321+09:00</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
+          </sv:node>
+          <sv:node sv:name="00">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:component</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+              <sv:value>mix:lockable</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>8959bdac-7c2c-4c0c-b1fc-b8e441ce9137</sv:value>
+            </sv:property>
+            <sv:property sv:name="display" sv:type="String">
+              <sv:value>true</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="text" sv:type="String">
+              <sv:value>&lt;p&gt;&amp;nbsp;&lt;span style="font-size: 15px; text-align: left; "&gt;I just know I have been taught that the earth is round. but, I do not to experience actually that the earth is round. simply, that the earth is round. now you are living as a human being. what is it? yes it is, you are simply a part of the universe.&lt;/span&gt;&lt;/p&gt;</sv:value>
+            </sv:property>
+            <sv:node sv:name="MetaData">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:metaData</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:authorid" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                <sv:value>2012-05-19T07:51:12.895+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                <sv:value>2012-05-19T07:51:12.895+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>exmp-blossom:components/richTextParagraph</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="text_files">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:contentNode</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>2e7b0876-102e-4d79-9271-5f766977fbbf</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2012-05-19T07:51:12.895+09:00</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
           </sv:node>
         </sv:node>
       </sv:node>
-      <sv:node sv:name="01">
+      <sv:node sv:name="0">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:component</sv:value>
         </sv:property>
@@ -381,10 +486,7 @@
           <sv:value>mix:lockable</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>e5bed95f-6b8c-4125-b119-493004aba805</sv:value>
-        </sv:property>
-        <sv:property sv:name="content" sv:type="String">
-          <sv:value>&lt;p&gt;There is no need to explain again. this is the WEB site you know well. I am always very indebted too. the WWW, there is a many useful stuff like this. we hope that everyone would like to help for you, that is the WWW.&lt;/p&gt;</sv:value>
+          <sv:value>631b8574-b86e-4eb5-bd47-a119f2868272</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -403,46 +505,21 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-            <sv:value>2012-03-19T07:22:38.082+09:00</sv:value>
+            <sv:value>2012-05-19T07:52:28.229+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-            <sv:value>2012-03-20T16:44:46.755+09:00</sv:value>
+            <sv:value>2012-05-19T07:53:44.263+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/richTextEntry</sv:value>
+            <sv:value>exmp-blossom:components/multipleParagraphEntry</sv:value>
           </sv:property>
         </sv:node>
-        <sv:node sv:name="content_files">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:contentNode</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-            <sv:value>mix:lockable</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>0c0b594d-7b39-4cd0-b96e-58f6fb57fb25</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:node sv:name="MetaData">
-            <sv:property sv:name="jcr:primaryType" sv:type="Name">
-              <sv:value>mgnl:metaData</sv:value>
-            </sv:property>
-            <sv:property sv:name="jcr:createdBy" sv:type="String">
-              <sv:value>admin</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-03-19T07:22:38.082+09:00</sv:value>
-            </sv:property>
-          </sv:node>
-        </sv:node>
-        <sv:node sv:name="richTextEntryLink">
+        <sv:node sv:name="paragraph">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:area</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>6aeaf1fd-307c-4420-83a0-890a7e034315</sv:value>
+            <sv:value>2623b5d5-56d1-47a1-ab1d-18fc29228758</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -458,7 +535,7 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-              <sv:value>2012-03-20T15:59:57.017+09:00</sv:value>
+              <sv:value>2012-05-19T07:53:44.263+09:00</sv:value>
             </sv:property>
           </sv:node>
           <sv:node sv:name="0">
@@ -469,16 +546,16 @@
               <sv:value>mix:lockable</sv:value>
             </sv:property>
             <sv:property sv:name="jcr:uuid" sv:type="String">
-              <sv:value>049f28fc-f8a2-41f7-ae52-1facb146e492</sv:value>
+              <sv:value>3c6e48ea-017d-4cba-b910-232b65c3254c</sv:value>
+            </sv:property>
+            <sv:property sv:name="display" sv:type="String">
+              <sv:value>true</sv:value>
             </sv:property>
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
             </sv:property>
-            <sv:property sv:name="link" sv:type="String">
-              <sv:value>http://www.wikipedia.org/</sv:value>
-            </sv:property>
-            <sv:property sv:name="linkText" sv:type="String">
-              <sv:value>well it's to known as the Wikipedia.org</sv:value>
+            <sv:property sv:name="text" sv:type="String">
+              <sv:value>&lt;p&gt;&amp;nbsp;&lt;span style="font-size: 15px; text-align: left; "&gt;There is no need to explain again. this is the WEB site you know well. I am always very indebted too. the WWW, there is a many useful stuff like this. we hope that everyone would like to help for you, that is the WWW.&lt;/span&gt;&lt;/p&gt;</sv:value>
             </sv:property>
             <sv:node sv:name="MetaData">
               <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -491,14 +568,141 @@
                 <sv:value>superuser</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-                <sv:value>2012-03-19T07:23:05.738+09:00</sv:value>
+                <sv:value>2012-05-19T07:52:43.791+09:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-                <sv:value>2012-03-20T15:59:57.017+09:00</sv:value>
+                <sv:value>2012-05-19T07:52:43.791+09:00</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:template" sv:type="String">
-                <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
+                <sv:value>exmp-blossom:components/richTextParagraph</sv:value>
               </sv:property>
+            </sv:node>
+            <sv:node sv:name="text_files">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:contentNode</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>224ed097-5966-48fc-841d-df31044c9965</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2012-05-19T07:52:43.791+09:00</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
+          </sv:node>
+          <sv:node sv:name="00">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:component</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+              <sv:value>mix:lockable</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>334ab809-2fb8-4c49-bcd8-2b730704bc80</sv:value>
+            </sv:property>
+            <sv:property sv:name="display" sv:type="String">
+              <sv:value>true</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:node sv:name="MetaData">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:metaData</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:authorid" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                <sv:value>2012-05-19T07:53:23.276+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                <sv:value>2012-05-19T07:53:44.262+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>exmp-blossom:components/linkParagraph</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="linkItem">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:area</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>3ddff5ed-92b8-4019-9749-bc1c0358a9cf</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:authorid" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                  <sv:value>2012-05-19T07:53:44.261+09:00</sv:value>
+                </sv:property>
+              </sv:node>
+              <sv:node sv:name="0">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:component</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                  <sv:value>mix:lockable</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:uuid" sv:type="String">
+                  <sv:value>6601cda7-4385-448a-9829-628417509bd6</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="link" sv:type="String">
+                  <sv:value>http://www.wikipedia.org/</sv:value>
+                </sv:property>
+                <sv:property sv:name="linkText" sv:type="String">
+                  <sv:value>well it's to known as the Wikipedia.org</sv:value>
+                </sv:property>
+                <sv:node sv:name="MetaData">
+                  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                    <sv:value>mgnl:metaData</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="jcr:createdBy" sv:type="String">
+                    <sv:value>admin</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="mgnl:authorid" sv:type="String">
+                    <sv:value>superuser</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                    <sv:value>2012-05-19T07:53:44.259+09:00</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                    <sv:value>2012-05-19T07:53:44.260+09:00</sv:value>
+                  </sv:property>
+                  <sv:property sv:name="mgnl:template" sv:type="String">
+                    <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
+                  </sv:property>
+                </sv:node>
+              </sv:node>
             </sv:node>
           </sv:node>
         </sv:node>
@@ -717,7 +921,7 @@
         <sv:value>2012-03-16T21:49:12.103+09:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-        <sv:value>2012-05-17T06:09:52.145+09:00</sv:value>
+        <sv:value>2012-05-19T07:58:36.707+09:00</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:template" sv:type="String">
         <sv:value>exmp-blossom:pages/main</sv:value>
@@ -923,10 +1127,10 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-          <sv:value>2012-05-17T06:09:52.145+09:00</sv:value>
+          <sv:value>2012-05-19T07:58:22.203+09:00</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="0">
+      <sv:node sv:name="01">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:component</sv:value>
         </sv:property>
@@ -934,16 +1138,7 @@
           <sv:value>mix:lockable</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>f5e987d1-adff-4758-ac9f-800bdd8978bb</sv:value>
-        </sv:property>
-        <sv:property sv:name="content" sv:type="String">
-          <sv:value>&lt;p&gt;To win in the chess game I wonder what I need? I must to learn the rules of chess first more than anything else. And after I learned the rules of chess is sufficiently what should I do then? It is to actually try the chess game. There is no substitute for the practical experience. the thoughts only in my head, but the arm of chess game is never progress. Let's start a chess game, there is no need to think harder. there is no fear of the something. the fear of the things you do not have the experience you have. however, if you run it probably is easy.&lt;/p&gt;</sv:value>
-        </sv:property>
-        <sv:property sv:name="imageLink" sv:type="String">
-          <sv:value>http://farm8.staticflickr.com/7245/7209575396_472ff798f4.jpg</sv:value>
-        </sv:property>
-        <sv:property sv:name="imagePosition" sv:type="String">
-          <sv:value>left</sv:value>
+          <sv:value>f692d1ba-c8cb-4e1d-92bc-5e734154b30c</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -958,53 +1153,25 @@
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
-          <sv:property sv:name="mgnl:activated" sv:type="Boolean">
-            <sv:value>false</sv:value>
-          </sv:property>
           <sv:property sv:name="mgnl:authorid" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-            <sv:value>2012-03-16T22:05:02.690+09:00</sv:value>
+            <sv:value>2012-05-19T07:55:25.542+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-            <sv:value>2012-05-17T06:09:52.145+09:00</sv:value>
+            <sv:value>2012-05-19T07:57:15.037+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/imageAndTextEntry</sv:value>
+            <sv:value>exmp-blossom:components/multipleParagraphEntry</sv:value>
           </sv:property>
         </sv:node>
-        <sv:node sv:name="content_files">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:contentNode</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-            <sv:value>mix:lockable</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>002ee9d9-476c-462f-9be1-8503fc35ab24</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:node sv:name="MetaData">
-            <sv:property sv:name="jcr:primaryType" sv:type="Name">
-              <sv:value>mgnl:metaData</sv:value>
-            </sv:property>
-            <sv:property sv:name="jcr:createdBy" sv:type="String">
-              <sv:value>admin</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-03-16T22:05:02.690+09:00</sv:value>
-            </sv:property>
-          </sv:node>
-        </sv:node>
-        <sv:node sv:name="imageAndTextEntryLink">
+        <sv:node sv:name="paragraph">
           <sv:property sv:name="jcr:primaryType" sv:type="Name">
             <sv:value>mgnl:area</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>fdaa476e-d69c-453a-b1ca-27d6be4ffe89</sv:value>
+            <sv:value>1d5ab0f9-4ac2-44b2-ac47-708c46d537b4</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
@@ -1016,10 +1183,152 @@
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
             </sv:property>
+            <sv:property sv:name="mgnl:authorid" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+              <sv:value>2012-05-19T07:57:15.037+09:00</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name="0">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:component</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+              <sv:value>mix:lockable</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>05dc3e07-9629-4289-a191-c93c8bc609f6</sv:value>
+            </sv:property>
+            <sv:property sv:name="display" sv:type="String">
+              <sv:value>true</sv:value>
+            </sv:property>
+            <sv:property sv:name="imageLink" sv:type="String">
+              <sv:value>http://farm8.staticflickr.com/7245/7209575396_472ff798f4.jpg</sv:value>
+            </sv:property>
+            <sv:property sv:name="imagePosition" sv:type="String">
+              <sv:value>left</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="text" sv:type="String">
+              <sv:value>&lt;p&gt;&lt;span style="font-size: 15px; line-height: normal; text-align: left; "&gt;To win in the chess game I wonder what I need? I must to learn the rules of chess first more than anything else. And after I learned the rules of chess is sufficiently what should I do then? It is to actually try the chess game. There is no substitute for the practical experience. the thoughts only in my head, but the arm of chess game is never progress.&lt;/span&gt;&lt;/p&gt;</sv:value>
+            </sv:property>
+            <sv:node sv:name="MetaData">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:metaData</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:authorid" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                <sv:value>2012-05-19T07:56:31.795+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                <sv:value>2012-05-19T07:56:51.057+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>exmp-blossom:components/imageAndTextParagraph</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="text_files">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:contentNode</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>c249ed62-b1a0-4156-941a-7dbd90929340</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2012-05-19T07:56:31.795+09:00</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
+          </sv:node>
+          <sv:node sv:name="00">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:component</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+              <sv:value>mix:lockable</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>7049025c-db21-45f4-9b0d-704d3185a0a6</sv:value>
+            </sv:property>
+            <sv:property sv:name="display" sv:type="String">
+              <sv:value>true</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="text" sv:type="String">
+              <sv:value>&lt;p&gt;&lt;span style="font-size: 15px; text-align: left; "&gt;Let's start a chess game, there is no need to think harder. there is no fear of the something. the fear of the things you do not have the experience you have. however, if you run it probably is easy.&lt;/span&gt;&lt;/p&gt;</sv:value>
+            </sv:property>
+            <sv:node sv:name="MetaData">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:metaData</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:authorid" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                <sv:value>2012-05-19T07:57:15.036+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                <sv:value>2012-05-19T07:57:15.037+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>exmp-blossom:components/richTextParagraph</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="text_files">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:contentNode</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>2e7ec067-6279-4c7e-8b56-0ca298d7b876</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2012-05-19T07:57:15.037+09:00</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
           </sv:node>
         </sv:node>
       </sv:node>
-      <sv:node sv:name="00">
+      <sv:node sv:name="0">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:component</sv:value>
         </sv:property>
@@ -1027,10 +1336,7 @@
           <sv:value>mix:lockable</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>62521df8-cb68-4534-9ee9-9d5da0a1ce74</sv:value>
-        </sv:property>
-        <sv:property sv:name="content" sv:type="String">
-          <sv:value>Thank you for looking at the last minute. I am grateful to you. I hope that everyone is better and live a life. and let 's meet again. goodbye :)</sv:value>
+          <sv:value>ec12f776-fa7f-4b9b-b720-f03a52192d46</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -1045,21 +1351,83 @@
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
-          <sv:property sv:name="mgnl:activated" sv:type="Boolean">
-            <sv:value>false</sv:value>
-          </sv:property>
           <sv:property sv:name="mgnl:authorid" sv:type="String">
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-            <sv:value>2012-03-17T07:57:54.213+09:00</sv:value>
+            <sv:value>2012-05-19T07:58:10.915+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-            <sv:value>2012-03-20T15:44:23.665+09:00</sv:value>
+            <sv:value>2012-05-19T07:58:22.203+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/textEntry</sv:value>
+            <sv:value>exmp-blossom:components/multipleParagraphEntry</sv:value>
           </sv:property>
+        </sv:node>
+        <sv:node sv:name="paragraph">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:area</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>49e2f0c9-d9c0-4107-a84f-afd8369c0fa2</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:node sv:name="MetaData">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:metaData</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:authorid" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+              <sv:value>2012-05-19T07:58:22.201+09:00</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name="0">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:component</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+              <sv:value>mix:lockable</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>0b28a75c-dd61-4da5-8891-3637039a613c</sv:value>
+            </sv:property>
+            <sv:property sv:name="display" sv:type="String">
+              <sv:value>true</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="text" sv:type="String">
+              <sv:value>Thank you for looking at the last minute. I am grateful to you. I hope that everyone is better and live a life. and let 's meet again. goodbye :)</sv:value>
+            </sv:property>
+            <sv:node sv:name="MetaData">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:metaData</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:authorid" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                <sv:value>2012-05-19T07:58:22.200+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                <sv:value>2012-05-19T07:58:22.201+09:00</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:template" sv:type="String">
+                <sv:value>exmp-blossom:components/textParagraph</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
         </sv:node>
       </sv:node>
     </sv:node>
@@ -1486,10 +1854,10 @@
         <sv:value>superuser</sv:value>
       </sv:property>
       <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-        <sv:value>2012-05-18T16:09:53.684+09:00</sv:value>
+        <sv:value>2012-05-19T07:32:38.754+09:00</sv:value>
       </sv:property>
     </sv:node>
-    <sv:node sv:name="0">
+    <sv:node sv:name="03">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:component</sv:value>
       </sv:property>
@@ -1497,16 +1865,7 @@
         <sv:value>mix:lockable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>b2926844-99f0-4b81-a7c8-8183a275ffa1</sv:value>
-      </sv:property>
-      <sv:property sv:name="content" sv:type="String">
-        <sv:value>&lt;p&gt;In the morning you can see the sun direction is the east. so, if the mountain was a mountain in the east that is visible on the other side, this will be the sunrise. do you know what is this mountain? I unfortunately do not know the mountain. and I think it is a much better a beautiful landscape ever. try to imagine that if this was the sunrise. have you ever seen the sun rise from the sea? the good news is that I am a living on the near sea side immediately. In the daily life of familiar to me. the sunrise from the horizon, It should be a landscape of the having a purple, did not experience even once so far. at the end of the day, this landscape is maybe sunset..&lt;/p&gt;</sv:value>
-      </sv:property>
-      <sv:property sv:name="imageLink" sv:type="String">
-        <sv:value>http://farm9.staticflickr.com/8145/7209575512_7621996b93.jpg</sv:value>
-      </sv:property>
-      <sv:property sv:name="imagePosition" sv:type="String">
-        <sv:value>left</sv:value>
+        <sv:value>d55716cb-f7c2-43d8-b386-83b8473f8bda</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
         <sv:value>admin</sv:value>
@@ -1525,46 +1884,21 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-          <sv:value>2012-03-16T22:05:02.690+09:00</sv:value>
+          <sv:value>2012-05-19T06:47:49.091+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-          <sv:value>2012-05-17T06:08:15.436+09:00</sv:value>
+          <sv:value>2012-05-19T07:01:37.138+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>exmp-blossom:components/imageAndTextEntry</sv:value>
+          <sv:value>exmp-blossom:components/multipleParagraphEntry</sv:value>
         </sv:property>
       </sv:node>
-      <sv:node sv:name="content_files">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:contentNode</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>b0c10432-492a-4c39-b7e1-7fd0729756d3</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:node sv:name="MetaData">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:metaData</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-            <sv:value>2012-03-16T22:05:02.690+09:00</sv:value>
-          </sv:property>
-        </sv:node>
-      </sv:node>
-      <sv:node sv:name="imageAndTextEntryLink">
+      <sv:node sv:name="paragraph">
         <sv:property sv:name="jcr:primaryType" sv:type="Name">
           <sv:value>mgnl:area</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>832c750c-7c2c-4769-8021-af06b1d4e2d0</sv:value>
+          <sv:value>a426fc29-6334-488e-86cb-07fcc08444bc</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -1580,7 +1914,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-            <sv:value>2012-03-20T16:51:37.125+09:00</sv:value>
+            <sv:value>2012-05-19T07:01:37.138+09:00</sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="0">
@@ -1591,16 +1925,22 @@
             <sv:value>mix:lockable</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>04ef46a8-49eb-42be-9610-42d4dde0e6cc</sv:value>
+            <sv:value>e2f6f699-089e-4f09-96f1-a8e2a0e5dac2</sv:value>
+          </sv:property>
+          <sv:property sv:name="display" sv:type="String">
+            <sv:value>true</sv:value>
+          </sv:property>
+          <sv:property sv:name="imageLink" sv:type="String">
+            <sv:value>http://farm9.staticflickr.com/8145/7209575512_7621996b93.jpg</sv:value>
+          </sv:property>
+          <sv:property sv:name="imagePosition" sv:type="String">
+            <sv:value>left</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
-          <sv:property sv:name="link" sv:type="String">
-            <sv:value>http://en.wikipedia.org/wiki/Sunrise</sv:value>
-          </sv:property>
-          <sv:property sv:name="linkText" sv:type="String">
-            <sv:value>the sunrize [* linked to external information.]</sv:value>
+          <sv:property sv:name="text" sv:type="String">
+            <sv:value>&lt;p&gt;&lt;span style="font-size: 15px; line-height: normal; text-align: left; "&gt;In the morning you can see the sun direction is the east. so, if the mountain was a mountain in the east that is visible on the other side, this will be the sunrise. do you know what is this mountain? I unfortunately do not know the mountain. and I think it is a much better a beautiful landscape ever.&lt;/span&gt;&lt;/p&gt;</sv:value>
           </sv:property>
           <sv:node sv:name="MetaData">
             <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -1613,14 +1953,39 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-03-20T16:47:19.675+09:00</sv:value>
+              <sv:value>2012-05-19T06:48:59.692+09:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-              <sv:value>2012-05-14T23:56:08.441+09:00</sv:value>
+              <sv:value>2012-05-19T07:22:03.140+09:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
+              <sv:value>exmp-blossom:components/imageAndTextParagraph</sv:value>
             </sv:property>
+          </sv:node>
+          <sv:node sv:name="text_files">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+              <sv:value>mix:lockable</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>77f4506b-7b20-4e85-868c-ccbaa49c87f5</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:node sv:name="MetaData">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:metaData</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                <sv:value>2012-05-19T06:48:59.692+09:00</sv:value>
+              </sv:property>
+            </sv:node>
           </sv:node>
         </sv:node>
         <sv:node sv:name="00">
@@ -1631,16 +1996,16 @@
             <sv:value>mix:lockable</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>8c0c0faf-6015-4001-adc1-6a95cbf68b06</sv:value>
+            <sv:value>0670aa7f-95d3-4f77-a914-a72f3e73d51c</sv:value>
+          </sv:property>
+          <sv:property sv:name="display" sv:type="String">
+            <sv:value>true</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
-          <sv:property sv:name="link" sv:type="String">
-            <sv:value>http://en.wikipedia.org/wiki/Sunset</sv:value>
-          </sv:property>
-          <sv:property sv:name="linkText" sv:type="String">
-            <sv:value>the sunset [* linked to external information.]</sv:value>
+          <sv:property sv:name="text" sv:type="String">
+            <sv:value>&lt;p&gt;&amp;nbsp;&lt;span style="font-size: 15px; text-align: left; "&gt;Try to imagine that if this was the sunrise. have you ever seen the sun rise from the sea? the good news is that I am a living on the near sea side immediately. In the daily life of familiar to me. the sunrise from the horizon, It should be a landscape of the having a purple, did not experience even once so far. at the end of the day, this landscape is maybe sunset..&lt;/span&gt;&lt;/p&gt;</sv:value>
           </sv:property>
           <sv:node sv:name="MetaData">
             <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -1653,19 +2018,186 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-03-20T16:47:49.447+09:00</sv:value>
+              <sv:value>2012-05-19T06:50:07.163+09:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-              <sv:value>2012-05-14T23:56:14.469+09:00</sv:value>
+              <sv:value>2012-05-19T07:21:26.780+09:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
+              <sv:value>exmp-blossom:components/richTextParagraph</sv:value>
             </sv:property>
+          </sv:node>
+          <sv:node sv:name="text_files">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+              <sv:value>mix:lockable</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>afaa8adc-3e85-481b-aaf7-983fb4f00211</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:node sv:name="MetaData">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:metaData</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                <sv:value>2012-05-19T06:50:07.163+09:00</sv:value>
+              </sv:property>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+        <sv:node sv:name="01">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+            <sv:value>mix:lockable</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>c9d22a6b-f236-4980-b878-bb08548eb510</sv:value>
+          </sv:property>
+          <sv:property sv:name="display" sv:type="String">
+            <sv:value>true</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:node sv:name="MetaData">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:metaData</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:authorid" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+              <sv:value>2012-05-19T07:00:31.007+09:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+              <sv:value>2012-05-19T07:01:37.137+09:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:template" sv:type="String">
+              <sv:value>exmp-blossom:components/linkParagraph</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name="linkItem">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:area</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:uuid" sv:type="String">
+              <sv:value>d33e2afc-19ba-41d0-aa60-86d1fbd5c710</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:node sv:name="MetaData">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:metaData</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:authorid" sv:type="String">
+                <sv:value>superuser</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                <sv:value>2012-05-19T07:01:37.137+09:00</sv:value>
+              </sv:property>
+            </sv:node>
+            <sv:node sv:name="0">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>f5a3294a-9975-4bb5-bd65-b315669cba22</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="link" sv:type="String">
+                <sv:value>http://en.wikipedia.org/wiki/Sunrise</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkText" sv:type="String">
+                <sv:value>the sunrize [* linked to external information.]</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:authorid" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2012-05-19T07:01:19.282+09:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                  <sv:value>2012-05-19T07:01:19.282+09:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:template" sv:type="String">
+                  <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
+            <sv:node sv:name="00">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:component</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+                <sv:value>mix:lockable</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:uuid" sv:type="String">
+                <sv:value>b4575c25-d4f7-4cf4-b4db-75a2acae70a5</sv:value>
+              </sv:property>
+              <sv:property sv:name="jcr:createdBy" sv:type="String">
+                <sv:value>admin</sv:value>
+              </sv:property>
+              <sv:property sv:name="link" sv:type="String">
+                <sv:value>http://en.wikipedia.org/wiki/Sunset</sv:value>
+              </sv:property>
+              <sv:property sv:name="linkText" sv:type="String">
+                <sv:value>the sunset [* linked to external information.]</sv:value>
+              </sv:property>
+              <sv:node sv:name="MetaData">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:metaData</sv:value>
+                </sv:property>
+                <sv:property sv:name="jcr:createdBy" sv:type="String">
+                  <sv:value>admin</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:authorid" sv:type="String">
+                  <sv:value>superuser</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                  <sv:value>2012-05-19T07:01:37.137+09:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+                  <sv:value>2012-05-19T07:01:37.137+09:00</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:template" sv:type="String">
+                  <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
+                </sv:property>
+              </sv:node>
+            </sv:node>
           </sv:node>
         </sv:node>
       </sv:node>
     </sv:node>
-    <sv:node sv:name="00">
+    <sv:node sv:name="0">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:component</sv:value>
       </sv:property>
@@ -1673,10 +2205,7 @@
         <sv:value>mix:lockable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>6863f84d-98f7-4efd-a464-e1b9b7941894</sv:value>
-      </sv:property>
-      <sv:property sv:name="content" sv:type="String">
-        <sv:value>Yes we can. maybe this is a one of a miracle matter. It has great potential. now let's go to experience together.</sv:value>
+        <sv:value>71d7dcab-3171-4875-98a9-9879a953d2e7</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
         <sv:value>admin</sv:value>
@@ -1695,17 +2224,82 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-          <sv:value>2012-03-17T07:57:54.213+09:00</sv:value>
+          <sv:value>2012-05-19T07:30:07.899+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-          <sv:value>2012-03-20T08:50:27.180+09:00</sv:value>
+          <sv:value>2012-05-19T07:30:33.997+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>exmp-blossom:components/textEntry</sv:value>
+          <sv:value>exmp-blossom:components/multipleParagraphEntry</sv:value>
         </sv:property>
       </sv:node>
+      <sv:node sv:name="paragraph">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:area</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:uuid" sv:type="String">
+          <sv:value>6b9b249a-dd0a-42ef-ae99-c18d8f9d3d54</sv:value>
+        </sv:property>
+        <sv:property sv:name="jcr:createdBy" sv:type="String">
+          <sv:value>admin</sv:value>
+        </sv:property>
+        <sv:node sv:name="MetaData">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:metaData</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:authorid" sv:type="String">
+            <sv:value>superuser</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+            <sv:value>2012-05-19T07:30:33.996+09:00</sv:value>
+          </sv:property>
+        </sv:node>
+        <sv:node sv:name="0">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:component</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+            <sv:value>mix:lockable</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:uuid" sv:type="String">
+            <sv:value>afb7b679-b9fc-4c2d-a172-c06308b19259</sv:value>
+          </sv:property>
+          <sv:property sv:name="display" sv:type="String">
+            <sv:value>true</sv:value>
+          </sv:property>
+          <sv:property sv:name="jcr:createdBy" sv:type="String">
+            <sv:value>admin</sv:value>
+          </sv:property>
+          <sv:property sv:name="text" sv:type="String">
+            <sv:value>Yes we can. maybe this is a one of a miracle matter. It has great potential. now let's go to experience together.</sv:value>
+          </sv:property>
+          <sv:node sv:name="MetaData">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:metaData</sv:value>
+            </sv:property>
+            <sv:property sv:name="jcr:createdBy" sv:type="String">
+              <sv:value>admin</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:authorid" sv:type="String">
+              <sv:value>superuser</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+              <sv:value>2012-05-19T07:30:33.995+09:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
+              <sv:value>2012-05-19T07:30:33.996+09:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:template" sv:type="String">
+              <sv:value>exmp-blossom:components/textParagraph</sv:value>
+            </sv:property>
+          </sv:node>
+        </sv:node>
+      </sv:node>
     </sv:node>
-    <sv:node sv:name="01">
+    <sv:node sv:name="00">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>mgnl:component</sv:value>
       </sv:property>
@@ -1713,16 +2307,7 @@
         <sv:value>mix:lockable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>20981994-51d4-48fd-9af3-ab3e54a43713</sv:value>
-      </sv:property>
-      <sv:property sv:name="content" sv:type="String">
-        <sv:value>&lt;p&gt;A frog will stay here. do you have went to see the world of the frog? I &amp;nbsp;hate the frog and much, because they are a very strange appearance that actually. And that is their cry. If you recall the old time, a frog was stay in the country. when the season in the summer? I remember that the frog was singing geko geko. I think it's the special is not in itself about the frog, that frog is a beautiful color that do have to admit. such also is one of this frog. well, frogs are not special. geko geko geko geko.. and let's singing together geko geko geko geko..&amp;nbsp;why don't? what has become somewhat fun? It is a fun song of the frog.&lt;/p&gt;</sv:value>
-      </sv:property>
-      <sv:property sv:name="imageLink" sv:type="String">
-        <sv:value>http://farm6.staticflickr.com/5276/7209575674_7bbd6a91c8.jpg </sv:value>
-      </sv:property>
-      <sv:property sv:name="imagePosition" sv:type="String">
-        <sv:value>right</sv:value>
+        <sv:value>73f072f3-0ed6-4660-829f-ab488b281e49</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
         <sv:value>admin</sv:value>
@@ -1741,91 +2326,10 @@
           <sv:value>superuser</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-          <sv:value>2012-03-18T15:35:05.493+09:00</sv:value>
+          <sv:value>2012-05-19T07:31:24.602+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-          <sv:value>2012-05-17T06:08:41.764+09:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>exmp-blossom:components/imageAndTextEntry</sv:value>
-        </sv:property>
-      </sv:node>
-      <sv:node sv:name="content_files">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:contentNode</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-          <sv:value>mix:lockable</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>06b17b20-828b-4974-98f6-e36564885356</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:node sv:name="MetaData">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:metaData</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-            <sv:value>2012-03-18T15:35:05.493+09:00</sv:value>
-          </sv:property>
-        </sv:node>
-      </sv:node>
-      <sv:node sv:name="imageAndTextEntryLink">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:area</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>09766bf9-d90a-45b5-b3cd-b0b33774dc59</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:node sv:name="MetaData">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:metaData</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-        </sv:node>
-      </sv:node>
-    </sv:node>
-    <sv:node sv:name="02">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>mgnl:component</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-        <sv:value>mix:lockable</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>17799df3-8c67-4699-a000-a0a88161bb75</sv:value>
-      </sv:property>
-      <sv:property sv:name="jcr:createdBy" sv:type="String">
-        <sv:value>admin</sv:value>
-      </sv:property>
-      <sv:property sv:name="title" sv:type="String">
-        <sv:value>This is a new entry.</sv:value>
-      </sv:property>
-      <sv:node sv:name="MetaData">
-        <sv:property sv:name="jcr:primaryType" sv:type="Name">
-          <sv:value>mgnl:metaData</sv:value>
-        </sv:property>
-        <sv:property sv:name="jcr:createdBy" sv:type="String">
-          <sv:value>admin</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:authorid" sv:type="String">
-          <sv:value>superuser</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-          <sv:value>2012-05-17T22:27:17.361+09:00</sv:value>
-        </sv:property>
-        <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-          <sv:value>2012-05-18T16:09:53.683+09:00</sv:value>
+          <sv:value>2012-05-19T07:32:38.754+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
           <sv:value>exmp-blossom:components/multipleParagraphEntry</sv:value>
@@ -1836,7 +2340,7 @@
           <sv:value>mgnl:area</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:uuid" sv:type="String">
-          <sv:value>664c554f-738b-41e5-b0f3-0588b2fdb850</sv:value>
+          <sv:value>88760b6a-e269-4d6d-a0df-eb35f207feef</sv:value>
         </sv:property>
         <sv:property sv:name="jcr:createdBy" sv:type="String">
           <sv:value>admin</sv:value>
@@ -1852,7 +2356,7 @@
             <sv:value>superuser</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-            <sv:value>2012-05-18T16:09:53.683+09:00</sv:value>
+            <sv:value>2012-05-19T07:32:38.754+09:00</sv:value>
           </sv:property>
         </sv:node>
         <sv:node sv:name="0">
@@ -1863,133 +2367,22 @@
             <sv:value>mix:lockable</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>d605ee82-77c3-4fd9-8a6e-bd4a0bc57088</sv:value>
+            <sv:value>7f3d3a2a-18fe-4e7f-98c9-16a25a3870e5</sv:value>
           </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:property sv:name="text" sv:type="String">
-            <sv:value>When the season in the summer? I remember that the frog was singing geko geko. I think it's the special is not in itself about the frog, that frog is a beautiful color that do have to admit. such also is one of this frog. well, frogs are not special. geko geko geko geko.. and let's singing together geko geko geko geko.. why don't? what has become somewhat fun? It is a fun song of the frog.</sv:value>
-          </sv:property>
-          <sv:node sv:name="MetaData">
-            <sv:property sv:name="jcr:primaryType" sv:type="Name">
-              <sv:value>mgnl:metaData</sv:value>
-            </sv:property>
-            <sv:property sv:name="jcr:createdBy" sv:type="String">
-              <sv:value>admin</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:authorid" sv:type="String">
-              <sv:value>superuser</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-05-17T22:27:45.992+09:00</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-              <sv:value>2012-05-17T22:27:45.992+09:00</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>exmp-blossom:components/textParagraph</sv:value>
-            </sv:property>
-          </sv:node>
-        </sv:node>
-        <sv:node sv:name="05">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:component</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-            <sv:value>mix:lockable</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>1367ff2c-7278-46da-aa0c-f9c3ec34308d</sv:value>
-          </sv:property>
-          <sv:property sv:name="caption" sv:type="String">
-            <sv:value>the pre caption.</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:property sv:name="text" sv:type="String">
-            <sv:value xsi:type="xs:base64Binary">PiBjZCB7IHBhdGggdG8gdGhpcyBSRUFETUUubWQgZGlyZWN0b3J5LiB9DQo+IG12biBjb21waWxlDQo+IG12biBpbnN0YWxsDQo+IGphdmEgLWphciB0YXJnZXQvZGVwZW5kZW5jeS9qZXR0eS1ydW5uZXIuamFyIGV4bXAtbWFnbm9saWEtd2ViYXBwL3RhcmdldC8qLndhcg==</sv:value>
-          </sv:property>
-          <sv:node sv:name="MetaData">
-            <sv:property sv:name="jcr:primaryType" sv:type="Name">
-              <sv:value>mgnl:metaData</sv:value>
-            </sv:property>
-            <sv:property sv:name="jcr:createdBy" sv:type="String">
-              <sv:value>admin</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:authorid" sv:type="String">
-              <sv:value>superuser</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-05-18T11:10:00.415+09:00</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-              <sv:value>2012-05-18T16:09:10.312+09:00</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>exmp-blossom:components/preTextParagraph</sv:value>
-            </sv:property>
-          </sv:node>
-        </sv:node>
-        <sv:node sv:name="03">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:component</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-            <sv:value>mix:lockable</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>e32a1621-0230-4c74-bb9b-1591a262566b</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:property sv:name="text" sv:type="String">
-            <sv:value>And that is their cry. If you recall the old time, a frog was stay in the country. when the season in the summer? I remember that the frog was singing geko geko. I think it's the special is not in itself about the frog, that frog is a beautiful color that do have to admit.</sv:value>
-          </sv:property>
-          <sv:node sv:name="MetaData">
-            <sv:property sv:name="jcr:primaryType" sv:type="Name">
-              <sv:value>mgnl:metaData</sv:value>
-            </sv:property>
-            <sv:property sv:name="jcr:createdBy" sv:type="String">
-              <sv:value>admin</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:authorid" sv:type="String">
-              <sv:value>superuser</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-05-17T23:45:12.153+09:00</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-              <sv:value>2012-05-17T23:45:12.153+09:00</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>exmp-blossom:components/textParagraph</sv:value>
-            </sv:property>
-          </sv:node>
-        </sv:node>
-        <sv:node sv:name="02">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:component</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-            <sv:value>mix:lockable</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>33b09c13-4888-4c41-9fa3-a1b78263c0c1</sv:value>
+          <sv:property sv:name="display" sv:type="String">
+            <sv:value>true</sv:value>
           </sv:property>
           <sv:property sv:name="imageLink" sv:type="String">
-            <sv:value>http://farm9.staticflickr.com/8145/7209575512_7621996b93.jpg</sv:value>
+            <sv:value>http://farm6.staticflickr.com/5276/7209575674_7bbd6a91c8.jpg</sv:value>
           </sv:property>
           <sv:property sv:name="imagePosition" sv:type="String">
-            <sv:value>left</sv:value>
+            <sv:value>right</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
-            <sv:value>&lt;p&gt;&amp;nbsp;&lt;span style="font-size: 16px; text-align: left; "&gt;A frog will stay here. do you have went to see the world of the frog? I &amp;nbsp;hate the frog and much, because they are a very strange appearance that actually.&lt;/span&gt;&lt;/p&gt;</sv:value>
+            <sv:value>&lt;p&gt;&lt;span style="font-size: 15px; line-height: normal; text-align: left; "&gt;A frog will stay here. do you have went to see the world of the frog? I &amp;nbsp;hate the frog and much, because they are a very strange appearance that actually. And that is their cry. If you recall the old time, a frog was stay in the country. when the season in the summer? I remember that the frog was singing geko geko.&lt;/span&gt;&lt;/p&gt;</sv:value>
           </sv:property>
           <sv:node sv:name="MetaData">
             <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -2002,10 +2395,10 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-05-17T22:40:07.288+09:00</sv:value>
+              <sv:value>2012-05-19T07:31:51.919+09:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-              <sv:value>2012-05-17T22:40:07.288+09:00</sv:value>
+              <sv:value>2012-05-19T07:32:14.152+09:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
               <sv:value>exmp-blossom:components/imageAndTextParagraph</sv:value>
@@ -2019,7 +2412,7 @@
               <sv:value>mix:lockable</sv:value>
             </sv:property>
             <sv:property sv:name="jcr:uuid" sv:type="String">
-              <sv:value>fb2a6bdd-fb0b-425c-a71d-d4f9e39a2727</sv:value>
+              <sv:value>87bd5f73-ba72-4d35-bf0c-89ba1bb88601</sv:value>
             </sv:property>
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
@@ -2032,7 +2425,7 @@
                 <sv:value>admin</sv:value>
               </sv:property>
               <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-                <sv:value>2012-05-17T22:40:07.288+09:00</sv:value>
+                <sv:value>2012-05-19T07:31:51.920+09:00</sv:value>
               </sv:property>
             </sv:node>
           </sv:node>
@@ -2045,13 +2438,16 @@
             <sv:value>mix:lockable</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>758b57a1-3c04-4799-9cd0-3efd4eb31292</sv:value>
+            <sv:value>d1f5e40c-5bba-4e79-80f4-354cfb4c4881</sv:value>
+          </sv:property>
+          <sv:property sv:name="display" sv:type="String">
+            <sv:value>true</sv:value>
           </sv:property>
           <sv:property sv:name="jcr:createdBy" sv:type="String">
             <sv:value>admin</sv:value>
           </sv:property>
           <sv:property sv:name="text" sv:type="String">
-            <sv:value>In the morning you can see the sun direction is the east. so, if the mountain was a mountain in the east that is visible on the other side, this will be the sunrise.</sv:value>
+            <sv:value>&lt;p&gt;&amp;nbsp;&lt;span style="font-size: 15px; text-align: left; "&gt;I think it's the special is not in itself about the frog, that frog is a beautiful color that do have to admit. such also is one of this frog. well, frogs are not special. geko geko geko geko.. and let's singing together geko geko geko geko..&amp;nbsp;why don't? what has become somewhat fun? It is a fun song of the frog.&lt;/span&gt;&lt;/p&gt;</sv:value>
           </sv:property>
           <sv:node sv:name="MetaData">
             <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -2064,264 +2460,24 @@
               <sv:value>superuser</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-05-17T22:28:22.174+09:00</sv:value>
+              <sv:value>2012-05-19T07:32:38.744+09:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-              <sv:value>2012-05-17T22:28:22.174+09:00</sv:value>
+              <sv:value>2012-05-19T07:32:38.754+09:00</sv:value>
             </sv:property>
             <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>exmp-blossom:components/textParagraph</sv:value>
+              <sv:value>exmp-blossom:components/richTextParagraph</sv:value>
             </sv:property>
           </sv:node>
-        </sv:node>
-        <sv:node sv:name="01">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:component</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-            <sv:value>mix:lockable</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>42dbfc7a-b7ad-40ea-bf67-610c68d34e08</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:node sv:name="MetaData">
+          <sv:node sv:name="text_files">
             <sv:property sv:name="jcr:primaryType" sv:type="Name">
-              <sv:value>mgnl:metaData</sv:value>
+              <sv:value>mgnl:contentNode</sv:value>
             </sv:property>
-            <sv:property sv:name="jcr:createdBy" sv:type="String">
-              <sv:value>admin</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:authorid" sv:type="String">
-              <sv:value>superuser</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-05-17T22:36:52.978+09:00</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-              <sv:value>2012-05-18T16:09:37.113+09:00</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>exmp-blossom:components/tableParagraph</sv:value>
-            </sv:property>
-          </sv:node>
-          <sv:node sv:name="paragraphTableItem">
-            <sv:property sv:name="jcr:primaryType" sv:type="Name">
-              <sv:value>mgnl:area</sv:value>
+            <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+              <sv:value>mix:lockable</sv:value>
             </sv:property>
             <sv:property sv:name="jcr:uuid" sv:type="String">
-              <sv:value>99286629-db58-401d-a659-75bbf399d366</sv:value>
-            </sv:property>
-            <sv:property sv:name="caption" sv:type="String">
-              <sv:value>the table caption.</sv:value>
-            </sv:property>
-            <sv:property sv:name="jcr:createdBy" sv:type="String">
-              <sv:value>admin</sv:value>
-            </sv:property>
-            <sv:property sv:name="wide" sv:type="String">
-              <sv:value>false</sv:value>
-            </sv:property>
-            <sv:node sv:name="MetaData">
-              <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                <sv:value>mgnl:metaData</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:createdBy" sv:type="String">
-                <sv:value>admin</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:authorid" sv:type="String">
-                <sv:value>superuser</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-                <sv:value>2012-05-18T16:09:37.113+09:00</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:template" sv:type="String">
-                <sv:value/>
-              </sv:property>
-            </sv:node>
-            <sv:node sv:name="01">
-              <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                <sv:value>mgnl:component</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-                <sv:value>mix:lockable</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:uuid" sv:type="String">
-                <sv:value>289840ec-947f-444f-a7c9-8b4cdd21f4f2</sv:value>
-              </sv:property>
-              <sv:property sv:name="firstValue" sv:type="String">
-                <sv:value>one</sv:value>
-              </sv:property>
-              <sv:property sv:name="fourthValue" sv:type="String">
-                <sv:value>four</sv:value>
-              </sv:property>
-              <sv:property sv:name="header" sv:type="String">
-                <sv:value>true</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:createdBy" sv:type="String">
-                <sv:value>admin</sv:value>
-              </sv:property>
-              <sv:property sv:name="secondValue" sv:type="String">
-                <sv:value>two</sv:value>
-              </sv:property>
-              <sv:property sv:name="thirdValue" sv:type="String">
-                <sv:value>three</sv:value>
-              </sv:property>
-              <sv:node sv:name="MetaData">
-                <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                  <sv:value>mgnl:metaData</sv:value>
-                </sv:property>
-                <sv:property sv:name="jcr:createdBy" sv:type="String">
-                  <sv:value>admin</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:authorid" sv:type="String">
-                  <sv:value>superuser</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-                  <sv:value>2012-05-18T12:34:40.911+09:00</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-                  <sv:value>2012-05-18T12:34:40.912+09:00</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:template" sv:type="String">
-                  <sv:value>exmp-blossom:components/fourColumnRowItem</sv:value>
-                </sv:property>
-              </sv:node>
-            </sv:node>
-            <sv:node sv:name="0">
-              <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                <sv:value>mgnl:component</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-                <sv:value>mix:lockable</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:uuid" sv:type="String">
-                <sv:value>dcbcc988-a825-47aa-858a-e79499a84430</sv:value>
-              </sv:property>
-              <sv:property sv:name="firstValue" sv:type="String">
-                <sv:value>one</sv:value>
-              </sv:property>
-              <sv:property sv:name="fourthValue" sv:type="String">
-                <sv:value>four</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:createdBy" sv:type="String">
-                <sv:value>admin</sv:value>
-              </sv:property>
-              <sv:property sv:name="secondValue" sv:type="String">
-                <sv:value>two</sv:value>
-              </sv:property>
-              <sv:property sv:name="thirdValue" sv:type="String">
-                <sv:value>three</sv:value>
-              </sv:property>
-              <sv:node sv:name="MetaData">
-                <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                  <sv:value>mgnl:metaData</sv:value>
-                </sv:property>
-                <sv:property sv:name="jcr:createdBy" sv:type="String">
-                  <sv:value>admin</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:authorid" sv:type="String">
-                  <sv:value>superuser</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-                  <sv:value>2012-05-17T22:37:39.665+09:00</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-                  <sv:value>2012-05-18T10:44:50.417+09:00</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:template" sv:type="String">
-                  <sv:value>exmp-blossom:components/fourColumnRowItem</sv:value>
-                </sv:property>
-              </sv:node>
-            </sv:node>
-            <sv:node sv:name="00">
-              <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                <sv:value>mgnl:component</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-                <sv:value>mix:lockable</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:uuid" sv:type="String">
-                <sv:value>8e18a0d3-5738-4b23-bd02-be1b21f02cc6</sv:value>
-              </sv:property>
-              <sv:property sv:name="firstValue" sv:type="String">
-                <sv:value>one</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:createdBy" sv:type="String">
-                <sv:value>admin</sv:value>
-              </sv:property>
-              <sv:property sv:name="secondValue" sv:type="String">
-                <sv:value>two</sv:value>
-              </sv:property>
-              <sv:property sv:name="thirdValue" sv:type="String">
-                <sv:value>three</sv:value>
-              </sv:property>
-              <sv:node sv:name="MetaData">
-                <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                  <sv:value>mgnl:metaData</sv:value>
-                </sv:property>
-                <sv:property sv:name="jcr:createdBy" sv:type="String">
-                  <sv:value>admin</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:authorid" sv:type="String">
-                  <sv:value>superuser</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-                  <sv:value>2012-05-17T22:38:04.952+09:00</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-                  <sv:value>2012-05-18T10:44:56.388+09:00</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:template" sv:type="String">
-                  <sv:value>exmp-blossom:components/threeColumnRowItem</sv:value>
-                </sv:property>
-              </sv:node>
-            </sv:node>
-          </sv:node>
-        </sv:node>
-        <sv:node sv:name="04">
-          <sv:property sv:name="jcr:primaryType" sv:type="Name">
-            <sv:value>mgnl:component</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-            <sv:value>mix:lockable</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:uuid" sv:type="String">
-            <sv:value>c78e91e3-3d34-4fc6-bf8e-8bfad22adb3c</sv:value>
-          </sv:property>
-          <sv:property sv:name="jcr:createdBy" sv:type="String">
-            <sv:value>admin</sv:value>
-          </sv:property>
-          <sv:node sv:name="MetaData">
-            <sv:property sv:name="jcr:primaryType" sv:type="Name">
-              <sv:value>mgnl:metaData</sv:value>
-            </sv:property>
-            <sv:property sv:name="jcr:createdBy" sv:type="String">
-              <sv:value>admin</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:authorid" sv:type="String">
-              <sv:value>superuser</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-              <sv:value>2012-05-18T10:05:14.146+09:00</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-              <sv:value>2012-05-18T16:09:53.683+09:00</sv:value>
-            </sv:property>
-            <sv:property sv:name="mgnl:template" sv:type="String">
-              <sv:value>exmp-blossom:components/linkParagraph</sv:value>
-            </sv:property>
-          </sv:node>
-          <sv:node sv:name="paragraphLinkItem">
-            <sv:property sv:name="jcr:primaryType" sv:type="Name">
-              <sv:value>mgnl:area</sv:value>
-            </sv:property>
-            <sv:property sv:name="jcr:uuid" sv:type="String">
-              <sv:value>9586c19c-0fd3-4b48-b5bf-fabcf60a97ce</sv:value>
-            </sv:property>
-            <sv:property sv:name="caption" sv:type="String">
-              <sv:value>the link caption.</sv:value>
+              <sv:value>42ca8638-c02d-461e-8ba6-cfc1f967480b</sv:value>
             </sv:property>
             <sv:property sv:name="jcr:createdBy" sv:type="String">
               <sv:value>admin</sv:value>
@@ -2333,95 +2489,9 @@
               <sv:property sv:name="jcr:createdBy" sv:type="String">
                 <sv:value>admin</sv:value>
               </sv:property>
-              <sv:property sv:name="mgnl:authorid" sv:type="String">
-                <sv:value>superuser</sv:value>
+              <sv:property sv:name="mgnl:creationdate" sv:type="Date">
+                <sv:value>2012-05-19T07:32:38.754+09:00</sv:value>
               </sv:property>
-              <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-                <sv:value>2012-05-18T16:09:53.683+09:00</sv:value>
-              </sv:property>
-              <sv:property sv:name="mgnl:template" sv:type="String">
-                <sv:value/>
-              </sv:property>
-            </sv:node>
-            <sv:node sv:name="0">
-              <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                <sv:value>mgnl:component</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-                <sv:value>mix:lockable</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:uuid" sv:type="String">
-                <sv:value>4a3f3ffb-7d45-4393-9190-b348752c9424</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:createdBy" sv:type="String">
-                <sv:value>admin</sv:value>
-              </sv:property>
-              <sv:property sv:name="link" sv:type="String">
-                <sv:value>http://en.wikipedia.org/wiki/Sunrise</sv:value>
-              </sv:property>
-              <sv:property sv:name="linkText" sv:type="String">
-                <sv:value>the sunrise</sv:value>
-              </sv:property>
-              <sv:node sv:name="MetaData">
-                <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                  <sv:value>mgnl:metaData</sv:value>
-                </sv:property>
-                <sv:property sv:name="jcr:createdBy" sv:type="String">
-                  <sv:value>admin</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:authorid" sv:type="String">
-                  <sv:value>superuser</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-                  <sv:value>2012-05-18T10:05:44.570+09:00</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-                  <sv:value>2012-05-18T10:44:17.816+09:00</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:template" sv:type="String">
-                  <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
-                </sv:property>
-              </sv:node>
-            </sv:node>
-            <sv:node sv:name="00">
-              <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                <sv:value>mgnl:component</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
-                <sv:value>mix:lockable</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:uuid" sv:type="String">
-                <sv:value>d7842b21-81d4-45c2-ab69-f96e8263e52d</sv:value>
-              </sv:property>
-              <sv:property sv:name="jcr:createdBy" sv:type="String">
-                <sv:value>admin</sv:value>
-              </sv:property>
-              <sv:property sv:name="link" sv:type="String">
-                <sv:value>http://en.wikipedia.org/wiki/Sunset</sv:value>
-              </sv:property>
-              <sv:property sv:name="linkText" sv:type="String">
-                <sv:value>the sunset</sv:value>
-              </sv:property>
-              <sv:node sv:name="MetaData">
-                <sv:property sv:name="jcr:primaryType" sv:type="Name">
-                  <sv:value>mgnl:metaData</sv:value>
-                </sv:property>
-                <sv:property sv:name="jcr:createdBy" sv:type="String">
-                  <sv:value>admin</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:authorid" sv:type="String">
-                  <sv:value>superuser</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:creationdate" sv:type="Date">
-                  <sv:value>2012-05-18T10:06:04.633+09:00</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:lastmodified" sv:type="Date">
-                  <sv:value>2012-05-18T10:44:23.598+09:00</sv:value>
-                </sv:property>
-                <sv:property sv:name="mgnl:template" sv:type="String">
-                  <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
-                </sv:property>
-              </sv:node>
             </sv:node>
           </sv:node>
         </sv:node>

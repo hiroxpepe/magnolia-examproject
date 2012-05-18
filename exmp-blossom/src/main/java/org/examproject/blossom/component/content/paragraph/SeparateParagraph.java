@@ -57,6 +57,7 @@ public class SeparateParagraph {
     
     @TabFactory("Separate Paragraph")
     public void addDialog(TabBuilder tab) {
+        tab.addHidden("display", "true");
         tab.addStatic("this is a separate paragraph of the entry.");
     }
     

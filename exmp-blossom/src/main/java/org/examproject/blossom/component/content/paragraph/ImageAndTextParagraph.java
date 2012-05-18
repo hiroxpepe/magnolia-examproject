@@ -59,18 +59,17 @@ public class ImageAndTextParagraph {
     
     @TabFactory("Image And Text Paragraph")
     public void addDialog(TabBuilder tab) {
+        tab.addHidden("display", "true");
         tab.addFckEditor(
             "text",
             "Text",
             "the text of the paragraph."
         ).setRequired(true);
-        
         tab.addLink(
             "imageLink",
             "Image Link URL",
             "the image url of the paragraph."
         ).setRequired(true);
-        
         Map<String, String> options = new HashMap<String, String>();
         options.put("Left", "left");
         options.put("Right", "right");

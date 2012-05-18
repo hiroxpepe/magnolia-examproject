@@ -57,6 +57,7 @@ public class PreTextParagraph {
     
     @TabFactory("Pre Text Paragraph")
     public void addDialog(TabBuilder tab) {
+        tab.addHidden("display", "true");
         tab.addTextArea(
             "text",
             "Text",

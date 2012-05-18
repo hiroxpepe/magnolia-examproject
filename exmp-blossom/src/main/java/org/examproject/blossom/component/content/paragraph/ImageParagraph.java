@@ -59,12 +59,12 @@ public class ImageParagraph {
     
     @TabFactory("Image Paragraph")
     public void addDialog(TabBuilder tab) {
+        tab.addHidden("display", "true");
         tab.addLink(
             "imageLink",
             "Image Link URL",
             "the image url of the paragraph."
         ).setRequired(true);
-        
         Map<String, String> options = new HashMap<String, String>();
         options.put("Left", "left");
         options.put("Right", "right");

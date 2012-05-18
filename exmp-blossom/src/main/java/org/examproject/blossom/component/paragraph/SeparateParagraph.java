@@ -14,8 +14,6 @@
 
 package org.examproject.blossom.component.paragraph;
 
-import java.util.HashMap;
-import java.util.Map;
 import javax.jcr.Node;
 import javax.jcr.Property;
 import javax.jcr.RepositoryException;
@@ -35,49 +33,31 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/imageAndTextParagraph",
-    title="Image And Text Paragraph"
+    id="exmp-blossom:components/separateParagraph",
+    title="Separate Paragraph"
 )
-@TemplateDescription("the component of an image and text paragraph.")
-public class ImageAndTextParagraphComponent {
+@TemplateDescription("the component of a separate paragraph.")
+public class SeparateParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        ImageAndTextParagraphComponent.class
+        SeparateParagraph.class
     );
     
-    @RequestMapping("/imageAndTextParagraph") 
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
+    
+    @RequestMapping("/separateParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/paragraph/imageAndTextParagraph.jsp";
+        LOG.trace("called.");
+        return "components/paragraph/separateParagraph.jsp";
     }
     
-    @TabFactory("Image And Text Paragraph")
+    @TabFactory("Separate Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addFckEditor(
-            "text",
-            "Text",
-            "the text of the paragraph."
-        ).setRequired(true);
-        
-        tab.addLink(
-            "imageLink",
-            "Image Link URL",
-            "the image url of the paragraph."
-        ).setRequired(true);
-        
-        Map<String, String> options = new HashMap<String, String>();
-        options.put("Left", "left");
-        options.put("Right", "right");
-        tab.addRadio(
-            "imagePosition", 
-            "Image Position", 
-            options,
-            "left"
-        ).setRequired(true);
+        tab.addStatic("this is a separate paragraph of the entry.");
     }
     
 }

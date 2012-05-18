@@ -30,7 +30,7 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.item.EntryLinkItemComponent;
+import org.examproject.blossom.component.item.EntryLinkItem;
 
 /**
  * @author hiroxpepe
@@ -41,10 +41,10 @@ import org.examproject.blossom.component.item.EntryLinkItemComponent;
     title="Link Paragraph"
 )
 @TemplateDescription("the component of a link paragraph.")
-public class LinkParagraphComponent {
+public class LinkParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        LinkParagraphComponent.class
+        LinkParagraph.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
@@ -56,16 +56,16 @@ public class LinkParagraphComponent {
         title="Link Item"
     )
     @AvailableComponentClasses({
-        EntryLinkItemComponent.class
+        EntryLinkItem.class
     })
-    public static class LinkParagraphItemArea {
+    public static class LinkItem {
 
         @RequestMapping("/linkParagraph/item")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
-            
+            LOG.trace("called.");
             return "areas/link.jsp";
         }
 
@@ -89,7 +89,6 @@ public class LinkParagraphComponent {
         Node content
     ) throws RepositoryException {
         LOG.debug("called.");
-        
         return "components/paragraph/linkParagraph.jsp";
     }
     

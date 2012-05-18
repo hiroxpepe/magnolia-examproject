@@ -14,6 +14,8 @@
 
 package org.examproject.blossom.component.content;
 
+import java.util.HashMap;
+import java.util.Map;
 import javax.jcr.Node;
 import javax.jcr.Property;
 import javax.jcr.RepositoryException;
@@ -30,23 +32,23 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.item.EntryLinkItemComponent;
+import org.examproject.blossom.component.item.EntryLinkItem;
 
 /**
- * one of the entry class with rich text input.
+ * one of the entry class with image link and rich text input.
  * this has one child classes as a area class.
  * @author hiroxpepe
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/richTextEntry",
-    title="Rich Text Entry"
+    id="exmp-blossom:components/imageAndTextEntry",
+    title="Image and Text Entry"
 )
-@TemplateDescription("the component of a rich text entry.")
-public class RichTextEntryComponent {
+@TemplateDescription("the component of an image and text entry.")
+public class ImageAndTextEntry {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        RichTextEntryComponent.class
+        ImageAndTextEntry.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
@@ -54,20 +56,20 @@ public class RichTextEntryComponent {
 
     @Controller
     @Area(
-        value="richTextEntryLink",
+        value="imageAndTextEntryLink",
         title="Link"
     )
     @AvailableComponentClasses({
-        EntryLinkItemComponent.class
+        EntryLinkItem.class
     })
     public static class LinkArea {
 
-        @RequestMapping("/richTextEntry/link")
+        @RequestMapping("/imageAndTextEntry/link")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
-            
+            LOG.trace("called.");
             return "areas/link.jsp";
         }
 
@@ -81,17 +83,16 @@ public class RichTextEntryComponent {
     ///////////////////////////////////////////////////////////////////////////
     // this class public methods.
     
-    @RequestMapping("/richTextEntry") 
+    @RequestMapping("/imageAndTextEntry")
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/content/richTextEntry.jsp";
+        LOG.trace("called.");
+        return "components/content/imageAndTextEntry.jsp";
     }
     
-    @TabFactory("Rich Text Entry")
+    @TabFactory("Image and Text Entry")
     public void addDialog(TabBuilder tab) {
         tab.addEdit(
             "title",
@@ -103,6 +104,22 @@ public class RichTextEntryComponent {
             "content",
             "Content",
             "the content of the entry."
+        ).setRequired(true);
+                 
+        tab.addLink(
+            "imageLink",
+            "Image Link URL",
+            "the image url of the entry."
+        ).setRequired(true);
+        
+        Map<String, String> options = new HashMap<String, String>();
+        options.put("Left", "left");
+        options.put("Right", "right");
+        tab.addRadio(
+            "imagePosition", 
+            "Image Position", 
+            options,
+            "left"
         ).setRequired(true);
     }
     

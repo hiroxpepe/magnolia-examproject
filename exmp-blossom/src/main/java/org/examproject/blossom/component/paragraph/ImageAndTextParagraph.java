@@ -14,6 +14,8 @@
 
 package org.examproject.blossom.component.paragraph;
 
+import java.util.HashMap;
+import java.util.Map;
 import javax.jcr.Node;
 import javax.jcr.Property;
 import javax.jcr.RepositoryException;
@@ -33,32 +35,50 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/richTextParagraph",
-    title="Rich Text Paragraph"
+    id="exmp-blossom:components/imageAndTextParagraph",
+    title="Image And Text Paragraph"
 )
-@TemplateDescription("the component of a rich text paragraph.")
-public class RichTextParagraphComponent {
+@TemplateDescription("the component of an image and text paragraph.")
+public class ImageAndTextParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        RichTextParagraphComponent.class
+        ImageAndTextParagraph.class
     );
     
-    @RequestMapping("/richTextParagraph") 
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
+    
+    @RequestMapping("/imageAndTextParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/paragraph/richTextParagraph.jsp";
+        LOG.trace("called.");
+        return "components/paragraph/imageAndTextParagraph.jsp";
     }
     
-    @TabFactory("Rich Text Paragraph")
+    @TabFactory("Image And Text Paragraph")
     public void addDialog(TabBuilder tab) {
         tab.addFckEditor(
             "text",
             "Text",
             "the text of the paragraph."
+        ).setRequired(true);
+        
+        tab.addLink(
+            "imageLink",
+            "Image Link URL",
+            "the image url of the paragraph."
+        ).setRequired(true);
+        
+        Map<String, String> options = new HashMap<String, String>();
+        options.put("Left", "left");
+        options.put("Right", "right");
+        tab.addRadio(
+            "imagePosition", 
+            "Image Position", 
+            options,
+            "left"
         ).setRequired(true);
     }
     

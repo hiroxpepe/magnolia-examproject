@@ -30,12 +30,12 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.item.FiveColumnRowItemComponent;
-import org.examproject.blossom.component.item.FourColumnRowItemComponent;
-import org.examproject.blossom.component.item.OneColumnRowItemComponent;
-import org.examproject.blossom.component.item.SixColumnRowItemComponent;
-import org.examproject.blossom.component.item.ThreeColumnRowItemComponent;
-import org.examproject.blossom.component.item.TwoColumnRowItemComponent;
+import org.examproject.blossom.component.item.FiveColumnRowItem;
+import org.examproject.blossom.component.item.FourColumnRowItem;
+import org.examproject.blossom.component.item.OneColumnRowItem;
+import org.examproject.blossom.component.item.SixColumnRowItem;
+import org.examproject.blossom.component.item.ThreeColumnRowItem;
+import org.examproject.blossom.component.item.TwoColumnRowItem;
 
 /**
  * @author hiroxpepe
@@ -46,10 +46,10 @@ import org.examproject.blossom.component.item.TwoColumnRowItemComponent;
     title="Table Paragraph"
 )
 @TemplateDescription("the component of a table paragraph.")
-public class TableParagraphComponent {
+public class TableParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        TableParagraphComponent.class
+        TableParagraph.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
@@ -61,21 +61,21 @@ public class TableParagraphComponent {
         title="Table Item"
     )
     @AvailableComponentClasses({
-        OneColumnRowItemComponent.class,
-        TwoColumnRowItemComponent.class,     
-        ThreeColumnRowItemComponent.class,
-        FourColumnRowItemComponent.class,
-        FiveColumnRowItemComponent.class,
-        SixColumnRowItemComponent.class
+        OneColumnRowItem.class,
+        TwoColumnRowItem.class,     
+        ThreeColumnRowItem.class,
+        FourColumnRowItem.class,
+        FiveColumnRowItem.class,
+        SixColumnRowItem.class
     })
-    public static class TableParagraphItemArea {
+    public static class TableItem {
 
         @RequestMapping("/tableParagraph/item")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
-            
+            LOG.trace("called.");
             return "areas/table.jsp";
         }
 
@@ -103,8 +103,7 @@ public class TableParagraphComponent {
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
+        LOG.trace("called.");
         return "components/paragraph/tableParagraph.jsp";
     }
     

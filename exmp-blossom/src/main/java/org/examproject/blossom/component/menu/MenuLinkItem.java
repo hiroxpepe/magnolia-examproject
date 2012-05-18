@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.sidebar;
+package org.examproject.blossom.component.menu;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,38 +33,39 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/sideBarLinkItem",
-    title="SideBar Link Item"
+    id="exmp-blossom:components/menuLinkItem",
+    title="Menu Link Item"
 )
-@TemplateDescription("the component of a sidebar link item.")
-public class SideBarLinkItemComponent {
+@TemplateDescription("the component of a menu item.")
+public class MenuLinkItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        SideBarLinkItemComponent.class
+        MenuLinkItem.class
     );
     
-    @RequestMapping("/sideBarLinkItem")
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
+    
+    @RequestMapping("/menuLinkItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/sidebar/sideBarLinkItem.jsp";
+        LOG.trace("called.");
+        return "components/menu/menuLinkItem.jsp";
     }
     
-    @TabFactory("SideBar Link Item")
-    public void addDialog(TabBuilder tab) {        
+    @TabFactory("Menu Link Item")
+    public void addDialog(TabBuilder tab) {
         tab.addEdit(
             "linkText",
             "Link Text",
-            "a link text of the sidebar item."
+            "the link text of a menu item."
         );
-        
         tab.addLink(
             "link",
             "Link URL",
-            "a link url of the sidebar item."
+            "the link url of a menu item."
         );
     }
     

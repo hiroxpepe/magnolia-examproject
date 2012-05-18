@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.paragraph;
+package org.examproject.blossom.component.sidebar;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,38 +33,39 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/preTextParagraph",
-    title="Pre Text Paragraph"
+    id="exmp-blossom:components/sidebarLinkItem",
+    title="Sidebar Link Item"
 )
-@TemplateDescription("the component of a pre text paragraph.")
-public class PreTextParagraphComponent {
+@TemplateDescription("the component of a sidebar link item.")
+public class SidebarLinkItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        PreTextParagraphComponent.class
+        SidebarLinkItem.class
     );
     
-    @RequestMapping("/preTextParagraph") 
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
+    
+    @RequestMapping("/sidebarLinkItem")
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/paragraph/preTextParagraph.jsp";
+        LOG.trace("called.");
+        return "components/sidebar/sidebarLinkItem.jsp";
     }
     
-    @TabFactory("Pre Text Paragraph")
+    @TabFactory("Sidebar Link Item")
     public void addDialog(TabBuilder tab) {
-        tab.addTextArea(
-            "text",
-            "Text",
-            "the text of the paragraph.",
-            5
-        ).setRequired(true);
         tab.addEdit(
-            "caption",
-            "Caption",
-            "set the caption of the table when if you need."
+            "linkText",
+            "Link Text",
+            "a link text of the sidebar item."
+        );
+        tab.addLink(
+            "link",
+            "Link URL",
+            "a link url of the sidebar item."
         );
     }
     

@@ -6,12 +6,10 @@
     <description>${project.description}</description>
     <class>org.examproject.blossom.core.BlossomModule</class>
     <version>${project.version}</version>
-    
     <dependencies>
         <dependency>
             <name>core</name>
             <version>4.5/*</version>
         </dependency>
     </dependencies>
-    
 </module>

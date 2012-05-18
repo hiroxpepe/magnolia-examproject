@@ -37,19 +37,21 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
     title="Four Columns Row Item"
 )
 @TemplateDescription("the component of a four columns row item.")
-public class FourColumnRowItemComponent {
+public class FourColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        FourColumnRowItemComponent.class
+        FourColumnRowItem.class
     );
+    
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
     
     @RequestMapping("/fourColumnRowItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
+        LOG.trace("called.");
         return "components/item/fourColumnRowItem.jsp";
     }
     

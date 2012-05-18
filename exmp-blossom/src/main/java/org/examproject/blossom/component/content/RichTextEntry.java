@@ -14,8 +14,6 @@
 
 package org.examproject.blossom.component.content;
 
-import java.util.HashMap;
-import java.util.Map;
 import javax.jcr.Node;
 import javax.jcr.Property;
 import javax.jcr.RepositoryException;
@@ -25,7 +23,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import info.magnolia.jcr.util.NodeUtil;
 import info.magnolia.module.blossom.annotation.Area;
 import info.magnolia.module.blossom.annotation.AvailableComponentClasses;
 import info.magnolia.module.blossom.annotation.TabFactory;
@@ -33,60 +30,48 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.paragraph.ImageParagraphComponent;
-import org.examproject.blossom.component.paragraph.ImageAndTextParagraphComponent;
-import org.examproject.blossom.component.paragraph.LinkParagraphComponent;
-import org.examproject.blossom.component.paragraph.PreTextParagraphComponent;
-import org.examproject.blossom.component.paragraph.RichTextParagraphComponent;
-import org.examproject.blossom.component.paragraph.TableParagraphComponent;
-import org.examproject.blossom.component.paragraph.TextParagraphComponent;
+import org.examproject.blossom.component.item.EntryLinkItem;
 
 /**
- * one of the entry class with text title.
+ * one of the entry class with rich text input.
  * this has one child classes as a area class.
  * @author hiroxpepe
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/multipleParagraphEntry",
-    title="Multiple Entry"
+    id="exmp-blossom:components/richTextEntry",
+    title="Rich Text Entry"
 )
-@TemplateDescription("the component of a multiple entry.")
-public class MultipleParagraphEntryComponent {
+@TemplateDescription("the component of a rich text entry.")
+public class RichTextEntry {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        MultipleParagraphEntryComponent.class
+        RichTextEntry.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
-    // the area class of the paragraph.
+    // the area class of the link.
 
     @Controller
     @Area(
-        value="paragraph",
-        title="Paragraph"
+        value="richTextEntryLink",
+        title="Link"
     )
     @AvailableComponentClasses({
-        ImageParagraphComponent.class,
-        ImageAndTextParagraphComponent.class,
-        LinkParagraphComponent.class,
-        PreTextParagraphComponent.class,
-        RichTextParagraphComponent.class,
-        TableParagraphComponent.class,
-        TextParagraphComponent.class
+        EntryLinkItem.class
     })
-    public static class MultipleParagraphArea {
+    public static class LinkArea {
 
-        @RequestMapping("/multipleParagraphEntry/paragraph")
+        @RequestMapping("/richTextEntry/link")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
-            
-            return "areas/paragraph.jsp";
+            LOG.trace("called.");
+            return "areas/link.jsp";
         }
 
-        @TabFactory("Paragraph")
+        @TabFactory("Link")
         public void addDialog(TabBuilder tab) {
             tab.addStatic("there is no item to be set yet.");
         }
@@ -96,22 +81,27 @@ public class MultipleParagraphEntryComponent {
     ///////////////////////////////////////////////////////////////////////////
     // this class public methods.
     
-    @RequestMapping("/multipleParagraphEntry")
+    @RequestMapping("/richTextEntry") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/content/multipleParagraphEntry.jsp";
+        LOG.trace("called.");
+        return "components/content/richTextEntry.jsp";
     }
     
-    @TabFactory("Multiple Paragraph Entry")
+    @TabFactory("Rich Text Entry")
     public void addDialog(TabBuilder tab) {
         tab.addEdit(
             "title",
             "Title",
             "the title of the entry."
+        ).setRequired(true); 
+        
+        tab.addFckEditor(
+            "content",
+            "Content",
+            "the content of the entry."
         ).setRequired(true);
     }
     

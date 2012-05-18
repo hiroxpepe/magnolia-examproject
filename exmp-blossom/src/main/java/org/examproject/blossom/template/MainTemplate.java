@@ -29,14 +29,14 @@ import info.magnolia.module.blossom.annotation.TabFactory;
 import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.content.ImageAndTextEntryComponent;
-import org.examproject.blossom.component.content.MultipleParagraphEntryComponent;
-import org.examproject.blossom.component.content.RichTextEntryComponent;
-import org.examproject.blossom.component.content.TextEntryComponent;
-import org.examproject.blossom.component.menu.MenuLinkItemComponent;
-import org.examproject.blossom.component.sidebar.SideBarHeaderItemComponent;
-import org.examproject.blossom.component.sidebar.SideBarLinkItemComponent;
-import org.examproject.blossom.component.sidebar.SideBarTextItemComponent;
+import org.examproject.blossom.component.content.ImageAndTextEntry;
+import org.examproject.blossom.component.content.MultipleParagraphEntry;
+import org.examproject.blossom.component.content.RichTextEntry;
+import org.examproject.blossom.component.content.TextEntry;
+import org.examproject.blossom.component.menu.MenuLinkItem;
+import org.examproject.blossom.component.sidebar.SidebarHeaderItem;
+import org.examproject.blossom.component.sidebar.SidebarLinkItem;
+import org.examproject.blossom.component.sidebar.SidebarTextItem;
 
 /**
  * the main template class of the application.
@@ -61,15 +61,15 @@ public class MainTemplate {
     @Controller
     @Area("menu")
     @AvailableComponentClasses({
-        MenuLinkItemComponent.class
+        MenuLinkItem.class
     })
-    public static class MenuArea {
+    public static class Menu {
         
         @RequestMapping("/main/menu")
         public String render(
             ModelMap model, Node content
         ) throws RepositoryException {
-            
+            LOG.trace("called.");
             return "areas/menu.jsp";
         }
         
@@ -85,14 +85,14 @@ public class MainTemplate {
     
     @Controller
     @Area("header")
-    public static class HeaderArea {
+    public static class Header {
 
         @RequestMapping("/main/header")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
-            
+            LOG.trace("called.");
             return "areas/header.jsp";
         }
         
@@ -119,19 +119,19 @@ public class MainTemplate {
     @Controller
     @Area("content")
     @AvailableComponentClasses({
-        TextEntryComponent.class,
-        RichTextEntryComponent.class,
-        ImageAndTextEntryComponent.class,
-        MultipleParagraphEntryComponent.class
+        TextEntry.class,
+        RichTextEntry.class,
+        ImageAndTextEntry.class,
+        MultipleParagraphEntry.class
     })
-    public static class ContentArea {
+    public static class Content {
         
         @RequestMapping("/main/content")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
-            
+            LOG.trace("called.");
             return "areas/content.jsp";
         }
 
@@ -148,18 +148,18 @@ public class MainTemplate {
     @Controller
     @Area("sidebar")
     @AvailableComponentClasses({
-        SideBarHeaderItemComponent.class,
-        SideBarTextItemComponent.class,
-        SideBarLinkItemComponent.class
+        SidebarHeaderItem.class,
+        SidebarTextItem.class,
+        SidebarLinkItem.class
     })
-    public static class SideBarArea {
+    public static class Sidebar {
 
         @RequestMapping("/main/sidebar")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
-            
+            LOG.trace("called.");
             return "areas/sidebar.jsp";
         }
 
@@ -175,14 +175,14 @@ public class MainTemplate {
     
     @Controller
     @Area("footer")
-    public static class FooterArea {
+    public static class Footer {
 
         @RequestMapping("/main/footer")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
-            
+            LOG.trace("called.");
             return "areas/footer.jsp";
         }
         
@@ -193,7 +193,6 @@ public class MainTemplate {
                 "Author",
                 "the author of the footer."
             );
-            
             tab.addEdit(
                 "copyright",
                 "Copyright",
@@ -211,7 +210,7 @@ public class MainTemplate {
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        
+        LOG.trace("called.");
         return "pages/main.jsp";
     }
     
@@ -222,13 +221,11 @@ public class MainTemplate {
             "Title",
             "the titel of the web site."
         );
-        
         tab.addEdit(
             "metaDescription",
             "Meta Description",
             "html meta description of the web site."
         );
-        
         tab.addEdit(
             "metaKeywords",
             "Meta Keywords",

@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.paragraph;
+package org.examproject.blossom.component.item;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,34 +33,41 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/textParagraph",
-    title="Text Paragraph"
+    id="exmp-blossom:components/entryLinkItem",
+    title="Entry Link Item"
 )
-@TemplateDescription("the component of a text paragraph.")
-public class TextParagraphComponent {
+@TemplateDescription("the component of a entry link item.")
+public class EntryLinkItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        TextParagraphComponent.class
+        EntryLinkItem.class
     );
     
-    @RequestMapping("/textParagraph") 
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
+    
+    @RequestMapping("/entryLinkItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/paragraph/textParagraph.jsp";
+        LOG.trace("called.");
+        return "components/item/entryLinkItem.jsp";
     }
     
-    @TabFactory("Text Paragraph")
+    @TabFactory("Entry Link Item")
     public void addDialog(TabBuilder tab) {
-        tab.addTextArea(
-            "text",
-            "Text",
-            "the text of the paragraph.",
-            5
-        ).setRequired(true);
+        tab.addEdit(
+            "linkText",
+            "Link Text",
+            "the link text of a entry item."
+        );
+        
+        tab.addLink(
+            "link",
+            "Link URL",
+            "the link url of a entry item."
+        );
     }
     
 }

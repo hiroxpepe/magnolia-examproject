@@ -564,7 +564,7 @@
             <sv:value>2012-03-21T23:12:40.119+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/sideBarHeaderItem</sv:value>
+            <sv:value>exmp-blossom:components/sidebarHeaderItem</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -604,7 +604,7 @@
             <sv:value>2012-03-22T16:47:59.985+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/sideBarTextItem</sv:value>
+            <sv:value>exmp-blossom:components/sidebarTextItem</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -647,7 +647,7 @@
             <sv:value>2012-03-18T14:16:43.300+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/sideBarLinkItem</sv:value>
+            <sv:value>exmp-blossom:components/sidebarLinkItem</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -1123,7 +1123,7 @@
             <sv:value>2012-05-15T07:25:14.438+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/sideBarHeaderItem</sv:value>
+            <sv:value>exmp-blossom:components/sidebarHeaderItem</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -1163,7 +1163,7 @@
             <sv:value>2012-03-22T16:48:37.143+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/sideBarTextItem</sv:value>
+            <sv:value>exmp-blossom:components/sidebarTextItem</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -1203,7 +1203,7 @@
             <sv:value>2012-03-21T23:09:00.093+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/sideBarHeaderItem</sv:value>
+            <sv:value>exmp-blossom:components/sidebarHeaderItem</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -1246,7 +1246,7 @@
             <sv:value>2012-03-22T16:50:07.407+09:00</sv:value>
           </sv:property>
           <sv:property sv:name="mgnl:template" sv:type="String">
-            <sv:value>exmp-blossom:components/sideBarLinkItem</sv:value>
+            <sv:value>exmp-blossom:components/sidebarLinkItem</sv:value>
           </sv:property>
         </sv:node>
       </sv:node>
@@ -2461,7 +2461,7 @@
           <sv:value>2012-03-21T23:12:00.142+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>exmp-blossom:components/sideBarHeaderItem</sv:value>
+          <sv:value>exmp-blossom:components/sidebarHeaderItem</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>
@@ -2498,7 +2498,7 @@
           <sv:value>2012-03-22T16:36:51.743+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>exmp-blossom:components/sideBarTextItem</sv:value>
+          <sv:value>exmp-blossom:components/sidebarTextItem</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>
@@ -2538,7 +2538,7 @@
           <sv:value>2012-03-21T23:10:29.762+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>exmp-blossom:components/sideBarHeaderItem</sv:value>
+          <sv:value>exmp-blossom:components/sidebarHeaderItem</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>
@@ -2578,7 +2578,7 @@
           <sv:value>2012-03-22T16:44:06.972+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>exmp-blossom:components/sideBarTextItem</sv:value>
+          <sv:value>exmp-blossom:components/sidebarTextItem</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>
@@ -2621,7 +2621,7 @@
           <sv:value>2012-03-22T16:46:18.613+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>exmp-blossom:components/sideBarLinkItem</sv:value>
+          <sv:value>exmp-blossom:components/sidebarLinkItem</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>
@@ -2661,7 +2661,7 @@
           <sv:value>2012-03-22T16:45:32.814+09:00</sv:value>
         </sv:property>
         <sv:property sv:name="mgnl:template" sv:type="String">
-          <sv:value>exmp-blossom:components/sideBarLinkItem</sv:value>
+          <sv:value>exmp-blossom:components/sidebarLinkItem</sv:value>
         </sv:property>
       </sv:node>
     </sv:node>

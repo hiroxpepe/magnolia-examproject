@@ -25,7 +25,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import info.magnolia.jcr.util.NodeUtil;
 import info.magnolia.module.blossom.annotation.Area;
 import info.magnolia.module.blossom.annotation.AvailableComponentClasses;
 import info.magnolia.module.blossom.annotation.TabFactory;
@@ -33,48 +32,62 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.item.EntryLinkItemComponent;
+import org.examproject.blossom.component.paragraph.ImageParagraph;
+import org.examproject.blossom.component.paragraph.ImageAndTextParagraph;
+import org.examproject.blossom.component.paragraph.LinkParagraph;
+import org.examproject.blossom.component.paragraph.PreTextParagraph;
+import org.examproject.blossom.component.paragraph.RichTextParagraph;
+import org.examproject.blossom.component.paragraph.SeparateParagraph;
+import org.examproject.blossom.component.paragraph.TableParagraph;
+import org.examproject.blossom.component.paragraph.TextParagraph;
 
 /**
- * one of the entry class with image link and rich text input.
+ * one of the entry class with text title.
  * this has one child classes as a area class.
  * @author hiroxpepe
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/imageAndTextEntry",
-    title="Image and Text Entry"
+    id="exmp-blossom:components/multipleParagraphEntry",
+    title="Multiple Entry"
 )
-@TemplateDescription("the component of an image and text entry.")
-public class ImageAndTextEntryComponent {
+@TemplateDescription("the component of a multiple entry.")
+public class MultipleParagraphEntry {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        ImageAndTextEntryComponent.class
+        MultipleParagraphEntry.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
-    // the area class of the link.
+    // the area class of the paragraph.
 
     @Controller
     @Area(
-        value="imageAndTextEntryLink",
-        title="Link"
+        value="paragraph",
+        title="Paragraph"
     )
     @AvailableComponentClasses({
-        EntryLinkItemComponent.class
+        ImageParagraph.class,
+        ImageAndTextParagraph.class,
+        LinkParagraph.class,
+        PreTextParagraph.class,
+        RichTextParagraph.class,
+        SeparateParagraph.class,
+        TableParagraph.class,
+        TextParagraph.class
     })
-    public static class LinkArea {
+    public static class Paragraph {
 
-        @RequestMapping("/imageAndTextEntry/link")
+        @RequestMapping("/multipleParagraphEntry/paragraph")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
-            
-            return "areas/link.jsp";
+            LOG.trace("called.");
+            return "areas/paragraph.jsp";
         }
 
-        @TabFactory("Link")
+        @TabFactory("Paragraph")
         public void addDialog(TabBuilder tab) {
             tab.addStatic("there is no item to be set yet.");
         }
@@ -84,47 +97,22 @@ public class ImageAndTextEntryComponent {
     ///////////////////////////////////////////////////////////////////////////
     // this class public methods.
     
-    @RequestMapping("/imageAndTextEntry")
+    @RequestMapping("/multipleParagraphEntry")
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/content/imageAndTextEntry.jsp";
+        LOG.trace("called.");
+        return "components/content/multipleParagraphEntry.jsp";
     }
     
-    @TabFactory("Image and Text Entry")
+    @TabFactory("Multiple Paragraph Entry")
     public void addDialog(TabBuilder tab) {
         tab.addEdit(
             "title",
             "Title",
             "the title of the entry."
-        ).setRequired(true); 
-        
-        tab.addFckEditor(
-            "content",
-            "Content",
-            "the content of the entry."
         ).setRequired(true);
-                 
-        tab.addLink(
-            "imageLink",
-            "Image Link URL",
-            "the image url of the entry."
-        ).setRequired(true);
-        
-        Map<String, String> options = new HashMap<String, String>();
-        options.put("Left", "left");
-        options.put("Right", "right");
-        tab.addRadio(
-            "imagePosition", 
-            "Image Position", 
-            options,
-            "left"
-        ).setRequired(true);
-        
-        
     }
     
 }

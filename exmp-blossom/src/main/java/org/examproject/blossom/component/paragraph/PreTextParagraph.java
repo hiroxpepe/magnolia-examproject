@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.sidebar;
+package org.examproject.blossom.component.paragraph;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,33 +33,41 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/sideBarHeaderItem",
-    title="SideBar Header Item"
+    id="exmp-blossom:components/preTextParagraph",
+    title="Pre Text Paragraph"
 )
-@TemplateDescription("the component of a sidebar header item.")
-public class SideBarHeaderItemComponent {
+@TemplateDescription("the component of a pre text paragraph.")
+public class PreTextParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        SideBarHeaderItemComponent.class
+        PreTextParagraph.class
     );
     
-    @RequestMapping("/sideBarHeaderItem")
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
+    
+    @RequestMapping("/preTextParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/sidebar/sideBarHeaderItem.jsp";
+        LOG.trace("called.");
+        return "components/paragraph/preTextParagraph.jsp";
     }
     
-    @TabFactory("SideBar Header Item")
+    @TabFactory("Pre Text Paragraph")
     public void addDialog(TabBuilder tab) {
+        tab.addTextArea(
+            "text",
+            "Text",
+            "the text of the paragraph.",
+            5
+        ).setRequired(true);
         tab.addEdit(
-            "title",
-            "Title",
-            "a title of the sidebar item."
-        ).setRequired(true); 
+            "caption",
+            "Caption",
+            "set the caption of the table when if you need."
+        );
     }
     
 }

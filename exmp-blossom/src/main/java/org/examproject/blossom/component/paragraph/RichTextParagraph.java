@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.item;
+package org.examproject.blossom.component.paragraph;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,42 +33,34 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/twoColumnRowItem",
-    title="Two Columns Row Item"
+    id="exmp-blossom:components/richTextParagraph",
+    title="Rich Text Paragraph"
 )
-@TemplateDescription("the component of a two columns row item.")
-public class TwoColumnRowItemComponent {
+@TemplateDescription("the component of a rich text paragraph.")
+public class RichTextParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        TwoColumnRowItemComponent.class
+        RichTextParagraph.class
     );
     
-    @RequestMapping("/twoColumnRowItem") 
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
+    
+    @RequestMapping("/richTextParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/item/twoColumnRowItem.jsp";
+        LOG.trace("called.");
+        return "components/paragraph/richTextParagraph.jsp";
     }
     
-    @TabFactory("Two Columns Row Item")
+    @TabFactory("Rich Text Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addEdit(
-            "firstValue",
-            "First Value",
-            "the text value of the first column."
-        );
-        tab.addEdit(
-            "secondValue",
-            "Second Value",
-            "the text value of the second column."
-        );
-        tab.addCheckbox(
-            "header",
-            "Header",
-            "set the check when if you need a header of the table."
+        tab.addFckEditor(
+            "text",
+            "Text",
+            "the text of the paragraph."
         ).setRequired(true);
     }
     

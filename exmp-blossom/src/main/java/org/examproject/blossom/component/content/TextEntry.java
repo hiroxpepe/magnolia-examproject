@@ -38,23 +38,25 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
     title="Text Entry"
 )
 @TemplateDescription("the component of a text entry.")
-public class TextEntryComponent {
+public class TextEntry {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        TextEntryComponent.class
+        TextEntry.class
     );
+    
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
     
     @RequestMapping("/textEntry") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
+        LOG.trace("called.");
         
         // a example of to get the Magnolia JCR data.
         Property property = content.getProperty("title");
         LOG.debug(property.getString());
-        
         return "components/content/textEntry.jsp";
     }
     

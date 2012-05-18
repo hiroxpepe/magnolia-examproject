@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.sidebar;
+package org.examproject.blossom.component.item;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,33 +33,60 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/sideBarTextItem",
-    title="SideBar Text Item"
+    id="exmp-blossom:components/fiveColumnRowItem",
+    title="Five Columns Row Item"
 )
-@TemplateDescription("the component of a sidebar text item.")
-public class SideBarTextItemComponent {
+@TemplateDescription("the component of a five columns row item.")
+public class FiveColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        SideBarTextItemComponent.class
+        FiveColumnRowItem.class
     );
     
-    @RequestMapping("/sideBarTextItem")
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
+    
+    @RequestMapping("/fiveColumnRowItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/sidebar/sideBarTextItem.jsp";
+        LOG.trace("called.");
+        return "components/item/fiveColumnRowItem.jsp";
     }
     
-    @TabFactory("SideBar Text Item")
-    public void addDialog(TabBuilder tab) {        
+    @TabFactory("Five Columns Row Item")
+    public void addDialog(TabBuilder tab) {
         tab.addEdit(
-            "content",
-            "Content",
-            "a content of the sidebar item."
+            "firstValue",
+            "First Value",
+            "the text value of the first column."
         );
+        tab.addEdit(
+            "secondValue",
+            "Second Value",
+            "the text value of the second column."
+        );
+        tab.addEdit(
+            "thirdValue",
+            "Third Value",
+            "the text value of the third column."
+        );
+        tab.addEdit(
+            "fourthValue",
+            "Fourth Value",
+            "the text value of the fourth column."
+        );
+        tab.addEdit(
+            "fifthValue",
+            "Fifth Value",
+            "the text value of the fifth column."
+        );
+        tab.addCheckbox(
+            "header",
+            "Header",
+            "set the check when if you need a header of the table."
+        ).setRequired(true);
     }
     
 }

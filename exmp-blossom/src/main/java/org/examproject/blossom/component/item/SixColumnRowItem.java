@@ -37,19 +37,21 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
     title="Six Columns Row Item"
 )
 @TemplateDescription("the component of a six columns row item.")
-public class SixColumnRowItemComponent {
+public class SixColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        SixColumnRowItemComponent.class
+        SixColumnRowItem.class
     );
+    
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
     
     @RequestMapping("/sixColumnRowItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
+        LOG.trace("called.");
         return "components/item/sixColumnRowItem.jsp";
     }
     

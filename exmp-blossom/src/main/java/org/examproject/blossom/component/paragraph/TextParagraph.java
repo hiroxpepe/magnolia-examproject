@@ -14,8 +14,6 @@
 
 package org.examproject.blossom.component.paragraph;
 
-import java.util.HashMap;
-import java.util.Map;
 import javax.jcr.Node;
 import javax.jcr.Property;
 import javax.jcr.RepositoryException;
@@ -35,42 +33,35 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/imageParagraph",
-    title="Image Paragraph"
+    id="exmp-blossom:components/textParagraph",
+    title="Text Paragraph"
 )
-@TemplateDescription("the component of an image paragraph.")
-public class ImageParagraphComponent {
+@TemplateDescription("the component of a text paragraph.")
+public class TextParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        ImageParagraphComponent.class
+        TextParagraph.class
     );
     
-    @RequestMapping("/imageParagraph") 
+    ///////////////////////////////////////////////////////////////////////////
+    // public methods
+    
+    @RequestMapping("/textParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        
-        return "components/paragraph/imageParagraph.jsp";
+        LOG.trace("called.");
+        return "components/paragraph/textParagraph.jsp";
     }
     
-    @TabFactory("Image Paragraph")
+    @TabFactory("Text Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addLink(
-            "imageLink",
-            "Image Link URL",
-            "the image url of the paragraph."
-        ).setRequired(true);
-        
-        Map<String, String> options = new HashMap<String, String>();
-        options.put("Left", "left");
-        options.put("Right", "right");
-        tab.addRadio(
-            "imagePosition", 
-            "Image Position", 
-            options,
-            "left"
+        tab.addTextArea(
+            "text",
+            "Text",
+            "the text of the paragraph.",
+            5
         ).setRequired(true);
     }
     

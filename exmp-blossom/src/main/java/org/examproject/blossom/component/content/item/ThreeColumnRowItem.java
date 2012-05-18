@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.item;
+package org.examproject.blossom.component.content.item;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,29 +33,29 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/sixColumnRowItem",
-    title="Six Columns Row Item"
+    id="exmp-blossom:components/threeColumnRowItem",
+    title="Three Columns Row Item"
 )
-@TemplateDescription("the component of a six columns row item.")
-public class SixColumnRowItem {
+@TemplateDescription("the component of a three columns row item.")
+public class ThreeColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        SixColumnRowItem.class
+        ThreeColumnRowItem.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/sixColumnRowItem") 
+    @RequestMapping("/threeColumnRowItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/item/sixColumnRowItem.jsp";
+        return "components/content/item/threeColumnRowItem.jsp";
     }
     
-    @TabFactory("Six Columns Row Item")
+    @TabFactory("Three Columns Row Item")
     public void addDialog(TabBuilder tab) {
         tab.addEdit(
             "firstValue",
@@ -71,21 +71,6 @@ public class SixColumnRowItem {
             "thirdValue",
             "Third Value",
             "the text value of the third column."
-        );
-        tab.addEdit(
-            "fourthValue",
-            "Fourth Value",
-            "the text value of the fourth column."
-        );
-        tab.addEdit(
-            "fifthValue",
-            "Fifth Value",
-            "the text value of the fifth column."
-        );
-        tab.addEdit(
-            "sixthValue",
-            "Sixth Value",
-            "the text value of the sixth column."
         );
         tab.addCheckbox(
             "header",

@@ -12,8 +12,10 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.paragraph;
+package org.examproject.blossom.component.content.paragraph;
 
+import java.util.HashMap;
+import java.util.Map;
 import javax.jcr.Node;
 import javax.jcr.Property;
 import javax.jcr.RepositoryException;
@@ -33,31 +35,51 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/separateParagraph",
-    title="Separate Paragraph"
+    id="exmp-blossom:components/imageAndTextParagraph",
+    title="Image And Text Paragraph"
 )
-@TemplateDescription("the component of a separate paragraph.")
-public class SeparateParagraph {
+@TemplateDescription("the component of an image and text paragraph.")
+public class ImageAndTextParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        SeparateParagraph.class
+        ImageAndTextParagraph.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/separateParagraph") 
+    @RequestMapping("/imageAndTextParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/paragraph/separateParagraph.jsp";
+        return "components/content/paragraph/imageAndTextParagraph.jsp";
     }
     
-    @TabFactory("Separate Paragraph")
+    @TabFactory("Image And Text Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addStatic("this is a separate paragraph of the entry.");
+        tab.addFckEditor(
+            "text",
+            "Text",
+            "the text of the paragraph."
+        ).setRequired(true);
+        
+        tab.addLink(
+            "imageLink",
+            "Image Link URL",
+            "the image url of the paragraph."
+        ).setRequired(true);
+        
+        Map<String, String> options = new HashMap<String, String>();
+        options.put("Left", "left");
+        options.put("Right", "right");
+        tab.addRadio(
+            "imagePosition", 
+            "Image Position", 
+            options,
+            "left"
+        ).setRequired(true);
     }
     
 }

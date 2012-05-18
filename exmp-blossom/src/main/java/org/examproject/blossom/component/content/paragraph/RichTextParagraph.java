@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.paragraph;
+package org.examproject.blossom.component.content.paragraph;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -52,7 +52,7 @@ public class RichTextParagraph {
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/paragraph/richTextParagraph.jsp";
+        return "components/content/paragraph/richTextParagraph.jsp";
     }
     
     @TabFactory("Rich Text Paragraph")

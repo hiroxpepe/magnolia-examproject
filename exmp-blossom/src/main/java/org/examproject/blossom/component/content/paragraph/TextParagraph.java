@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.item;
+package org.examproject.blossom.component.content.paragraph;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,49 +33,35 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/threeColumnRowItem",
-    title="Three Columns Row Item"
+    id="exmp-blossom:components/textParagraph",
+    title="Text Paragraph"
 )
-@TemplateDescription("the component of a three columns row item.")
-public class ThreeColumnRowItem {
+@TemplateDescription("the component of a text paragraph.")
+public class TextParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        ThreeColumnRowItem.class
+        TextParagraph.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/threeColumnRowItem") 
+    @RequestMapping("/textParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/item/threeColumnRowItem.jsp";
+        return "components/content/paragraph/textParagraph.jsp";
     }
     
-    @TabFactory("Three Columns Row Item")
+    @TabFactory("Text Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addEdit(
-            "firstValue",
-            "First Value",
-            "the text value of the first column."
-        );
-        tab.addEdit(
-            "secondValue",
-            "Second Value",
-            "the text value of the second column."
-        );
-        tab.addEdit(
-            "thirdValue",
-            "Third Value",
-            "the text value of the third column."
-        );
-        tab.addCheckbox(
-            "header",
-            "Header",
-            "set the check when if you need a header of the table."
+        tab.addTextArea(
+            "text",
+            "Text",
+            "the text of the paragraph.",
+            5
         ).setRequired(true);
     }
     

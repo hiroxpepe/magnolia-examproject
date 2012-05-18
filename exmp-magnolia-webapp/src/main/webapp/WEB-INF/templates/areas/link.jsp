@@ -2,12 +2,14 @@
 <%@ taglib prefix="cms" uri="http://magnolia-cms.com/taglib/templating-components/cms" %>
 
 <c:if test="${!empty components}">
-    <c:if test="${content.caption}">
-        <div class="entry-caption">${content.caption}</div>
-    </c:if>
     <div class="entry-link">
-        <c:forEach items="${components}" var="component">
-            <cms:component content="${component}" />
-        </c:forEach>
+        <c:if test="${!empty content.caption}">
+            <div class="entry-caption">${content.caption}</div>
+        </c:if>
+        <div class="entry-link-body">
+            <c:forEach items="${components}" var="component">
+                <cms:component content="${component}" />
+            </c:forEach>
+        </div>
     </div>
 </c:if>

@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.paragraph;
+package org.examproject.blossom.component.content.paragraph;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,36 +35,30 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/imageAndTextParagraph",
-    title="Image And Text Paragraph"
+    id="exmp-blossom:components/imageParagraph",
+    title="Image Paragraph"
 )
-@TemplateDescription("the component of an image and text paragraph.")
-public class ImageAndTextParagraph {
+@TemplateDescription("the component of an image paragraph.")
+public class ImageParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        ImageAndTextParagraph.class
+        ImageParagraph.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/imageAndTextParagraph") 
+    @RequestMapping("/imageParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/paragraph/imageAndTextParagraph.jsp";
+        return "components/content/paragraph/imageParagraph.jsp";
     }
     
-    @TabFactory("Image And Text Paragraph")
+    @TabFactory("Image Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addFckEditor(
-            "text",
-            "Text",
-            "the text of the paragraph."
-        ).setRequired(true);
-        
         tab.addLink(
             "imageLink",
             "Image Link URL",

@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.paragraph;
+package org.examproject.blossom.component.content.item;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -23,78 +23,50 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import info.magnolia.module.blossom.annotation.Area;
-import info.magnolia.module.blossom.annotation.AvailableComponentClasses;
 import info.magnolia.module.blossom.annotation.TabFactory;
 import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
-
-import org.examproject.blossom.component.item.EntryLinkItem;
 
 /**
  * @author hiroxpepe
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/linkParagraph",
-    title="Link Paragraph"
+    id="exmp-blossom:components/oneColumnRowItem",
+    title="one Column Row Item"
 )
-@TemplateDescription("the component of a link paragraph.")
-public class LinkParagraph {
+@TemplateDescription("the component of a one column row item.")
+public class OneColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        LinkParagraph.class
+        OneColumnRowItem.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
-    // the area class of the link.
-
-    @Controller
-    @Area(
-        value="paragraphLinkItem",
-        title="Link Item"
-    )
-    @AvailableComponentClasses({
-        EntryLinkItem.class
-    })
-    public static class LinkItem {
-
-        @RequestMapping("/linkParagraph/item")
-        public String render(
-            ModelMap model,
-            Node content
-        ) throws RepositoryException {
-            LOG.trace("called.");
-            return "areas/link.jsp";
-        }
-
-        @TabFactory("Link")
-        public void addDialog(TabBuilder tab) {
-            tab.addEdit(
-                "caption",
-                "Caption",
-                "set the caption of the table when if you need."
-            );
-        }
-
-    }
+    // public methods
     
-    ///////////////////////////////////////////////////////////////////////////
-    // this class public methods.
-    
-    @RequestMapping("/linkParagraph") 
+    @RequestMapping("/oneColumnRowItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
-        LOG.debug("called.");
-        return "components/paragraph/linkParagraph.jsp";
+        LOG.trace("called.");
+        return "components/content/item/oneColumnRowItem.jsp";
     }
     
-    @TabFactory("Link Paragraph")
+    @TabFactory("One Column Row Item")
     public void addDialog(TabBuilder tab) {
-        tab.addStatic("to proceed with OK.");
+        tab.addEdit(
+            "firstValue",
+            "First Value",
+            "the text value of the first column."
+        );
+        tab.addCheckbox(
+            "header",
+            "Header",
+            "set the check when if you need a header of the table."
+        ).setRequired(true);
     }
     
 }

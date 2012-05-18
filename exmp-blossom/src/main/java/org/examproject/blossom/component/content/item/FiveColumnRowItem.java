@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.item;
+package org.examproject.blossom.component.content.item;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,29 +33,29 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/twoColumnRowItem",
-    title="Two Columns Row Item"
+    id="exmp-blossom:components/fiveColumnRowItem",
+    title="Five Columns Row Item"
 )
-@TemplateDescription("the component of a two columns row item.")
-public class TwoColumnRowItem {
+@TemplateDescription("the component of a five columns row item.")
+public class FiveColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        TwoColumnRowItem.class
+        FiveColumnRowItem.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/twoColumnRowItem") 
+    @RequestMapping("/fiveColumnRowItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/item/twoColumnRowItem.jsp";
+        return "components/content/item/fiveColumnRowItem.jsp";
     }
     
-    @TabFactory("Two Columns Row Item")
+    @TabFactory("Five Columns Row Item")
     public void addDialog(TabBuilder tab) {
         tab.addEdit(
             "firstValue",
@@ -66,6 +66,21 @@ public class TwoColumnRowItem {
             "secondValue",
             "Second Value",
             "the text value of the second column."
+        );
+        tab.addEdit(
+            "thirdValue",
+            "Third Value",
+            "the text value of the third column."
+        );
+        tab.addEdit(
+            "fourthValue",
+            "Fourth Value",
+            "the text value of the fourth column."
+        );
+        tab.addEdit(
+            "fifthValue",
+            "Fifth Value",
+            "the text value of the fifth column."
         );
         tab.addCheckbox(
             "header",

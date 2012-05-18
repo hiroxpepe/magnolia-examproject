@@ -12,10 +12,8 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.paragraph;
+package org.examproject.blossom.component.content.item;
 
-import java.util.HashMap;
-import java.util.Map;
 import javax.jcr.Node;
 import javax.jcr.Property;
 import javax.jcr.RepositoryException;
@@ -35,44 +33,44 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/imageParagraph",
-    title="Image Paragraph"
+    id="exmp-blossom:components/twoColumnRowItem",
+    title="Two Columns Row Item"
 )
-@TemplateDescription("the component of an image paragraph.")
-public class ImageParagraph {
+@TemplateDescription("the component of a two columns row item.")
+public class TwoColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        ImageParagraph.class
+        TwoColumnRowItem.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/imageParagraph") 
+    @RequestMapping("/twoColumnRowItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/paragraph/imageParagraph.jsp";
+        return "components/content/item/twoColumnRowItem.jsp";
     }
     
-    @TabFactory("Image Paragraph")
+    @TabFactory("Two Columns Row Item")
     public void addDialog(TabBuilder tab) {
-        tab.addLink(
-            "imageLink",
-            "Image Link URL",
-            "the image url of the paragraph."
-        ).setRequired(true);
-        
-        Map<String, String> options = new HashMap<String, String>();
-        options.put("Left", "left");
-        options.put("Right", "right");
-        tab.addRadio(
-            "imagePosition", 
-            "Image Position", 
-            options,
-            "left"
+        tab.addEdit(
+            "firstValue",
+            "First Value",
+            "the text value of the first column."
+        );
+        tab.addEdit(
+            "secondValue",
+            "Second Value",
+            "the text value of the second column."
+        );
+        tab.addCheckbox(
+            "header",
+            "Header",
+            "set the check when if you need a header of the table."
         ).setRequired(true);
     }
     

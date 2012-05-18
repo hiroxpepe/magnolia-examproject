@@ -32,14 +32,14 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.paragraph.ImageParagraph;
-import org.examproject.blossom.component.paragraph.ImageAndTextParagraph;
-import org.examproject.blossom.component.paragraph.LinkParagraph;
-import org.examproject.blossom.component.paragraph.PreTextParagraph;
-import org.examproject.blossom.component.paragraph.RichTextParagraph;
-import org.examproject.blossom.component.paragraph.SeparateParagraph;
-import org.examproject.blossom.component.paragraph.TableParagraph;
-import org.examproject.blossom.component.paragraph.TextParagraph;
+import org.examproject.blossom.component.content.paragraph.ImageParagraph;
+import org.examproject.blossom.component.content.paragraph.ImageAndTextParagraph;
+import org.examproject.blossom.component.content.paragraph.LinkParagraph;
+import org.examproject.blossom.component.content.paragraph.PreTextParagraph;
+import org.examproject.blossom.component.content.paragraph.RichTextParagraph;
+import org.examproject.blossom.component.content.paragraph.SeparateParagraph;
+import org.examproject.blossom.component.content.paragraph.TableParagraph;
+import org.examproject.blossom.component.content.paragraph.TextParagraph;
 
 /**
  * one of the entry class with text title.

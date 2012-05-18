@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.item;
+package org.examproject.blossom.component.content.paragraph;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,40 +33,31 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/oneColumnRowItem",
-    title="one Column Row Item"
+    id="exmp-blossom:components/separateParagraph",
+    title="Separate Paragraph"
 )
-@TemplateDescription("the component of a one column row item.")
-public class OneColumnRowItem {
+@TemplateDescription("the component of a separate paragraph.")
+public class SeparateParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        OneColumnRowItem.class
+        SeparateParagraph.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/oneColumnRowItem") 
+    @RequestMapping("/separateParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/item/oneColumnRowItem.jsp";
+        return "components/content/paragraph/separateParagraph.jsp";
     }
     
-    @TabFactory("One Column Row Item")
+    @TabFactory("Separate Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addEdit(
-            "firstValue",
-            "First Value",
-            "the text value of the first column."
-        );
-        tab.addCheckbox(
-            "header",
-            "Header",
-            "set the check when if you need a header of the table."
-        ).setRequired(true);
+        tab.addStatic("this is a separate paragraph of the entry.");
     }
     
 }

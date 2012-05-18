@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.paragraph;
+package org.examproject.blossom.component.content.item;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,35 +33,54 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/textParagraph",
-    title="Text Paragraph"
+    id="exmp-blossom:components/fourColumnRowItem",
+    title="Four Columns Row Item"
 )
-@TemplateDescription("the component of a text paragraph.")
-public class TextParagraph {
+@TemplateDescription("the component of a four columns row item.")
+public class FourColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        TextParagraph.class
+        FourColumnRowItem.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/textParagraph") 
+    @RequestMapping("/fourColumnRowItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/paragraph/textParagraph.jsp";
+        return "components/content/item/fourColumnRowItem.jsp";
     }
     
-    @TabFactory("Text Paragraph")
+    @TabFactory("Four Columns Row Item")
     public void addDialog(TabBuilder tab) {
-        tab.addTextArea(
-            "text",
-            "Text",
-            "the text of the paragraph.",
-            5
+        tab.addEdit(
+            "firstValue",
+            "First Value",
+            "the text value of the first column."
+        );
+        tab.addEdit(
+            "secondValue",
+            "Second Value",
+            "the text value of the second column."
+        );
+        tab.addEdit(
+            "thirdValue",
+            "Third Value",
+            "the text value of the third column."
+        );
+        tab.addEdit(
+            "fourthValue",
+            "Fourth Value",
+            "the text value of the fourth column."
+        );
+        tab.addCheckbox(
+            "header",
+            "Header",
+            "set the check when if you need a header of the table."
         ).setRequired(true);
     }
     

@@ -3,8 +3,12 @@
 <%@ taglib prefix="cmsfn" uri="http://magnolia-cms.com/taglib/templating-components/cmsfn" %>
 
 <div class="entry-paragraph-pre-text">
-    <c:if test="${content.caption}">
-        <div class="entry-caption">${content.caption}</div>
-    </c:if>
-    <div class="entry-pre"><pre>${cmsfn:decode(content).text}</pre></div>
+    <div class="entry-pre">
+        <c:if test="${!empty content.caption}">
+            <div class="entry-caption">${content.caption}</div>
+        </c:if>
+        <div class="entry-pre-body">    
+            <pre>${cmsfn:decode(content).text}</pre>
+        </div>
+    </div>
 </div>

@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.paragraph;
+package org.examproject.blossom.component.content.paragraph;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -30,62 +30,47 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.item.FiveColumnRowItem;
-import org.examproject.blossom.component.item.FourColumnRowItem;
-import org.examproject.blossom.component.item.OneColumnRowItem;
-import org.examproject.blossom.component.item.SixColumnRowItem;
-import org.examproject.blossom.component.item.ThreeColumnRowItem;
-import org.examproject.blossom.component.item.TwoColumnRowItem;
+import org.examproject.blossom.component.content.item.EntryLinkItem;
 
 /**
  * @author hiroxpepe
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/tableParagraph",
-    title="Table Paragraph"
+    id="exmp-blossom:components/linkParagraph",
+    title="Link Paragraph"
 )
-@TemplateDescription("the component of a table paragraph.")
-public class TableParagraph {
+@TemplateDescription("the component of a link paragraph.")
+public class LinkParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        TableParagraph.class
+        LinkParagraph.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
-    // the area class of the table.
+    // the area class of the link.
 
     @Controller
     @Area(
-        value="paragraphTableItem",
-        title="Table Item"
+        value="paragraphLinkItem",
+        title="Link Item"
     )
     @AvailableComponentClasses({
-        OneColumnRowItem.class,
-        TwoColumnRowItem.class,     
-        ThreeColumnRowItem.class,
-        FourColumnRowItem.class,
-        FiveColumnRowItem.class,
-        SixColumnRowItem.class
+        EntryLinkItem.class
     })
-    public static class TableItem {
+    public static class LinkItem {
 
-        @RequestMapping("/tableParagraph/item")
+        @RequestMapping("/linkParagraph/item")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
             LOG.trace("called.");
-            return "areas/table.jsp";
+            return "areas/link.jsp";
         }
 
-        @TabFactory("Table")
+        @TabFactory("Link")
         public void addDialog(TabBuilder tab) {
-            tab.addCheckbox(
-                "wide",
-                "Wide",
-                "set the check when if you need a wide table."
-            ).setRequired(true);
             tab.addEdit(
                 "caption",
                 "Caption",
@@ -98,16 +83,16 @@ public class TableParagraph {
     ///////////////////////////////////////////////////////////////////////////
     // this class public methods.
     
-    @RequestMapping("/tableParagraph") 
+    @RequestMapping("/linkParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/paragraph/tableParagraph.jsp";
+        return "components/content/paragraph/linkParagraph.jsp";
     }
     
-    @TabFactory("Table Paragraph")
+    @TabFactory("Link Paragraph")
     public void addDialog(TabBuilder tab) {
         tab.addStatic("to proceed with OK.");
     }

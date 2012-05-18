@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.item;
+package org.examproject.blossom.component.content.item;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,55 +33,41 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/fourColumnRowItem",
-    title="Four Columns Row Item"
+    id="exmp-blossom:components/entryLinkItem",
+    title="Entry Link Item"
 )
-@TemplateDescription("the component of a four columns row item.")
-public class FourColumnRowItem {
+@TemplateDescription("the component of a entry link item.")
+public class EntryLinkItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        FourColumnRowItem.class
+        EntryLinkItem.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/fourColumnRowItem") 
+    @RequestMapping("/entryLinkItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/item/fourColumnRowItem.jsp";
+        return "components/content/item/entryLinkItem.jsp";
     }
     
-    @TabFactory("Four Columns Row Item")
+    @TabFactory("Entry Link Item")
     public void addDialog(TabBuilder tab) {
         tab.addEdit(
-            "firstValue",
-            "First Value",
-            "the text value of the first column."
+            "linkText",
+            "Link Text",
+            "the link text of a entry item."
         );
-        tab.addEdit(
-            "secondValue",
-            "Second Value",
-            "the text value of the second column."
+        
+        tab.addLink(
+            "link",
+            "Link URL",
+            "the link url of a entry item."
         );
-        tab.addEdit(
-            "thirdValue",
-            "Third Value",
-            "the text value of the third column."
-        );
-        tab.addEdit(
-            "fourthValue",
-            "Fourth Value",
-            "the text value of the fourth column."
-        );
-        tab.addCheckbox(
-            "header",
-            "Header",
-            "set the check when if you need a header of the table."
-        ).setRequired(true);
     }
     
 }

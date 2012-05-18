@@ -12,10 +12,8 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.content;
+package org.examproject.blossom.component.content.paragraph;
 
-import java.util.HashMap;
-import java.util.Map;
 import javax.jcr.Node;
 import javax.jcr.Property;
 import javax.jcr.RepositoryException;
@@ -32,50 +30,67 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.content.item.EntryLinkItem;
+import org.examproject.blossom.component.content.item.FiveColumnRowItem;
+import org.examproject.blossom.component.content.item.FourColumnRowItem;
+import org.examproject.blossom.component.content.item.OneColumnRowItem;
+import org.examproject.blossom.component.content.item.SixColumnRowItem;
+import org.examproject.blossom.component.content.item.ThreeColumnRowItem;
+import org.examproject.blossom.component.content.item.TwoColumnRowItem;
 
 /**
- * one of the entry class with image link and rich text input.
- * this has one child classes as a area class.
  * @author hiroxpepe
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/imageAndTextEntry",
-    title="Image and Text Entry"
+    id="exmp-blossom:components/tableParagraph",
+    title="Table Paragraph"
 )
-@TemplateDescription("the component of an image and text entry.")
-public class ImageAndTextEntry {
+@TemplateDescription("the component of a table paragraph.")
+public class TableParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        ImageAndTextEntry.class
+        TableParagraph.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
-    // the area class of the link.
+    // the area class of the table.
 
     @Controller
     @Area(
-        value="imageAndTextEntryLink",
-        title="Link"
+        value="paragraphTableItem",
+        title="Table Item"
     )
     @AvailableComponentClasses({
-        EntryLinkItem.class
+        OneColumnRowItem.class,
+        TwoColumnRowItem.class,     
+        ThreeColumnRowItem.class,
+        FourColumnRowItem.class,
+        FiveColumnRowItem.class,
+        SixColumnRowItem.class
     })
-    public static class LinkArea {
+    public static class TableItem {
 
-        @RequestMapping("/imageAndTextEntry/link")
+        @RequestMapping("/tableParagraph/item")
         public String render(
             ModelMap model,
             Node content
         ) throws RepositoryException {
             LOG.trace("called.");
-            return "areas/link.jsp";
+            return "areas/table.jsp";
         }
 
-        @TabFactory("Link")
+        @TabFactory("Table")
         public void addDialog(TabBuilder tab) {
-            tab.addStatic("there is no item to be set yet.");
+            tab.addCheckbox(
+                "wide",
+                "Wide",
+                "set the check when if you need a wide table."
+            ).setRequired(true);
+            tab.addEdit(
+                "caption",
+                "Caption",
+                "set the caption of the table when if you need."
+            );
         }
 
     }
@@ -83,44 +98,18 @@ public class ImageAndTextEntry {
     ///////////////////////////////////////////////////////////////////////////
     // this class public methods.
     
-    @RequestMapping("/imageAndTextEntry")
+    @RequestMapping("/tableParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/content/imageAndTextEntry.jsp";
+        return "components/content/paragraph/tableParagraph.jsp";
     }
     
-    @TabFactory("Image and Text Entry")
+    @TabFactory("Table Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addEdit(
-            "title",
-            "Title",
-            "the title of the entry."
-        ).setRequired(true); 
-        
-        tab.addFckEditor(
-            "content",
-            "Content",
-            "the content of the entry."
-        ).setRequired(true);
-                 
-        tab.addLink(
-            "imageLink",
-            "Image Link URL",
-            "the image url of the entry."
-        ).setRequired(true);
-        
-        Map<String, String> options = new HashMap<String, String>();
-        options.put("Left", "left");
-        options.put("Right", "right");
-        tab.addRadio(
-            "imagePosition", 
-            "Image Position", 
-            options,
-            "left"
-        ).setRequired(true);
+        tab.addStatic("to proceed with OK.");
     }
     
 }

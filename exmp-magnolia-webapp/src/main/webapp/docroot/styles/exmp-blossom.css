@@ -299,6 +299,9 @@ div.entry-wrapper {
         margin-left : 1em;
         margin-right : 1em;
     }
+        /* ********************************************************************
+         * define the appearance of the title of the entry.
+         */
         div.entry-title {
             margin-top: 1em;
             padding-top: 0.5em;
@@ -307,25 +310,40 @@ div.entry-wrapper {
             color: dimgray;
             border-top: 1px solid gainsboro;
         }
+        /* ********************************************************************
+         * define the appearance of the caption of the entry.
+         */
         div.entry-caption {
+            margin-bottom: 0.25em;
         }
+        /* ********************************************************************
+         * define the appearance of the content text of the entry.
+         */
         div.entry-content {
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
             div.entry-content p {
             }
+        /* ********************************************************************
+         * define the appearance of the pre text of the entry.
+         */
         div.entry-pre {
             margin-top: 1.0em;
             margin-bottom: 1.0em;
-            padding: 0.5em;
-            font-size: small;
-            overflow: auto;
-            color: dimgray;
-            background: whitesmoke;
-            border-radius: 3px;
-            box-shadow: 0 0 2px 0 silver;
         }
+            div.entry-pre-body {
+                padding: 0.5em;
+                font-size: small;
+                overflow: auto;
+                color: dimgray;
+                background: whitesmoke;
+                border-radius: 3px;
+                box-shadow: 0 0 2px 0 silver;
+            }
+        /* ********************************************************************
+         * define the appearance of the image of the entry.
+         */
         div.entry-image-left {
             margin-top: 0.5em;
             margin-bottom: 0.5em;
@@ -337,9 +355,9 @@ div.entry-wrapper {
                 border-radius: 3px;
                 box-shadow: 0 0 2px 0 gainsboro;
             }
-        div.entry-clear-left {
-            clear: left;
-        }
+            div.entry-clear-left {
+                clear: left;
+            }
         div.entry-image-right {
             margin-top: 0.5em;
             margin-bottom: 0.5em;
@@ -351,45 +369,48 @@ div.entry-wrapper {
                 border-radius: 3px;
                 box-shadow: 0 0 2px 0 gainsboro;
             }
-        div.entry-clear-right {
-            clear: right;
-        }
+            div.entry-clear-right {
+                clear: right;
+            }
+        /* ********************************************************************
+         * define the appearance of the link of the entry.
+         */
         div.entry-link {
             margin-top: 1.0em;
             margin-bottom: 1.0em;
-            padding: 0.5em;
-            background: lavender;
-            border: 1px solid lightsteelblue;
-            border-radius: 3px;
-            box-shadow: 0 0 2px 0 gainsboro;
         }
-            div.entry-link p {
-                padding: 0.25em;
+            div.entry-link-body {
+                padding: 0.5em;
+                background: lavender;
+                border: 1px solid lightsteelblue;
+                border-radius: 3px;
+                box-shadow: 0 0 2px 0 gainsboro;
             }
-            div.entry-link a {
-                font-weight: bold;
-                text-decoration: none;
-                color: dimgray;
-            }
-                div.entry-link a:active {
+                div.entry-link p {
+                    padding: 0.25em;
+                }
+                div.entry-link a {
                     font-weight: bold;
                     text-decoration: none;
                     color: dimgray;
                 }
-                div.entry-link a:visited {
-                    font-weight: bold;
-                    text-decoration: none;
-                    color: dimgray;
-                }
-                div.entry-link a:hover {
-                    font-weight: bold;
-                    text-decoration: underline;
-                    color: #777799;
-                }
-        div.entry-paragraph {
-        }
+                    div.entry-link a:active {
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: dimgray;
+                    }
+                    div.entry-link a:visited {
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: dimgray;
+                    }
+                    div.entry-link a:hover {
+                        font-weight: bold;
+                        text-decoration: underline;
+                        color: #777799;
+                    }
             /* ****************************************************************
-            * define the appearance of the table.
+            * define the appearance of the table of the entry.
             */
             div.entry-table {
                 margin-top: 1.0em;

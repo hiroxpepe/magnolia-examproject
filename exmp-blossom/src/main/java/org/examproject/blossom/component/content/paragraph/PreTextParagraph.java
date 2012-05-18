@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.item;
+package org.examproject.blossom.component.content.paragraph;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,60 +33,41 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/fiveColumnRowItem",
-    title="Five Columns Row Item"
+    id="exmp-blossom:components/preTextParagraph",
+    title="Pre Text Paragraph"
 )
-@TemplateDescription("the component of a five columns row item.")
-public class FiveColumnRowItem {
+@TemplateDescription("the component of a pre text paragraph.")
+public class PreTextParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        FiveColumnRowItem.class
+        PreTextParagraph.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/fiveColumnRowItem") 
+    @RequestMapping("/preTextParagraph") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/item/fiveColumnRowItem.jsp";
+        return "components/content/paragraph/preTextParagraph.jsp";
     }
     
-    @TabFactory("Five Columns Row Item")
+    @TabFactory("Pre Text Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addEdit(
-            "firstValue",
-            "First Value",
-            "the text value of the first column."
-        );
-        tab.addEdit(
-            "secondValue",
-            "Second Value",
-            "the text value of the second column."
-        );
-        tab.addEdit(
-            "thirdValue",
-            "Third Value",
-            "the text value of the third column."
-        );
-        tab.addEdit(
-            "fourthValue",
-            "Fourth Value",
-            "the text value of the fourth column."
-        );
-        tab.addEdit(
-            "fifthValue",
-            "Fifth Value",
-            "the text value of the fifth column."
-        );
-        tab.addCheckbox(
-            "header",
-            "Header",
-            "set the check when if you need a header of the table."
+        tab.addTextArea(
+            "text",
+            "Text",
+            "the text of the paragraph.",
+            5
         ).setRequired(true);
+        tab.addEdit(
+            "caption",
+            "Caption",
+            "set the caption of the table when if you need."
+        );
     }
     
 }

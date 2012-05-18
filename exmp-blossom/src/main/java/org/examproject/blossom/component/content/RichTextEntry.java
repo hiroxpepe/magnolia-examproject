@@ -30,7 +30,7 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.item.EntryLinkItem;
+import org.examproject.blossom.component.content.item.EntryLinkItem;
 
 /**
  * one of the entry class with rich text input.

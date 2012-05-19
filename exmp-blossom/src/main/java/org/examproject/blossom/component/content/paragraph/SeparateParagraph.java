@@ -36,7 +36,7 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
     id="exmp-blossom:components/separateParagraph",
     title="Separate Paragraph"
 )
-@TemplateDescription("the component of a separate paragraph.")
+@TemplateDescription("the component of a paragraph as a separator.")
 public class SeparateParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(

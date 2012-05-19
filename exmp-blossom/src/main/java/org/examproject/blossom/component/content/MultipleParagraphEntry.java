@@ -49,9 +49,9 @@ import org.examproject.blossom.component.content.paragraph.TextParagraph;
 @Controller
 @Template(
     id="exmp-blossom:components/multipleParagraphEntry",
-    title="Multiple Entry"
+    title="Multiple Paragraph Entry"
 )
-@TemplateDescription("the component of a multiple entry.")
+@TemplateDescription("the component of an entry with multiple paragraphs.")
 public class MultipleParagraphEntry {
     
     private static final Logger LOG = LoggerFactory.getLogger(

@@ -699,7 +699,7 @@
                     <sv:value>2012-05-19T07:53:44.260+09:00</sv:value>
                   </sv:property>
                   <sv:property sv:name="mgnl:template" sv:type="String">
-                    <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
+                    <sv:value>exmp-blossom:components/contentLinkItem</sv:value>
                   </sv:property>
                 </sv:node>
               </sv:node>
@@ -2149,7 +2149,7 @@
                   <sv:value>2012-05-19T07:01:19.282+09:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:template" sv:type="String">
-                  <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
+                  <sv:value>exmp-blossom:components/contentLinkItem</sv:value>
                 </sv:property>
               </sv:node>
             </sv:node>
@@ -2189,7 +2189,7 @@
                   <sv:value>2012-05-19T07:01:37.137+09:00</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:template" sv:type="String">
-                  <sv:value>exmp-blossom:components/entryLinkItem</sv:value>
+                  <sv:value>exmp-blossom:components/contentLinkItem</sv:value>
                 </sv:property>
               </sv:node>
             </sv:node>
@@ -2647,7 +2647,7 @@
         <sv:value>d76e659e-8d41-40dc-8706-ec0d56329deb</sv:value>
       </sv:property>
       <sv:property sv:name="content" sv:type="String">
-        <sv:value>I think that the OSS project to learn these useful and very worthwhile. Is not never late even now. everything is  important that you start.</sv:value>
+        <sv:value>I think that the OSS project to learn these useful and very worthwhile. Is not never late even now. everything is important that you start.</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:createdBy" sv:type="String">
         <sv:value>admin</sv:value>

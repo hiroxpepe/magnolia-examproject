@@ -3,5 +3,5 @@
 
 <div class="entry">
     <div class="entry-title">${content.title}</div>
-    <div class="entry-content">${content.content}</div>
+    <div class="entry-content">${content.text}</div>
 </div>

@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package org.examproject.blossom.component.sidebar;
+package org.examproject.blossom.component.content.item;
 
 import javax.jcr.Node;
 import javax.jcr.Property;
@@ -33,35 +33,40 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
  */
 @Controller
 @Template(
-    id="exmp-blossom:components/sidebarHeaderItem",
-    title="Sidebar Header Item"
+    id="exmp-blossom:components/contentLinkItem",
+    title="Content Link Item"
 )
-@TemplateDescription("the component of a sidebar header item.")
-public class SidebarHeaderItem {
+@TemplateDescription("the component of an item of a link.")
+public class ContentLinkItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(
-        SidebarHeaderItem.class
+        ContentLinkItem.class
     );
     
     ///////////////////////////////////////////////////////////////////////////
     // public methods
     
-    @RequestMapping("/sidebarHeaderItem")
+    @RequestMapping("/contentLinkItem") 
     public String render(
         ModelMap model,
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        return "components/sidebar/sidebarHeaderItem.jsp";
+        return "components/content/item/contentLinkItem.jsp";
     }
     
-    @TabFactory("Sidebar Header Item")
+    @TabFactory("Content Link Item")
     public void addDialog(TabBuilder tab) {
         tab.addEdit(
-            "title",
-            "Title",
-            "a title of the sidebar item."
-        ).setRequired(true); 
+            "linkText",
+            "Link Text",
+            "the link text of the link item."
+        );
+        tab.addLink(
+            "link",
+            "Link URL",
+            "the link url of the link item."
+        );
     }
     
 }

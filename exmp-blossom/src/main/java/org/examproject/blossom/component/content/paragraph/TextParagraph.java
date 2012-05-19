@@ -36,7 +36,7 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
     id="exmp-blossom:components/textParagraph",
     title="Text Paragraph"
 )
-@TemplateDescription("the component of a text paragraph.")
+@TemplateDescription("the component of a paragraph with a text.")
 public class TextParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(

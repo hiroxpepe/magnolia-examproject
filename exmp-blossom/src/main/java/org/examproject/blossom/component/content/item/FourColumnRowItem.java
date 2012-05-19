@@ -36,7 +36,7 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
     id="exmp-blossom:components/fourColumnRowItem",
     title="Four Columns Row Item"
 )
-@TemplateDescription("the component of a four columns row item.")
+@TemplateDescription("the component of an item of the table row, has four columns.")
 public class FourColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(

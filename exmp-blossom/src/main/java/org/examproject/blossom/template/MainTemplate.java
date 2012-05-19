@@ -29,14 +29,12 @@ import info.magnolia.module.blossom.annotation.TabFactory;
 import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.content.ImageAndTextEntry;
 import org.examproject.blossom.component.content.MultipleParagraphEntry;
-import org.examproject.blossom.component.content.RichTextEntry;
 import org.examproject.blossom.component.content.TextEntry;
-import org.examproject.blossom.component.menu.MenuLinkItem;
-import org.examproject.blossom.component.sidebar.SidebarHeaderItem;
-import org.examproject.blossom.component.sidebar.SidebarLinkItem;
-import org.examproject.blossom.component.sidebar.SidebarTextItem;
+import org.examproject.blossom.component.menu.item.MenuLinkItem;
+import org.examproject.blossom.component.sidebar.item.SidebarHeaderItem;
+import org.examproject.blossom.component.sidebar.item.SidebarLinkItem;
+import org.examproject.blossom.component.sidebar.item.SidebarTextItem;
 
 /**
  * the main template class of the application.
@@ -120,8 +118,6 @@ public class MainTemplate {
     @Area("content")
     @AvailableComponentClasses({
         TextEntry.class,
-        RichTextEntry.class,
-        ImageAndTextEntry.class,
         MultipleParagraphEntry.class
     })
     public static class Content {

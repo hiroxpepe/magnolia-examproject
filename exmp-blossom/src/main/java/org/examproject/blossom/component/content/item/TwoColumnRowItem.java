@@ -36,7 +36,7 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
     id="exmp-blossom:components/twoColumnRowItem",
     title="Two Columns Row Item"
 )
-@TemplateDescription("the component of a two columns row item.")
+@TemplateDescription("the component of an item of the table row, has two columns.")
 public class TwoColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(

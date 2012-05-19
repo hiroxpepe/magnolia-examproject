@@ -35,9 +35,9 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
 @Controller
 @Template(
     id="exmp-blossom:components/textEntry",
-    title="Text Entry"
+    title="Simple Text Entry"
 )
-@TemplateDescription("the component of a text entry.")
+@TemplateDescription("the component of an entry with a simple text.")
 public class TextEntry {
     
     private static final Logger LOG = LoggerFactory.getLogger(
@@ -53,8 +53,7 @@ public class TextEntry {
         Node content
     ) throws RepositoryException {
         LOG.trace("called.");
-        
-        // a example of to get the Magnolia JCR data.
+        // an example of to get the Magnolia JCR data.
         Property property = content.getProperty("title");
         LOG.debug(property.getString());
         return "components/content/textEntry.jsp";
@@ -66,12 +65,11 @@ public class TextEntry {
             "title",
             "Title",
             "the title of the entry."
-        ).setRequired(true); 
-        
+        ).setRequired(true);
         tab.addTextArea(
-            "content",
-            "Content",
-            "the content of the entry.",
+            "text",
+            "Text",
+            "the text of the entry.",
             5
         ).setRequired(true);
     }

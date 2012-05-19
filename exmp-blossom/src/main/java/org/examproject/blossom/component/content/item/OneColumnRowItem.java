@@ -34,9 +34,9 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
 @Controller
 @Template(
     id="exmp-blossom:components/oneColumnRowItem",
-    title="one Column Row Item"
+    title="One Column Row Item"
 )
-@TemplateDescription("the component of a one column row item.")
+@TemplateDescription("the component of an item of the table row, has one column.")
 public class OneColumnRowItem {
     
     private static final Logger LOG = LoggerFactory.getLogger(

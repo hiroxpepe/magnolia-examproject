@@ -36,7 +36,7 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
     id="exmp-blossom:components/preTextParagraph",
     title="Pre Text Paragraph"
 )
-@TemplateDescription("the component of a pre text paragraph.")
+@TemplateDescription("the component of a paragraph with a pre text.")
 public class PreTextParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(

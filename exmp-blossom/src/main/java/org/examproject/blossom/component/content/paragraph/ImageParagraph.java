@@ -38,7 +38,7 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
     id="exmp-blossom:components/imageParagraph",
     title="Image Paragraph"
 )
-@TemplateDescription("the component of an image paragraph.")
+@TemplateDescription("the component of a paragraph with an image.")
 public class ImageParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(

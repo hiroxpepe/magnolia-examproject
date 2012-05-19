@@ -36,7 +36,7 @@ import info.magnolia.module.blossom.dialog.TabBuilder;
     id="exmp-blossom:components/richTextParagraph",
     title="Rich Text Paragraph"
 )
-@TemplateDescription("the component of a rich text paragraph.")
+@TemplateDescription("the component of a paragraph with a rich text.")
 public class RichTextParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(

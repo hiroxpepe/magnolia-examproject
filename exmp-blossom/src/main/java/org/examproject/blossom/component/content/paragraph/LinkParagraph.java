@@ -30,7 +30,7 @@ import info.magnolia.module.blossom.annotation.Template;
 import info.magnolia.module.blossom.annotation.TemplateDescription;
 import info.magnolia.module.blossom.dialog.TabBuilder;
 
-import org.examproject.blossom.component.content.item.EntryLinkItem;
+import org.examproject.blossom.component.content.item.ContentLinkItem;
 
 /**
  * @author hiroxpepe
@@ -40,7 +40,7 @@ import org.examproject.blossom.component.content.item.EntryLinkItem;
     id="exmp-blossom:components/linkParagraph",
     title="Link Paragraph"
 )
-@TemplateDescription("the component of a link paragraph.")
+@TemplateDescription("the component of a paragraph with link items.")
 public class LinkParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(
@@ -56,7 +56,7 @@ public class LinkParagraph {
         title="Link Item"
     )
     @AvailableComponentClasses({
-        EntryLinkItem.class
+        ContentLinkItem.class
     })
     public static class LinkItem {
 

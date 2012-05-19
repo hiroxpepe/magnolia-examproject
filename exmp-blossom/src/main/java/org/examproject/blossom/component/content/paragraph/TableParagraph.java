@@ -45,7 +45,7 @@ import org.examproject.blossom.component.content.item.TwoColumnRowItem;
     id="exmp-blossom:components/tableParagraph",
     title="Table Paragraph"
 )
-@TemplateDescription("the component of a table paragraph.")
+@TemplateDescription("the component of a paragraph with a table.")
 public class TableParagraph {
     
     private static final Logger LOG = LoggerFactory.getLogger(

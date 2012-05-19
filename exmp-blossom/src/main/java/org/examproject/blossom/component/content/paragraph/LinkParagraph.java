@@ -49,7 +49,7 @@ public class LinkParagraph {
     
     ///////////////////////////////////////////////////////////////////////////
     // the area class of the link.
-
+    
     @Controller
     @Area(
         value="linkItem",
@@ -59,7 +59,7 @@ public class LinkParagraph {
         ContentLinkItem.class
     })
     public static class LinkItem {
-
+        
         @RequestMapping("/linkParagraph/item")
         public String render(
             ModelMap model,
@@ -68,7 +68,7 @@ public class LinkParagraph {
             LOG.trace("called.");
             return "areas/link.jsp";
         }
-
+        
         @TabFactory("Link")
         public void addDialog(TabBuilder tab) {
             tab.addEdit(
@@ -77,7 +77,7 @@ public class LinkParagraph {
                 "set the caption of the table when if you need."
             );
         }
-
+        
     }
     
     ///////////////////////////////////////////////////////////////////////////

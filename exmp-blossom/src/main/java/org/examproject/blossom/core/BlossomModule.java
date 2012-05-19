@@ -25,7 +25,7 @@ import info.magnolia.module.blossom.module.BlossomModuleSupport;
  * @author hiroxpepe
  */
 public class BlossomModule extends BlossomModuleSupport implements ModuleLifecycle {
-
+    
     private static final Logger LOG = LoggerFactory.getLogger(
         BlossomModule.class
     );
@@ -33,25 +33,23 @@ public class BlossomModule extends BlossomModuleSupport implements ModuleLifecyc
     @Override
     public void start(ModuleLifecycleContext moduleLifecycleContext) {
         LOG.info(this.getClass().getSimpleName() + " is starting");
-                
+        
         initRootWebApplicationContext(
             "/WEB-INF/spring/app-config.xml"
         );
         
         initBlossomDispatcherServlet(
             "blossom",
-            "/WEB-INF/blossom/blossom-config.xml"
+            "/WEB-INF/spring/blossom-config.xml"
         );
     }
-
+    
     @Override
     public void stop(ModuleLifecycleContext moduleLifecycleContext) {
         destroyDispatcherServlets();
         closeRootWebApplicationContext();
         
         LOG.info(this.getClass().getSimpleName() + " is stopping");
-    } 
-
+    }
+    
 }
-
-

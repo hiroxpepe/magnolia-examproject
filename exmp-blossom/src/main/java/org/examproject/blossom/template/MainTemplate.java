@@ -65,7 +65,8 @@ public class MainTemplate {
         
         @RequestMapping("/main/menu")
         public String render(
-            ModelMap model, Node content
+            ModelMap model,
+            Node content
         ) throws RepositoryException {
             LOG.trace("called.");
             return "areas/menu.jsp";
@@ -75,7 +76,7 @@ public class MainTemplate {
         public void addDialog(TabBuilder tab) {
             tab.addStatic("there is no item to be set yet.");
         }
-
+    
     }
     
     ///////////////////////////////////////////////////////////////////////////
@@ -84,7 +85,7 @@ public class MainTemplate {
     @Controller
     @Area("header")
     public static class Header {
-
+        
         @RequestMapping("/main/header")
         public String render(
             ModelMap model,
@@ -95,13 +96,12 @@ public class MainTemplate {
         }
         
         @TabFactory("Header")
-        public void addDialog(TabBuilder tab) {          
+        public void addDialog(TabBuilder tab) {
             tab.addEdit(
                 "title",
                 "Title",
                 "the title of the header."
             ).setRequired(true); 
-
             tab.addEdit(
                 "subTitle",
                 "Sub Title",
@@ -130,7 +130,7 @@ public class MainTemplate {
             LOG.trace("called.");
             return "areas/content.jsp";
         }
-
+        
         @TabFactory("Content")
         public void addDialog(TabBuilder tab) {
             tab.addStatic("there is no item to be set yet.");
@@ -149,7 +149,7 @@ public class MainTemplate {
         SidebarLinkItem.class
     })
     public static class Sidebar {
-
+        
         @RequestMapping("/main/sidebar")
         public String render(
             ModelMap model,
@@ -158,7 +158,7 @@ public class MainTemplate {
             LOG.trace("called.");
             return "areas/sidebar.jsp";
         }
-
+        
         @TabFactory("Sidebar")
         public void addDialog(TabBuilder tab) {
             tab.addStatic("there is no item to be set yet.");
@@ -172,7 +172,7 @@ public class MainTemplate {
     @Controller
     @Area("footer")
     public static class Footer {
-
+        
         @RequestMapping("/main/footer")
         public String render(
             ModelMap model,
@@ -183,7 +183,7 @@ public class MainTemplate {
         }
         
         @TabFactory("Footer")
-        public void addDialog(TabBuilder tab) {          
+        public void addDialog(TabBuilder tab) {
             tab.addEdit(
                 "author",
                 "Author",

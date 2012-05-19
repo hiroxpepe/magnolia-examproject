@@ -54,7 +54,7 @@ public class TableParagraph {
     
     ///////////////////////////////////////////////////////////////////////////
     // the area class of the table.
-
+    
     @Controller
     @Area(
         value="tableItem",
@@ -62,14 +62,14 @@ public class TableParagraph {
     )
     @AvailableComponentClasses({
         OneColumnRowItem.class,
-        TwoColumnRowItem.class,     
+        TwoColumnRowItem.class,
         ThreeColumnRowItem.class,
         FourColumnRowItem.class,
         FiveColumnRowItem.class,
         SixColumnRowItem.class
     })
     public static class TableItem {
-
+        
         @RequestMapping("/tableParagraph/item")
         public String render(
             ModelMap model,
@@ -78,7 +78,7 @@ public class TableParagraph {
             LOG.trace("called.");
             return "areas/table.jsp";
         }
-
+        
         @TabFactory("Table")
         public void addDialog(TabBuilder tab) {
             tab.addCheckbox(
@@ -92,7 +92,7 @@ public class TableParagraph {
                 "set the caption of the table when if you need."
             );
         }
-
+        
     }
     
     ///////////////////////////////////////////////////////////////////////////

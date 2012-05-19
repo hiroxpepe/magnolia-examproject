@@ -60,7 +60,7 @@ public class MultipleParagraphEntry {
     
     ///////////////////////////////////////////////////////////////////////////
     // the area class of the paragraph.
-
+    
     @Controller
     @Area(
         value="paragraph",
@@ -77,7 +77,7 @@ public class MultipleParagraphEntry {
         TextParagraph.class
     })
     public static class Paragraph {
-
+        
         @RequestMapping("/multipleParagraphEntry/paragraph")
         public String render(
             ModelMap model,
@@ -86,12 +86,12 @@ public class MultipleParagraphEntry {
             LOG.trace("called.");
             return "areas/paragraph.jsp";
         }
-
+        
         @TabFactory("Paragraph")
         public void addDialog(TabBuilder tab) {
             tab.addStatic("there is no item to be set yet.");
         }
-
+        
     }
     
     ///////////////////////////////////////////////////////////////////////////

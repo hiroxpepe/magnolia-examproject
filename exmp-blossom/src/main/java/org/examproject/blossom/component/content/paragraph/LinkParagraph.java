@@ -74,7 +74,7 @@ public class LinkParagraph {
             tab.addEdit(
                 "caption",
                 "Caption",
-                "set the caption of the table when if you need."
+                "set the caption of links when if you need."
             );
         }
         
@@ -94,8 +94,14 @@ public class LinkParagraph {
     
     @TabFactory("Link Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addHidden("display", "true");
-        tab.addStatic("proceed with Save.");
+        tab.addHidden(
+            "display",
+            "true"
+        );
+        
+        tab.addStatic(
+            "proceed with Save."
+        );
     }
     
 }

@@ -314,7 +314,9 @@ div.entry-wrapper {
          * define the appearance of the caption of the entry.
          */
         div.entry-caption {
-            margin-bottom: 0.25em;
+            padding-top: 0.5em;
+            font-weight: bold;
+            color: dimgray;
         }
         /* ********************************************************************
          * define the appearance of the content text of the entry.
@@ -339,7 +341,7 @@ div.entry-wrapper {
                 color: dimgray;
                 background: whitesmoke;
                 border-radius: 3px;
-                box-shadow: 0 0 2px 0 silver;
+                box-shadow: 0 0 2px 0 gray;
             }
         /* ********************************************************************
          * define the appearance of the image of the entry.
@@ -384,7 +386,7 @@ div.entry-wrapper {
                 background: lavender;
                 border: 1px solid lightsteelblue;
                 border-radius: 3px;
-                box-shadow: 0 0 2px 0 gainsboro;
+                box-shadow: 0 0 1px 0 gainsboro;
             }
                 div.entry-link p {
                     padding: 0.25em;

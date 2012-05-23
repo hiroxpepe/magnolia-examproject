@@ -86,6 +86,7 @@ public class TableParagraph {
                 "Wide",
                 "set the check when if you need a wide table."
             ).setRequired(true);
+            
             tab.addEdit(
                 "caption",
                 "Caption",

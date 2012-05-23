@@ -4,6 +4,9 @@
 
 <c:if test="${content.display == 'true'}">
     <div class="entry-paragraph-text">
+        <c:if test="${!empty content.caption}">
+            <div class="entry-caption">${content.caption}</div>
+        </c:if>
         <div class="entry-content">${cmsfn:decode(content).text}</div>
     </div>
 </c:if>

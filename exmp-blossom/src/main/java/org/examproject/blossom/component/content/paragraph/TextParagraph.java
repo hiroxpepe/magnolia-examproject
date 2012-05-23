@@ -57,13 +57,23 @@ public class TextParagraph {
     
     @TabFactory("Text Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addHidden("display", "true");
+        tab.addHidden(
+            "display",
+            "true"
+        );
+        
         tab.addTextArea(
             "text",
             "Text",
             "the text of the paragraph.",
             5
         ).setRequired(true);
+        
+        tab.addEdit(
+            "caption",
+            "Caption",
+            "set the caption of the text when if you need."
+        );
     }
     
 }

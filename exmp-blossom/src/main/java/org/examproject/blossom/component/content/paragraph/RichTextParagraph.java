@@ -57,12 +57,22 @@ public class RichTextParagraph {
     
     @TabFactory("Rich Text Paragraph")
     public void addDialog(TabBuilder tab) {
-        tab.addHidden("display", "true");
+        tab.addHidden(
+            "display",
+            "true"
+        );
+        
         tab.addFckEditor(
             "text",
             "Text",
             "the text of the paragraph."
         ).setRequired(true);
+        
+        tab.addEdit(
+            "caption",
+            "Caption",
+            "set the caption of the text when if you need."
+        );
     }
     
 }

@@ -9,11 +9,12 @@
         <meta http-equiv="Content-Language" content="en">
         <meta name="description" content="${content.metaDescription}" />
         <meta name="keywords" content="${content.metaKeywords}" />
-        <link rel="shortcut icon" href="<c:url value="/docroot/images/icon.ico" />" />
-        <link rel="stylesheet" type="text/css" href="<c:url value="/docroot/styles/exmp-blossom.css" />" />
-        <script language="javascript" type="text/javascript" src="<c:url value="/docroot/scripts/jquery.js" />"></script>
-        <script language="javascript" type="text/javascript" src="<c:url value="/docroot/scripts/jquery-ui.custom.min.js" />"></script>
-        <script language="javascript" type="text/javascript" src="<c:url value="/docroot/scripts/exmp-blossom.js" />"></script>
+        <base href="${pageContext.request.contextPath}" />
+        <link rel="shortcut icon" href="/docroot/images/icon.ico" />
+        <link rel="stylesheet" type="text/css" href="/docroot/styles/exmp-blossom.css" />
+        <script language="javascript" type="text/javascript" src="/docroot/scripts/jquery.js"></script>
+        <script language="javascript" type="text/javascript" src="/docroot/scripts/jquery-ui.custom.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/docroot/scripts/exmp-blossom.js"></script>
         <title>${content.title}</title>
     </head>
     <body>
